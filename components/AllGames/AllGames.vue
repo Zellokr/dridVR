@@ -82,26 +82,34 @@ onMounted(() => {
   <div class="min-h-screen">
     <div class="flex flex-col justify-center items-center">
       <h1 class="text-white text-5xl font-bold py-8 mb-2">Todos los juegos</h1>
-      <div class="mb-8 w-full max-w-4xl px-4">
+      <div class="mb-8 w-full max-w-4xl px-4 md:px-12 lg:px-16">
         <div class="flex items-center justify-between ">
-          <!-- Filtro de texto (ocupa el centro) -->
           <input
               v-model="searchTerm"
               type="text"
               placeholder="Filtrar..."
-              class="bg-gray-700 text-white p-2 rounded-lg w-full max-w-2xl mr-4"
+              class="bg-gray-700 text-white p-2 rounded-lg w-full mr-4"
           />
-
-          <!-- Switch para activar/desactivar el filtro -->
-          <div class="flex items-center ">
-            <label for="filterSwitch" class="text-white mr-4">Con video</label>
-            <!-- Switch hecho con Tailwind CSS -->
-            <input
-                id="filterSwitch"
-                type="checkbox"
-                v-model="hasVideo"
-                class="toggle-checkbox hidden"
-            />
+          <div class="flex items-center">
+            <div class="flex ml-6">
+              <label for="filterSwitch" class="text-white mr-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  class="w-5 h-5 text-white"
+                  viewBox="0 0 24 24"
+              >
+                <path
+                    d="M22.54 6.42a2.42 2.42 0 00-2.38-2.42H3.84A2.42 2.42 0 001.46 6.42v11.16a2.42 2.42 0 002.38 2.42h16.32a2.42 2.42 0 002.38-2.42zM9.5 16.57V7.43L16 12z"
+                />
+              </svg></label>
+              <input
+                  id="filterSwitch"
+                  type="checkbox"
+                  v-model="hasVideo"
+                  class="toggle-checkbox hidden "
+              />
+            </div>
             <div
                 class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
                 :class="hasVideo ? 'bg-blue-500' : 'bg-gray-300'"
@@ -110,7 +118,7 @@ onMounted(() => {
               <div
                   class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
                   :class="hasVideo ? 'transform translate-x-6' : ''"
-              ></div>
+              />
             </div>
           </div>
         </div>
@@ -137,7 +145,7 @@ onMounted(() => {
                   <div
                       v-if="game.yt_url"
                       class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
-                      @click.stop="openVideoLink(game.yt_url)"
+                      @click.stop.prevent="openVideoLink(game.yt_url)"
                   >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

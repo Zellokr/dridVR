@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import accesories from '@/public/accesories.json';
 
-interface Accesories {
-  name: string
-  link: string
-  img_link: string
-}
-
-
 </script>
 
 <template>
