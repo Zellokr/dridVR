@@ -35,9 +35,10 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
         @click="deactivateFilters"
         class="bg-gray-700 text-white p-2 rounded-lg w-full mr-4"
     />
+
     <div class="flex items-center">
       <div class="flex ml-6">
-        <label for="filterSwitch" class="text-white mr-4 flex items-center space-x-2.5">
+        <label for="filterYoutube" class="text-white mr-4 flex items-center space-x-2.5">
           <span>Youtube</span>
           <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +51,7 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
             />
           </svg></label>
         <input
-            id="filterSwitch"
+            id="youtube"
             type="checkbox"
             v-model="hasVideo"
             class="toggle-checkbox hidden "
@@ -60,6 +61,7 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
           class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
           :class="hasVideo ? 'bg-blue-500' : 'bg-gray-300'"
           @click="hasVideo = !hasVideo; hasCrossbuy = false; searchTerm = '';"
+
       >
         <div
             class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
@@ -70,12 +72,12 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
 
     <div class="flex items-center">
       <div class="flex ml-6">
-        <label for="filterSwitch" class="text-white mr-4 flex items-center space-x-2.5">
+        <label for="crossbuy" class="text-white mr-4 flex items-center space-x-2.5">
           <span>CrossBuy</span>
           <MdiIcon icon="mdiSync" class="text-white w-4 h-4" />
         </label>
         <input
-            id="filterSwitch"
+            id="filterCrossbuy"
             type="checkbox"
             v-model="hasCrossbuy"
             class="toggle-checkbox hidden "
@@ -85,6 +87,7 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
           class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
           :class="hasCrossbuy ? 'bg-blue-500' : 'bg-gray-300'"
           @click="hasCrossbuy = !hasCrossbuy; hasVideo = false; searchTerm = '';"
+
       >
         <div
             class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
@@ -94,7 +97,3 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>
