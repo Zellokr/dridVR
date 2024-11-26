@@ -34,7 +34,7 @@ const openVideoLink = (ytUrl: string) => {
     </div>
 
     <div class="flex justify-center items-center gap-x-8 flex-wrap gap-y-4 pb-8">
-      <transition-group name="fade" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 pb-8">
+      <transition-group name="fade" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 pb-8">
         <div
             v-for="(game, index) in containVideo"
             :key="game.affiliate_link"
