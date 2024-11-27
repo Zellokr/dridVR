@@ -36,6 +36,31 @@ const loadGames = () => {
   }, 1); // Ajusta el tiempo de espera según sea necesario
 };
 
+// Alternativa con Intersection Observer
+const observer = ref<IntersectionObserver | null>(null);
+
+onMounted(() => {
+  const sentinel = document.getElementById('scroll-sentinel'); // Elemento al final de la lista
+  if (sentinel) {
+    observer.value = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !loading.value) {
+            loadGames();
+          }
+        },
+        { rootMargin: '100px' } // Cargar antes de llegar al final
+    );
+    observer.value.observe(sentinel);
+  }
+  loadGames(); // Cargar los primeros juegos al iniciar la página
+});
+
+onUnmounted(() => {
+  if (observer.value) {
+    observer.value.disconnect(); // Limpiar el observador
+  }
+});
+
 const finalFilteredGames = computed(() => {
   let filtered = games.value;
 
@@ -58,32 +83,6 @@ const finalFilteredGames = computed(() => {
 
   return filtered;
 });
-
-let scrollTimeout: ReturnType<typeof setTimeout> | null = null;
-
-const onScroll = () => {
-  if (scrollTimeout) return; // Evitar que se llame múltiples veces en poco tiempo
-
-  scrollTimeout = setTimeout(() => {
-    const bottom =
-        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight;
-
-    if (bottom && !loading.value) {
-      loadGames(); // Cargar más juegos
-    }
-
-    scrollTimeout = null; // Liberar el timeout
-  }, 200); // Tiempo de espera para throttle
-};
-
-onMounted(() => {
-  loadGames(); // Cargar los primeros juegos al iniciar la página
-  window.addEventListener('scroll', onScroll, { passive: true }); // Detectar el evento de scroll
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', onScroll); // Limpiar el evento al desmontar
-});
 </script>
 
 <template>
@@ -99,7 +98,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <CardGames :game-records="finalFilteredGames"></CardGames>
+    <CardGames :game-records="finalFilteredGames" :feature="false"></CardGames>
 
     <div v-if="loading" class="text-center py-4 text-white">
       Cargando más juegos...
@@ -110,5 +109,6 @@ onUnmounted(() => {
     >
       No se ha encontrado el juego...
     </div>
+    <div id="scroll-sentinel" class="h-1"></div> <!-- Elemento observado -->
   </div>
 </template>

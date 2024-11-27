@@ -18,6 +18,6 @@ const games = ref<Game[]>(featureGames);
     <div class="flex flex-col justify-center items-center">
       <h1 class="text-white text-5xl font-bold py-8 mb-2">Destacados</h1>
     </div>
-    <CardGames :game-records="games" />
+    <CardGames :game-records="games" feature />
   </div>
 </template>

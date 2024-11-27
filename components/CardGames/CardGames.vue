@@ -10,6 +10,7 @@ type Game = {
 
 type CardGamesProps = {
   gameRecords: Game[]
+  feature: boolean
 }
 
 defineProps<CardGamesProps>()
@@ -22,7 +23,14 @@ const openVideoLink = (ytUrl: string) => {
 
 <template>
   <div class="flex justify-center items-center flex-wrap gap-y-2">
-    <transition-group name="fade" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 pb-2">
+    <transition-group
+        name="fade"
+        tag="div"
+        :class="{
+        'grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 pb-6': !feature,
+        'grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 px-8': feature
+      }"
+    >
       <div
           v-for="(game, index) in gameRecords"
           :key="index"
