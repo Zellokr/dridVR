@@ -78,7 +78,7 @@ const finalFilteredGames = computed(() => {
 
   // Filtrar por crossbuy si hasCrossbuy está activo
   if (hasCrossbuy.value) {
-    filtered = gamesData.filter((game: Game) => game.crossbuy === true);
+    filtered = gamesData.filter((game: Game) => game.crossbuy === 1);
   }
 
   return filtered;
