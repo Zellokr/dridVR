@@ -21,7 +21,7 @@ const goToChannel = () => {
       <!-- Texto -->
       <div class="text-center md:text-left px-5 md:px-2">
       <span class="text-white text-base sm:text-lg md:text-xl font-bold leading-relaxed">
-        Usa estos enlaces de afiliado y consigue un ¡10% de descuento en cualquier juego!
+        ¡Usa estos enlaces de afiliado y consigue un <span class="text-yellow-400">10% de descuento</span> en cualquier juego!
       </span>
       </div>
     </div>
