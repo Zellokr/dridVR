@@ -10,14 +10,19 @@ type Game = {
   crossbuy?: boolean;
 };
 
+type AllGamesProps = {
+  searchTerm: string
+  hasVideo: boolean
+  hasCrossbuy: boolean
+}
+
+const props = defineProps<AllGamesProps>()
+
 const games = ref<Game[]>([]);
 const loading = ref(false);
 const pageSize = 10; // Número de juegos a cargar por cada "paginación"
 let currentPage = 0;
 
-const searchTerm = ref('');
-const hasVideo = ref(false);
-const hasCrossbuy = ref(false);
 
 const loadGames = () => {
   if (loading.value) return; // Evitar cargas múltiples a la vez
@@ -65,19 +70,19 @@ const finalFilteredGames = computed(() => {
   let filtered = games.value;
 
   // Filtrar por búsqueda (searchTerm)
-  if (searchTerm.value.trim() !== '' && searchTerm.value.length >= 4) {
+  if (props.searchTerm.trim() !== '' && props.searchTerm.length >= 4) {
     filtered = gamesData.filter((game: Game) =>
-        game.name!.toLowerCase().includes(searchTerm.value.toLowerCase())
+        game.name!.toLowerCase().includes(props.searchTerm.toLowerCase())
     );
   }
 
   // Filtrar por videos si hasVideo está activo
-  if (hasVideo.value) {
+  if (props.hasVideo) {
     filtered = gamesData.filter((game: Game) => game.yt_link?.trim() !== '');
   }
 
   // Filtrar por crossbuy si hasCrossbuy está activo
-  if (hasCrossbuy.value) {
+  if (props.hasCrossbuy) {
     filtered = gamesData.filter((game: Game) => game.crossbuy === 1);
   }
 
@@ -87,16 +92,6 @@ const finalFilteredGames = computed(() => {
 
 <template>
   <div class="min-h-screen">
-    <div class="flex flex-col justify-center items-center">
-      <h1 class="text-white text-5xl font-bold py-8 mb-2">Todos los juegos</h1>
-      <div class="mb-8 w-full max-w-4xl px-4 md:px-12 lg:px-16">
-        <Filters
-            v-model:searchTerm="searchTerm"
-            v-model:hasVideo="hasVideo"
-            v-model:hasCrossbuy="hasCrossbuy"
-        ></Filters>
-      </div>
-    </div>
 
     <CardGames :game-records="finalFilteredGames" :feature="false"></CardGames>
 

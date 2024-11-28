@@ -5,12 +5,12 @@ import accesories from '@/public/accesories.json';
 
 <template>
     <div class="flex flex-col justify-center items-center">
-      <h1 class="text-white text-5xl font-bold py-8 mb-2">Accesorios</h1>
+      <h1 class="text-white text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold py-8">Accesorios</h1>
     </div>
 
 
     <div class="flex justify-center items-center flex-wrap gap-y-2">
-      <transition-group name="fade" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pb-2">
+      <transition-group name="fade" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 ">
         <!-- Itera sobre los datos filtrados -->
         <div
             v-for="(accessory, index) in accesories"
@@ -32,7 +32,7 @@ import accesories from '@/public/accesories.json';
                 </div>
                 <!-- Contenido -->
                 <div class="p-4 h-16">
-                  <h3 class="text-lg font-semibold mb-2 text-white ">
+                  <h3 class="text-lg font-semibold text-white ">
                     {{ accessory.name || "Nombre del Accesorio" }}
                   </h3>
                 </div>
