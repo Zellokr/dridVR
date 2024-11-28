@@ -27,9 +27,9 @@ watch(hasCrossbuy, (newVal) => emit('update:hasCrossbuy', newVal));
 </script>
 
 <template>
-  <div class="sticky top-0 z-20 mb-4">
+  <div class="sticky top-0 z-20 mb-4 ">
     <div class="flex flex-col justify-center items-center bg-gray-900 py-4 md:px-0 lg:px-0 gap-y-8">
-    <h1 class="text-white text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold mt-8 px-4">Todos los juegos</h1>
+    <h1 class="text-white text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold md:mt-8 mt-0 px-4">Todos los juegos</h1>
     <div class="mb-4 w-full max-w-4xl px-4 md:px-12 lg:px-16">
       <div class="flex  items-center justify-center flex-wrap gap-4">
       <!-- Input de Búsqueda -->

@@ -23,7 +23,7 @@ const hasCrossbuy = ref(false)
               <div class="text-yellow-500 text-2xl font-bold tracking-wide">
                 BLACK FRIDAY
               </div>
-              <div class="text-gray-300 text-sm  font-semibold mt-1">Se aplica a todos los juegos hasta <strong>31/12/24</strong> </div>
+              <div class="text-gray-300 text-sm font-semibold mt-1">Se aplica a todos los juegos hasta <strong>31/12/24</strong> </div>
               <!-- Discount -->
               <div class="text-8xl font-extrabold text-white">
                 20<span class="text-yellow-500">%</span>

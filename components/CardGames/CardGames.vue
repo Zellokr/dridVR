@@ -35,7 +35,7 @@ const openVideoLink = (ytUrl: string) => {
           v-for="(game, index) in gameRecords"
           :key="index"
       >
-        <div class="block cursor-pointer">
+        <div class="block cursor-pointer shadow-3xl">
           <a
               :href="game.affiliate_link"
               target="_blank"

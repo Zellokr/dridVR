@@ -7,7 +7,7 @@ const goToChannel = () => {
 </script>
 
 <template>
-  <div class="bg-gray-700 h-auto w-full pb-4 rounded-b-full">
+  <div class="bg-gray-700 h-auto w-full pb-4 ">
     <div class="flex flex-col justify-center items-center gap-y-5 sm:gap-y-3 md:gap-x-8 md:py-8 ">
       <!-- Logo -->
       <img

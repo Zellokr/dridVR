@@ -6,7 +6,7 @@ import accesories from '@/public/accesories.json';
 <template>
     <div class="flex flex-col justify-center items-center">
       <h1 class="text-white text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold py-8">Accesorios</h1>
-      <span class="text-white text-2xl mb-4">Con la compra de cualquier visor... ¡Obtienes <span class="text-yellow-400">60€</span> para gastar en la tienda de Meta!</span>
+      <span class="text-white text-lg px-16 md:text-2xl  mb-4">Con la compra de cualquier visor... ¡Obtienes <span class="text-yellow-400">60€</span> para gastar en la tienda de Meta!</span>
     </div>
 
 
