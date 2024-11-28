@@ -1,20 +1,21 @@
 <script setup lang="ts">
 import {ref} from "vue";
+import {
+  Dialog,
+  DialogContent,
+} from '@/components/ui/dialog'
 
 const searchTerm = ref('');
 const hasVideo = ref(false)
 const hasCrossbuy = ref(false)
 
-import {
-  Dialog,
-  DialogContent,
-} from '@/components/ui/dialog'
 
 </script>
 
 <template>
   <div class="h-full w-full bg-gray-900 ">
     <Dialog default-open>
+      <DialogTitle />
       <DialogContent class="border border-gray-700 rounded-lg bg-gradient-to-br from-gray-800 to-black text-center text-white p-6">
             <!-- Content -->
             <div class="relative z-10">
@@ -29,17 +30,16 @@ import {
               </div>
             </div>
       </DialogContent>
+      <DialogDescription />
     </Dialog>
     <Header />
     <Features />
     <Accesories />
-    <div class="sticky top-0 z-20 mb-4">
-      <Filters
+    <Filters
           v-model:searchTerm="searchTerm"
           v-model:hasVideo="hasVideo"
           v-model:hasCrossbuy="hasCrossbuy"
-      />
-    </div>
+    />
     <AllGames :search-term="searchTerm" :has-video="hasVideo" :has-crossbuy="hasCrossbuy" />
   </div>
 </template>
