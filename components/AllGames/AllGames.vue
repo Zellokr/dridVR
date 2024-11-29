@@ -91,7 +91,7 @@ const finalFilteredGames = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen">
+  <div class="min-h-screen ">
 
     <CardGames :game-records="finalFilteredGames" :feature="false"></CardGames>
 

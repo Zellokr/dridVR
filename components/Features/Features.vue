@@ -15,6 +15,7 @@ const games = ref<Game[]>(featureGames);
 
 <template>
   <div class="h-full">
+
     <div class="flex flex-col justify-center items-center">
       <h1 class="text-white text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-bold py-8 mb-2">Novedades</h1>
     </div>
