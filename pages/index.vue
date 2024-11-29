@@ -9,12 +9,33 @@ const searchTerm = ref('');
 const hasVideo = ref(false)
 const hasCrossbuy = ref(false)
 
+const dialogOpen = ref(false);
+
+onMounted(() => {
+  if (process.client) {
+    const lastShown = localStorage.getItem("dialogLastShown");
+
+    if (!lastShown || hasOneDayPassed(lastShown)) {
+      dialogOpen.value = true; // Muestra el diálogo
+      localStorage.setItem("dialogLastShown", new Date().toISOString()); // Actualiza la fecha
+    }
+  }
+});
+
+// Función para verificar si ha pasado un día
+function hasOneDayPassed(lastShown) {
+  const lastDate = new Date(lastShown);
+  const now = new Date();
+  const diffInMs = now - lastDate;
+  const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
+  return diffInMs >= oneDayInMs;
+}
 
 </script>
 
 <template>
   <div class="h-full w-full bg-gray-950 text-gray-100 font-sans">
-    <Dialog default-open>
+    <Dialog v-model:open="dialogOpen">
       <!-- Dialog Title -->
       <DialogTitle class="sr-only" />
 
@@ -65,7 +86,3 @@ const hasCrossbuy = ref(false)
     />
   </div>
 </template>
-
-<style scoped>
-
-</style>
