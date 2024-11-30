@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue';
-import gamesData from '@/public/data.json';
+import { ref, computed, onMounted, onUnmounted } from "vue";
+import gamesData from "@/public/data.json";
+import TitleContent from "~/components/TitleContent/TitleContent.vue";
 
 type Game = {
   name?: string;
@@ -8,21 +9,18 @@ type Game = {
   img_link: string;
   yt_link?: string;
   crossbuy?: boolean;
+  bhaptics?: boolean;
 };
 
-type AllGamesProps = {
-  searchTerm: string
-  hasVideo: boolean
-  hasCrossbuy: boolean
-}
-
-const props = defineProps<AllGamesProps>()
+const searchTerm = ref("");
+const hasVideo = ref(false);
+const hasCrossbuy = ref(false);
+const hasHaptic = ref(false);
 
 const games = ref<Game[]>([]);
 const loading = ref(false);
 const pageSize = 10; // Número de juegos a cargar por cada "paginación"
 let currentPage = 0;
-
 
 const loadGames = () => {
   if (loading.value) return; // Evitar cargas múltiples a la vez
@@ -45,15 +43,15 @@ const loadGames = () => {
 const observer = ref<IntersectionObserver | null>(null);
 
 onMounted(() => {
-  const sentinel = document.getElementById('scroll-sentinel'); // Elemento al final de la lista
+  const sentinel = document.getElementById("scroll-sentinel"); // Elemento al final de la lista
   if (sentinel) {
     observer.value = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting && !loading.value) {
-            loadGames();
-          }
-        },
-        { rootMargin: '100px' } // Cargar antes de llegar al final
+      ([entry]) => {
+        if (entry.isIntersecting && !loading.value) {
+          loadGames();
+        }
+      },
+      { rootMargin: "100px" }, // Cargar antes de llegar al final
     );
     observer.value.observe(sentinel);
   }
@@ -70,20 +68,24 @@ const finalFilteredGames = computed(() => {
   let filtered = games.value;
 
   // Filtrar por búsqueda (searchTerm)
-  if (props.searchTerm.trim() !== '' && props.searchTerm.length >= 4) {
+  if (searchTerm.value.trim() !== "" && searchTerm.value.length >= 4) {
     filtered = gamesData.filter((game: Game) =>
-        game.name!.toLowerCase().includes(props.searchTerm.toLowerCase())
+      game.name!.toLowerCase().includes(searchTerm.value.toLowerCase()),
     );
   }
 
   // Filtrar por videos si hasVideo está activo
-  if (props.hasVideo) {
-    filtered = gamesData.filter((game: Game) => game.yt_link?.trim() !== '');
+  if (hasVideo.value) {
+    filtered = gamesData.filter((game: Game) => game.yt_link?.trim() !== "");
   }
 
   // Filtrar por crossbuy si hasCrossbuy está activo
-  if (props.hasCrossbuy) {
-    filtered = gamesData.filter((game: Game) => game.crossbuy === 1);
+  if (hasCrossbuy.value) {
+    filtered = gamesData.filter((game: Game) => game.crossbuy);
+  }
+
+  if (hasHaptic.value) {
+    filtered = gamesData.filter((game: Game) => game.bhaptics);
   }
 
   return filtered;
@@ -91,19 +93,26 @@ const finalFilteredGames = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen ">
-
-    <CardGames :game-records="finalFilteredGames" :feature="false"></CardGames>
+  <div class="min-h-screen">
+    <TitleContent id="allgames" title="Todos los juegos" />
+    <Filters
+      v-model:searchTerm="searchTerm"
+      v-model:hasVideo="hasVideo"
+      v-model:hasCrossbuy="hasCrossbuy"
+      v-model:hasHaptic="hasHaptic"
+    />
+    <CardGames :game-records="finalFilteredGames" :feature="false" />
 
     <div v-if="loading" class="text-center py-4 text-white">
       Cargando más juegos...
     </div>
     <div
-        v-if="finalFilteredGames.length === 0 && loading === false"
-        class="flex justify-center text-white font-bold text-xl"
+      v-if="finalFilteredGames.length === 0 && loading === false"
+      class="flex justify-center text-white font-bold text-xl"
     >
       No se ha encontrado el juego...
     </div>
-    <div id="scroll-sentinel" class="h-1"></div> <!-- Elemento observado -->
+    <div id="scroll-sentinel" class="h-1"></div>
+    <!-- Elemento observado -->
   </div>
 </template>

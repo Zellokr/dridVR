@@ -1,37 +1,50 @@
 <script setup lang="ts">
+import { redirectToContent } from "~/utils/redirectToContent";
 
 const goToChannel = () => {
-  window.open('https://www.youtube.com/@dridvr', '_blank');
-}
-
+  window.open("https://www.youtube.com/@dridvr", "_blank");
+};
 </script>
 
 <template>
-  <div class="bg-gray-700 h-auto w-full pb-4 ">
-    <div class="flex flex-col justify-center items-center gap-y-5 sm:gap-y-3 md:gap-x-8 md:py-8 ">
+  <div
+    class="bg-gradient-to-br from-gray-800 via-gray-900 to-black w-full pb-8"
+  >
+    <div
+      class="flex flex-col justify-center items-center gap-y-6 py-8 md:gap-y-8"
+    >
       <!-- Logo -->
       <img
-          src="/img/logo.png"
-          alt="Logo"
-          width="150"
-          height="150"
-          class="mt-4 w-28 sm:w-36 md:w-40 max-w-full h-auto cursor-pointer"
-          @click="goToChannel"
-      >
-      <!-- Texto -->
-      <div class="text-center md:text-left px-5 md:px-2">
-      <span class="text-white text-base sm:text-lg md:text-xl font-bold leading-relaxed">
-        ¡Usa estos enlaces de afiliado y consigue un <span class="text-yellow-400">20% de descuento</span> en cualquier juego!
-      </span>
+        src="/img/logo.png"
+        alt="Logo"
+        width="150"
+        height="150"
+        class="mt-4 w-28 sm:w-36 md:w-40 h-auto cursor-pointer transition-transform duration-200 hover:scale-105"
+        @click="goToChannel"
+      />
+      <!-- Texto promocional -->
+      <div class="text-center px-5 md:px-2">
+        <span
+          class="text-white text-lg sm:text-xl md:text-2xl font-bold leading-relaxed block"
+        >
+          ¡Usa estos enlaces de afiliado y consigue un
+          <span class="text-yellow-400">20% de descuento</span> en cualquier
+          juego!
+        </span>
       </div>
+      <!-- Botón de CTA -->
+      <button
+        class="bg-yellow-500 text-black text-sm sm:text-base md:text-lg font-semibold py-2 px-6 rounded-lg shadow-md transition-transform hover:scale-105 hover:bg-yellow-600"
+        @click="redirectToContent('allgames')"
+      >
+        Ver ofertas ahora
+      </button>
     </div>
   </div>
 </template>
 
 <style scoped>
-
-.custom-color-header{
+.custom-color-header {
   background-color: #3b3b3b;
 }
-
 </style>

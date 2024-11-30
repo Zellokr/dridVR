@@ -1,13 +1,7 @@
 <script setup lang="ts">
-import {ref} from "vue";
-import {
-  Dialog,
-  DialogContent,
-} from '@/components/ui/dialog'
-
-const searchTerm = ref('');
-const hasVideo = ref(false)
-const hasCrossbuy = ref(false)
+import { ref } from "vue";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { redirectToContent } from "~/utils/redirectToContent";
 
 const dialogOpen = ref(false);
 
@@ -30,59 +24,81 @@ function hasOneDayPassed(lastShown) {
   const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
   return diffInMs >= oneDayInMs;
 }
-
 </script>
 
 <template>
-  <div class="h-full w-full bg-gray-950 text-gray-100 font-sans">
+  <div class="h-full w-full bg-gray-950 text-gray-200 font-sans">
+    <!-- Diálogo BLACK FRIDAY -->
     <Dialog v-model:open="dialogOpen">
-      <!-- Dialog Title -->
       <DialogTitle class="sr-only" />
-
-      <!-- Dialog Content -->
       <DialogContent
-          class="border border-gray-800 rounded-xl bg-gradient-to-br from-gray-900 to-black shadow-xl p-8 max-w-md mx-auto mt-10 text-center"
+        class="border border-gray-800 rounded-xl bg-gradient-to-br from-gray-800 via-gray-900 to-black shadow-2xl p-8 max-w-md mx-auto mt-10 text-center"
       >
-        <!-- Content -->
         <div class="relative z-10">
-          <!-- Main Title -->
-          <div class="text-yellow-500 text-3xl font-extrabold tracking-wider">
+          <!-- Título principal -->
+          <div class="text-yellow-400 text-3xl font-extrabold tracking-wide">
             BLACK FRIDAY
           </div>
-          <div class="text-gray-400 text-sm font-medium mt-2">
-            Se aplica a todos los juegos hasta <strong class="text-yellow-400">31/12/24</strong>
+          <div class="text-gray-300 text-sm font-medium mt-2">
+            Se aplica a todos los juegos hasta
+            <strong class="text-yellow-300">31/12/24</strong>
           </div>
-          <!-- Discount -->
+          <!-- Descuento -->
           <div class="text-8xl font-black text-white mt-4">
-            20<span class="text-yellow-500">%</span>
+            20<span class="text-yellow-400">%</span>
           </div>
-          <!-- Call to Action -->
+          <!-- Botón de llamada a la acción -->
           <DialogClose as-child>
             <button
-                class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:ring-2 focus:ring-yellow-300"
+              @click="redirectToContent('allgames')"
             >
               ¡Explorar ofertas!
             </button>
           </DialogClose>
-
         </div>
       </DialogContent>
-
       <DialogDescription class="sr-only" />
     </Dialog>
-    <Header class="border-b border-gray-800 bg-gray-900 shadow-sm " />
-    <Features class="py-8 bg-gray-950" />
-    <Accesories class="py-8 bg-gray-950" />
-    <Filters
-        v-model:searchTerm="searchTerm"
-        v-model:hasVideo="hasVideo"
-        v-model:hasCrossbuy="hasCrossbuy"
-    />
-    <AllGames
-        :search-term="searchTerm"
-        :has-video="hasVideo"
-        :has-crossbuy="hasCrossbuy"
-        class="pt-8"
-    />
+    <!-- Encabezado -->
+    <Header class="border-b border-gray-700 bg-gray-900 shadow-md" />
+    <!-- Sección de características -->
+    <Features />
+    <!-- Sección de accesorios -->
+    <Accesories />
+    <!-- Listado de juegos -->
+    <AllGames />
   </div>
 </template>
+
+<style scoped>
+/* Transición cuando el card de filtro aparece */
+.filter-transition-enter-active {
+  animation: bounce-in 0.2s ease-out;
+}
+
+.filter-transition-leave-active {
+  animation: bounce-in 0.2s reverse ease-in;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0) translateY(50px); /* Empieza pequeño y desplazado hacia abajo */
+    opacity: 0; /* Empieza invisible */
+  }
+  50% {
+    transform: scale(1.1) translateY(-10px); /* Rebote hacia arriba y más grande */
+    opacity: 1; /* Se vuelve visible */
+  }
+  100% {
+    transform: scale(1) translateY(0); /* Llega a su tamaño y posición final */
+    opacity: 1; /* Totalmente visible */
+  }
+}
+
+/* Efecto de salida */
+.filter-transition-leave-to {
+  transform: scale(0) translateY(50px); /* Sale hacia abajo y pequeño */
+  opacity: 0;
+}
+</style>
