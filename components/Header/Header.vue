@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { redirectToContent } from "~/utils/redirectToContent";
-
 const goToChannel = () => {
   window.open("https://www.youtube.com/@dridvr", "_blank");
 };
@@ -32,13 +30,6 @@ const goToChannel = () => {
           juego!
         </span>
       </div>
-      <!-- Botón de CTA -->
-      <button
-        class="bg-yellow-500 text-black text-sm sm:text-base md:text-lg font-semibold py-2 px-6 rounded-lg shadow-md transition-transform hover:scale-105 hover:bg-yellow-600"
-        @click="redirectToContent('allgames')"
-      >
-        Ver ofertas ahora
-      </button>
     </div>
   </div>
 </template>

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { redirectToContent } from "~/utils/redirectToContent";
 
 const dialogOpen = ref(false);
 
@@ -51,7 +50,6 @@ function hasOneDayPassed(lastShown) {
           <DialogClose as-child>
             <button
               class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:ring-2 focus:ring-yellow-300"
-              @click="redirectToContent('allgames')"
             >
               ¡Explorar ofertas!
             </button>
