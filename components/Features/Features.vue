@@ -13,7 +13,7 @@ const games = ref<Game[]>(featureGames);
 </script>
 
 <template>
-  <div class="h-full">
+  <div class="h-full flex flex-col py-4">
     <TitleContent title="Novedades" />
     <CardGames :game-records="games" feature />
   </div>

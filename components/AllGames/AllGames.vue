@@ -99,7 +99,7 @@ const finalFilteredGames = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen">
+  <div class="min-h-screen flex flex-col py-4">
     <TitleContent id="allgames" title="Todos los juegos" />
     <Filters
       v-model:searchTerm="searchTerm"

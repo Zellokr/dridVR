@@ -21,7 +21,9 @@ const openVideoLink = (ytUrl: string) => {
 </script>
 
 <template>
-  <div class="flex justify-center items-center flex-wrap gap-y-2">
+  <div
+    class="flex justify-center md:justify-start items-center flex-wrap gap-y-2"
+  >
     <transition-group
       name="fade"
       tag="div"
