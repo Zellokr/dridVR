@@ -5,7 +5,7 @@
     "img_link": "./img/38974570_1418983688953859_565718311001618557_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "A Fisherman's Tale",
@@ -125,7 +125,7 @@
     "img_link": "./img/75612001_712085487403027_7441665157116758578_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Amid Evil",
@@ -149,7 +149,7 @@
     "img_link": "./img/75195904_429894816474957_3168994560101083038_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Angry Birds VR: Isle of Pigs",
@@ -181,7 +181,7 @@
     "img_link": "./img/38984447_850812473320576_4671455256794477843_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Apollo 11",
@@ -213,7 +213,7 @@
     "img_link": "./img/39031485_2765133826953588_3581677201549640095_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Arcsmith",
@@ -245,7 +245,7 @@
     "img_link": "./img/39036675_668073522030216_7603294127181822967_n.jpg",
     "yt_link": " https://youtu.be/oWxPwkJBNls?si=oxAl82uQVdQz8mAE",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Arizona Sunshine® Remake",
@@ -253,7 +253,7 @@
     "img_link": "./img/39036618_26551429654470387_31984803005620468_n.jpg",
     "yt_link": " https://youtu.be/oWxPwkJBNls?si=1oEC7NDscUuCDJ3g",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "ARK and ADE",
@@ -261,7 +261,7 @@
     "img_link": "./img/39035394_189329466887518_7987128258753799588_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Asgard's Wrath 2",
@@ -309,7 +309,7 @@
     "img_link": "./img/39031399_1665234817234914_2340729601491300061_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Audioshield",
@@ -421,7 +421,7 @@
     "img_link": "./img/38982545_766209505571762_3583659239499174869_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "BlackForge: A Smithing Adventure",
@@ -445,7 +445,7 @@
     "img_link": "./img/38974900_1207688627130940_481340907229520760_n.jpg",
     "yt_link": " https://youtu.be/prEAsrMjO98?si=j9fpAPII4RyBBJm5",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Blair Witch: Oculus Quest Edition",
@@ -653,7 +653,7 @@
     "img_link": "./img/39031596_3838637049736852_4956530396401581766_n.jpg",
     "yt_link": " https://youtu.be/vDgRQCOXRnw?si=SgAlxQ4KCNCHzFvl",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Chess Club",
@@ -725,7 +725,7 @@
     "img_link": "./img/75240103_484559161286793_812088702888088173_n.jpg",
     "yt_link": " https://youtu.be/LR2x_8ppE5s?si=1fldmgnzheZNXDCk",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Contractors Showdown",
@@ -789,7 +789,7 @@
     "img_link": "./img/43931330_1154998742520524_1778696620532136446_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Creed: Rise to Glory - Championship Edition™",
@@ -813,7 +813,7 @@
     "img_link": "./img/75375087_1208887956355538_5089347524954478384_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Crowbar Climber",
@@ -869,7 +869,7 @@
     "img_link": "./img/39003229_1147612703748746_206252908942721577_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Dash Dash World",
@@ -880,12 +880,20 @@
     "bhaptics": 0
   },
   {
+    "name": "Dead Hook",
+    "affiliate_link": "https://www.meta.com/affiliates/DGC7a24d8",
+    "img_link": "./img/75375084_1073148814299496_4759387456329043907_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 1
+  },
+  {
     "name": "Dead Second",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3780317308718524%2F&cjsku=3780317308718524&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/38974499_944743354069459_629713514061662626_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Dead Secret Circle",
@@ -917,7 +925,7 @@
     "img_link": "./img/39003286_1084860392865722_6446587121590393398_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Death Lap",
@@ -933,7 +941,7 @@
     "img_link": "./img/39035466_342361975290069_4429663040838723779_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Demeo",
@@ -1021,7 +1029,7 @@
     "img_link": "./img/39035413_1724298688109644_4236826086711167175_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Dragon Front Rising",
@@ -1085,7 +1093,7 @@
     "img_link": "./img/57570296_2238091626583993_500904430534501466_n.jpg",
     "yt_link": " https://youtu.be/UyeElO6hrtA?si=3TDYMMTSarulWLbJ",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "DYSCHRONIA: Chronos Alternate",
@@ -1181,7 +1189,7 @@
     "img_link": "./img/38974725_789320756401865_1400652570310805520_n.jpg",
     "yt_link": " https://youtu.be/aXyUbz5bZ_A?si=Gn_SLSNnTg3EZ-EY",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Eternal Starlight",
@@ -1381,7 +1389,7 @@
     "img_link": "./img/39031417_345517305290678_74939448815013885_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Garden of the Sea",
@@ -1445,7 +1453,7 @@
     "img_link": "./img/39035396_373365398675905_1892781441647840613_n.jpg",
     "yt_link": " https://youtu.be/R27HzTfxUWo?si=qBVMKd1hDlIAuYNT",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Gloomy Eyes",
@@ -1685,7 +1693,7 @@
     "img_link": "./img/39031437_1824123754697188_9147684127376671126_n.jpg",
     "yt_link": " https://youtu.be/b_M6mW-VvGU?si=66sjgDaO0HtWOhCB",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Human Fall Flat VR",
@@ -1757,7 +1765,7 @@
     "img_link": "./img/39035326_1104482317256170_4435949670451885093_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Infinite Inside",
@@ -2045,7 +2053,7 @@
     "img_link": "./img/57572919_1009843727114256_5388141006798935981_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Marvel's Iron Man VR",
@@ -2317,7 +2325,7 @@
     "img_link": "./img/38982441_1383849195553851_3141226983174836702_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "NOPE CHALLENGE",
@@ -2389,7 +2397,7 @@
     "img_link": "./img/38974539_1934504873723375_8360105318246061792_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Paint the Town Red VR",
@@ -2397,7 +2405,7 @@
     "img_link": "./img/38974631_1009962096951813_2445805738666393034_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Painting VR",
@@ -2453,7 +2461,7 @@
     "img_link": "./img/38974727_863457635361053_6268530440471876634_n.jpg",
     "yt_link": " https://youtu.be/f_3DV7z8eUg?si=qrEBFCigMStAjhxk",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Peaky Blinders: The King's Ransom",
@@ -2789,7 +2797,7 @@
     "img_link": "./img/75339313_943228311187876_713058988258471880_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Rube Goldberg Workshop",
@@ -2805,7 +2813,7 @@
     "img_link": "./img/75292493_179621571606608_6361459839879091633_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Rumble Boxing",
@@ -2821,7 +2829,7 @@
     "img_link": "./img/38974535_7103898489674039_9023378213275078177_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "RUSH",
@@ -2837,7 +2845,7 @@
     "img_link": "./img/38974753_577361656175908_2359689121577828352_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Samba de Amigo: Virtual Party",
@@ -2877,7 +2885,7 @@
     "img_link": "./img/39031308_728842622105406_8314214508683025802_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Shooty Skies Overdrive",
@@ -2965,7 +2973,7 @@
     "img_link": "./img/39031529_1078920487277416_5203191620410657605_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Snapstick",
@@ -2989,7 +2997,7 @@
     "img_link": "./img/39035467_252658423851905_998744389521239834_n.jpg",
     "yt_link": " https://youtu.be/W0X-n0KZuI8?si=wF6msqHTw4R0Zwgb",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Some Assembly Required",
@@ -3080,6 +3088,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Split Second",
+    "affiliate_link": "https://www.meta.com/affiliates/5R6MaU4VH",
+    "img_link": "./img/75556799_967654961752008_1934117744054204359_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 1
+  },
+  {
     "name": "Sports Scramble",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F705576999566582%2F&cjsku=705576999566582&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/39031396_1077137479574795_4259797381365302892_n.jpg",
@@ -3093,7 +3109,7 @@
     "img_link": "./img/75422370_1234323361120713_6760025376398065952_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Stabby",
@@ -3189,7 +3205,7 @@
     "img_link": "./img/39031492_2007029749799759_8645099489347821741_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "STRIDE: Fates",
@@ -3269,7 +3285,7 @@
     "img_link": "./img/38982581_1061756765681294_6527189122940218397_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "SWORDS of GARGANTUA",
@@ -3485,7 +3501,7 @@
     "img_link": "./img/38974611_970471976621307_62421362462949376_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "The Thrill of the Fight 2",
@@ -3501,7 +3517,7 @@
     "img_link": "./img/442322451_983402386630340_6330647163741509706_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "The Walking Dead: Saints & Sinners",
@@ -3573,7 +3589,7 @@
     "img_link": "./img/39001670_2349941531857280_5440549364211692593_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Titans of Space PLUS",
@@ -3717,7 +3733,7 @@
     "img_link": "./img/38982464_7453045514716753_2926124577435503174_n.jpg",
     "yt_link": " https://youtu.be/eBTAAeViV7Q?si=x3qi39X0KS2Fkdho",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Under Cover",
@@ -3813,7 +3829,7 @@
     "img_link": "./img/75223483_356437780827541_7772313892073591877_n.jpg",
     "yt_link": " https://youtu.be/RBmIv9NDYuE?si=i9pjY-zloz63CsXu",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Virtual Desktop",
@@ -3957,7 +3973,7 @@
     "img_link": "./img/38974456_898862137792013_1206103340984641084_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Warplanes: WW1 Fighters",
@@ -3965,7 +3981,7 @@
     "img_link": "./img/39035330_1463042874200080_7212762916900179602_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "We Are One",
@@ -3973,7 +3989,7 @@
     "img_link": "./img/39035396_404911699154872_8709582548380305269_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "WHAT THE BAT?",
@@ -4069,7 +4085,7 @@
     "img_link": "./img/86871412_567586771134103_784666540866152810_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Zengence: Take Aim with Every Breath",
@@ -4085,7 +4101,15 @@
     "img_link": "./img/39035354_1187955725620153_1847049243265685930_n.jpg",
     "yt_link": " https://youtu.be/RvqW9hYxmh4?si=qoyz--UHoWlc2_dQ",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
+  },
+   {
+    "name": "Zero Caliber: Reloaded",
+    "affiliate_link": "https://www.meta.com/affiliates/An1RuBkTw",
+    "img_link": "./img/38982528_779236494258320_1823883246452015868_n.jpg",
+    "yt_link": " https://youtu.be/RvqW9hYxmh4?si=qoyz--UHoWlc2_dQ",
+    "crossbuy": 0,
+    "bhaptics": 1
   },
   {
     "name": "Ziggy's Cosmic Adventures",
