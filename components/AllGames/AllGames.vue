@@ -65,28 +65,34 @@ onUnmounted(() => {
 });
 
 const finalFilteredGames = computed(() => {
+  // Comenzamos con todos los juegos
   let filtered = games.value;
 
-  // Filtrar por búsqueda (searchTerm)
+  // Revisar si alguno de los filtros está activo
+  const isAnyFilterActive =
+    hasVideo.value || hasCrossbuy.value || hasHaptic.value;
+
+  // Si no hay filtros activos, devolver todos los juegos
+  if (!isAnyFilterActive && searchTerm.value.trim() === "") {
+    return filtered;
+  }
+
+  // Aplicar el filtro de búsqueda, si está definido y tiene más de 4 caracteres
   if (searchTerm.value.trim() !== "" && searchTerm.value.length >= 4) {
-    filtered = gamesData.filter((game: Game) =>
+    return gamesData.filter((game: Game) =>
       game.name!.toLowerCase().includes(searchTerm.value.toLowerCase()),
     );
   }
 
-  // Filtrar por videos si hasVideo está activo
-  if (hasVideo.value) {
-    filtered = gamesData.filter((game: Game) => game.yt_link?.trim() !== "");
-  }
+  // Acumular condiciones de filtros activados
+  filtered = gamesData.filter((game: Game) => {
+    const matchesVideo = !hasVideo.value || game.yt_link?.trim() !== "";
+    const matchesCrossbuy = !hasCrossbuy.value || game.crossbuy;
+    const matchesHaptic = !hasHaptic.value || game.bhaptics;
 
-  // Filtrar por crossbuy si hasCrossbuy está activo
-  if (hasCrossbuy.value) {
-    filtered = gamesData.filter((game: Game) => game.crossbuy);
-  }
-
-  if (hasHaptic.value) {
-    filtered = gamesData.filter((game: Game) => game.bhaptics);
-  }
+    // El juego debe cumplir todas las condiciones activas
+    return matchesVideo && matchesCrossbuy && matchesHaptic;
+  });
 
   return filtered;
 });

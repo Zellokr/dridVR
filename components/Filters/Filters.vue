@@ -76,11 +76,7 @@ watch(hasHaptic, (newVal) => emit("update:hasHaptic", newVal));
               <div
                 class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
                 :class="hasVideo ? 'bg-blue-500' : 'bg-gray-300'"
-                @click="
-                  hasVideo = !hasVideo;
-                  hasCrossbuy = false;
-                  searchTerm = '';
-                "
+                @click="hasVideo = !hasVideo"
               >
                 <div
                   class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
@@ -109,11 +105,7 @@ watch(hasHaptic, (newVal) => emit("update:hasHaptic", newVal));
               <div
                 class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
                 :class="hasCrossbuy ? 'bg-blue-500' : 'bg-gray-300'"
-                @click="
-                  hasCrossbuy = !hasCrossbuy;
-                  hasVideo = false;
-                  searchTerm = '';
-                "
+                @click="hasCrossbuy = !hasCrossbuy"
               >
                 <div
                   class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
@@ -142,11 +134,7 @@ watch(hasHaptic, (newVal) => emit("update:hasHaptic", newVal));
               <div
                 class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
                 :class="hasHaptic ? 'bg-blue-500' : 'bg-gray-300'"
-                @click="
-                  hasHaptic = !hasHaptic;
-                  hasVideo = false;
-                  searchTerm = '';
-                "
+                @click="hasHaptic = !hasHaptic"
               >
                 <div
                   class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
