@@ -30,10 +30,10 @@ watch(hasHaptic, (newVal) => emit("update:hasHaptic", newVal));
 </script>
 
 <template>
-  <div class="sticky top-0 z-20">
+  <div class="sticky top-0 z-20 h-auto">
     <div class="flex flex-col items-center bg-gray-800 py-4 mb-8">
       <div
-        class="flex flex-col md:flex-row gap-y-4 md:justify-around px-4 gap-x-4 mt-4"
+        class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 md:justify-around px-4 gap-x-4 h-auto"
       >
         <div>
           <span>Nombre del juego</span>

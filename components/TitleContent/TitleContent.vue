@@ -10,15 +10,17 @@ defineProps<TitleContentProps>();
 
 <template>
   <!-- Título de juegos -->
-  <div
-    :id="id"
-    class="flex flex-col gap-y-4 w-full justify-center items-center my-8"
-  >
-    <h1 class="text-white text-4xl md:text-5xl font-bold px-4 text-center">
+  <div :id="id">
+    <h1
+      class="text-white text-4xl md:text-5xl font-bold text-center md:text-left"
+    >
       {{ title }}
     </h1>
 
-    <h2 v-if="subtitle" class="text-white text-lg px-16 md:text-2xl mb-4">
+    <h2
+      v-if="subtitle?.length !== 0"
+      class="text-white text-lg md:text-2xl mb-4"
+    >
       <slot name="subtitle" />
     </h2>
   </div>

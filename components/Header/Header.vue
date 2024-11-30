@@ -8,7 +8,7 @@ const goToChannel = () => {
 
 <template>
   <div
-    class="bg-gradient-to-br from-gray-800 via-gray-900 to-black w-full pb-8"
+    class="bg-gradient-to-br from-gray-800 via-gray-900 to-black w-full pb-8 border-b border-gray-700 bg-gray-900 shadow-md"
   >
     <div
       class="flex flex-col justify-center items-center gap-y-6 py-8 md:gap-y-8"

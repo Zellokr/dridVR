@@ -61,13 +61,15 @@ function hasOneDayPassed(lastShown) {
       <DialogDescription class="sr-only" />
     </Dialog>
     <!-- Encabezado -->
-    <Header class="border-b border-gray-700 bg-gray-900 shadow-md" />
-    <!-- Sección de características -->
-    <Features />
-    <!-- Sección de accesorios -->
-    <Accesories />
-    <!-- Listado de juegos -->
-    <AllGames />
+    <Header />
+    <div class="container mx-auto flex flex-col gap-y-4 mt-4">
+      <!-- Sección de características -->
+      <Features />
+      <!-- Sección de accesorios -->
+      <Accesories />
+      <!-- Listado de juegos -->
+      <AllGames />
+    </div>
   </div>
 </template>
 
