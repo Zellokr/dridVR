@@ -70,11 +70,20 @@ onMounted(() => {
     <div
       class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
     >
-      <div class="col-span-12">
+      <div class="col-span-12 row-start-1">
         <Banner />
       </div>
 
-      <div class="col-span-12 row-start-2 rounded-md sticky top-0 z-20">
+      <div class="col-span-12 row-start-2 mx-6 md:mx-0">
+        <Features />
+      </div>
+      <div class="col-span-12 row-start-3 mx-6 md:mx-0">
+        <Accesories />
+      </div>
+      <div class="col-span-12 row-start-4 mx-6 md:mx-0">
+        <TitleContent title="Juegos" class="static" />
+      </div>
+      <div class="col-span-12 row-start-5 rounded-md sticky top-0 z-20">
         <Filters
           v-model:searchTerm="searchTerm"
           v-model:hasVideo="hasVideo"
@@ -82,7 +91,7 @@ onMounted(() => {
           v-model:hasHaptic="hasHaptic"
         />
       </div>
-      <div class="col-span-12 row-start-3">
+      <div class="col-span-12 row-start-6">
         <AllGames
           :filter-search-terms="searchTerm"
           :filter-video="hasVideo"
@@ -91,17 +100,6 @@ onMounted(() => {
         />
       </div>
     </div>
-
-    <!-- Encabezado -->
-
-    <!--    <div class="container mx-auto flex flex-col gap-y-4 mt-4">-->
-    <!--      &lt;!&ndash; Sección de características &ndash;&gt;-->
-    <!--      <Features />-->
-    <!--      &lt;!&ndash; Sección de accesorios &ndash;&gt;-->
-    <!--      <Accesories />-->
-    <!--      &lt;!&ndash; Listado de juegos &ndash;&gt;-->
-    <!--      <AllGames />-->
-    <!--    </div>-->
   </div>
 </template>
 

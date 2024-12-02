@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     'nuxt-svgo',
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
+    '@nuxtjs/device',
   ],
   ssr: false,
 })

@@ -66,23 +66,26 @@ watch(
 
 <template>
   <div
-    class="bg-gray-800 grid grid-cols-1 md:grid-cols-2 gap-4 p-4 mx-6 md:mx-0 border border-slate-700 gap-x-8"
+    class="bg-gray-800 grid grid-cols-1 md:grid-cols-2 gap-4 p-4 border border-slate-700 fixed bottom-0 left-0 w-full z-20 gap-x-8 md:relative md:mx-0 rounded-t-lg md:rounded-t-none"
   >
     <!-- Input de búsqueda -->
-    <div class="">
+    <div class="flex items-center bg-gray-700 text-white rounded-lg w-full">
+      <MdiIcon icon="mdiMagnify" class="text-white w-5 h-5 ml-3" />
       <input
         v-model="searchTerm"
         type="text"
         placeholder="Busca tu juego"
         @click="deactivateFilters"
-        class="bg-gray-700 text-white p-2 rounded-lg w-full"
+        class="bg-transparent text-white p-2 pl-3 w-full focus:outline-none"
       />
     </div>
 
     <!-- Filtros -->
-    <div class="flex justify-evenly">
+    <div
+      class="flex justify-evenly gap-x-8 md:gap-x-0 md:justify-evenly w-full"
+    >
       <!-- Filtro Youtube -->
-      <div class="">
+      <div class="flex flex-col">
         <label for="filterYoutube" class="text-white flex items-center">
           <span class="mr-2">Youtube</span>
           <svg
@@ -112,7 +115,7 @@ watch(
       </div>
 
       <!-- Filtro CrossBuy -->
-      <div class="">
+      <div class="flex flex-col">
         <label for="filterCrossbuy" class="text-white flex items-center">
           <span class="mr-2">CrossBuy</span>
           <MdiIcon icon="mdiSync" class="text-white w-4 h-4" />
@@ -133,7 +136,7 @@ watch(
       </div>
 
       <!-- Filtro Haptic -->
-      <div class="">
+      <div class="flex flex-col">
         <label for="filterVibrate" class="text-white flex items-center">
           <span class="mr-2">bHaptics</span>
           <MdiIcon icon="mdiVibrate" class="text-white w-4 h-4" />
