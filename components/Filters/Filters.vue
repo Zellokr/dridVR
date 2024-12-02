@@ -84,7 +84,7 @@ watch(
           </div>
         </div>
 
-        <div class="flex space-x-2.5">
+        <div class="flex flex-wrap gap-x-4">
           <div class="flex items-end mb-2">
             <div class="flex justify-between w-1/2">
               <div>
