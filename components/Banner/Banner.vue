@@ -3,7 +3,7 @@
 <template>
   <div class="">
     <img
-      src="../../public/img/banner.png"
+      src="../../public/img/banner.webp"
       alt="Banner de Videojuegos"
       class="w-full h-1/2"
     />
