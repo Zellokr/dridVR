@@ -75,14 +75,12 @@ onMounted(() => {
       </div>
 
       <div class="col-span-12 row-start-2 rounded-md sticky top-0 z-20">
-        <div class="border-2 border-slate-700">
-          <Filters
-            v-model:searchTerm="searchTerm"
-            v-model:hasVideo="hasVideo"
-            v-model:hasCrossbuy="hasCrossbuy"
-            v-model:hasHaptic="hasHaptic"
-          />
-        </div>
+        <Filters
+          v-model:searchTerm="searchTerm"
+          v-model:hasVideo="hasVideo"
+          v-model:hasCrossbuy="hasCrossbuy"
+          v-model:hasHaptic="hasHaptic"
+        />
       </div>
       <div class="col-span-12 row-start-3">
         <AllGames
