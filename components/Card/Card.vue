@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import YoutubeIcon from "";
 type GameSchema = {
   name?: string;
   affiliate_link: string;
@@ -42,16 +43,7 @@ const openVideoLink = (ytUrl: string) => {
             class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
             @click.stop.prevent="openVideoLink(game.yt_link)"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="w-5 h-5 text-white"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M22.54 6.42a2.42 2.42 0 00-2.38-2.42H3.84A2.42 2.42 0 001.46 6.42v11.16a2.42 2.42 0 002.38 2.42h16.32a2.42 2.42 0 002.38-2.42zM9.5 16.57V7.43L16 12z"
-              />
-            </svg>
+            <SvgoYoutubeIcon />
           </div>
           <div
             class="p-4 h-20 flex justify-between items-center bg-gray-800 rounded-lg shadow-md"

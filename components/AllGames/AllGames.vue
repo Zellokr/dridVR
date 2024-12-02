@@ -39,7 +39,7 @@ const loadGames = () => {
     games.value.push(...newGames); // Agregar los juegos cargados a la lista
     currentPage++; // Incrementar la página
     loading.value = false; // Dejar de cargar
-  }, 1); // Ajusta el tiempo de espera según sea necesario
+  }, 100); // Ajusta el tiempo de espera según sea necesario
 };
 
 // Alternativa con Intersection Observer

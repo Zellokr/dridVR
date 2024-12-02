@@ -1,14 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-mdi',
-    'nuxt-svgo',
-    'shadcn-nuxt',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/device',
+    "@nuxtjs/tailwindcss",
+    "nuxt-mdi",
+    "nuxt-svgo",
+    "shadcn-nuxt",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/device",
   ],
+  svgo: {
+    defaultImports: "component",
+  },
   ssr: false,
-})
+});

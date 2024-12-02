@@ -88,16 +88,7 @@ watch(
       <div class="flex flex-col">
         <label for="filterYoutube" class="text-white flex items-center">
           <span class="mr-2">Youtube</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="red"
-            class="w-5 h-5 text-white"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M22.54 6.42a2.42 2.42 0 00-2.38-2.42H3.84A2.42 2.42 0 001.46 6.42v11.16a2.42 2.42 0 002.38 2.42h16.32a2.42 2.42 0 002.38-2.42zM9.5 16.57V7.43L16 12z"
-            />
-          </svg>
+          <SvgoYoutubeIcon class="scale-125 text-red-600"></SvgoYoutubeIcon>
         </label>
         <div
           class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
