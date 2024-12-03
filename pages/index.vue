@@ -2,6 +2,7 @@
 import { ref } from "vue";
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { bannerImagesList } from "~/constants/bannerImageList";
 
 const dialogOpen = ref(false);
 
@@ -71,7 +72,7 @@ onMounted(() => {
       class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
     >
       <div class="col-span-12 row-start-1">
-        <Banner />
+        <Banner :data-images="bannerImagesList" />
       </div>
 
       <div class="col-span-12 row-start-2 mx-6 md:mx-0">
@@ -80,7 +81,7 @@ onMounted(() => {
       <div class="col-span-12 row-start-3 mx-6 md:mx-0">
         <Accesories />
       </div>
-      <div class="col-span-12 row-start-4 mx-6 md:mx-0">
+      <div class="col-span-12 row-start-4 mx-6 md:mx-0" id="allgames">
         <TitleContent title="Juegos" class="static" />
       </div>
       <div class="col-span-12 row-start-5 rounded-md sticky top-0 z-20">

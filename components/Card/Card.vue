@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import YoutubeIcon from "";
+import { handleContent } from "~/utils/handleContent";
 type GameSchema = {
   name?: string;
   affiliate_link: string;
@@ -14,10 +14,6 @@ type CardProps = {
 };
 
 defineProps<CardProps>();
-
-const openVideoLink = (ytUrl: string) => {
-  window.open(ytUrl, "_blank");
-};
 </script>
 
 <template>
@@ -41,7 +37,7 @@ const openVideoLink = (ytUrl: string) => {
           <div
             v-if="game.yt_link"
             class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
-            @click.stop.prevent="openVideoLink(game.yt_link)"
+            @click.stop.prevent="handleContent(game.yt_link)"
           >
             <SvgoYoutubeIcon />
           </div>
