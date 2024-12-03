@@ -1,8 +1,24 @@
 <script setup lang="ts">
 import { ref } from "vue";
+
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { bannerImagesList } from "~/constants/bannerImageList";
 
 const dialogOpen = ref(false);
+
+const searchTerm = ref("");
+const hasVideo = ref(false);
+const hasCrossbuy = ref(false);
+const hasHaptic = ref(false);
+
+// Función para verificar si ha pasado un día
+function hasOneDayPassed(lastShown) {
+  const lastDate = new Date(lastShown);
+  const now = new Date();
+  const diffInMs = now - lastDate;
+  const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
+  return diffInMs >= oneDayInMs;
+}
 
 onMounted(() => {
   if (process.client) {
@@ -14,19 +30,10 @@ onMounted(() => {
     }
   }
 });
-
-// Función para verificar si ha pasado un día
-function hasOneDayPassed(lastShown) {
-  const lastDate = new Date(lastShown);
-  const now = new Date();
-  const diffInMs = now - lastDate;
-  const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
-  return diffInMs >= oneDayInMs;
-}
 </script>
 
 <template>
-  <div class="h-full w-full bg-gray-950 text-gray-200 font-sans">
+  <div class="h-full w-full text-gray-200 font-sans">
     <!-- Diálogo BLACK FRIDAY -->
     <Dialog v-model:open="dialogOpen">
       <DialogTitle class="sr-only" />
@@ -58,47 +65,43 @@ function hasOneDayPassed(lastShown) {
       </DialogContent>
       <DialogDescription class="sr-only" />
     </Dialog>
-    <!-- Encabezado -->
+
     <Header />
-    <div class="container mx-auto flex flex-col gap-y-4 mt-4">
-      <!-- Sección de características -->
-      <Features />
-      <!-- Sección de accesorios -->
-      <Accesories />
-      <!-- Listado de juegos -->
-      <AllGames />
+
+    <div
+      class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
+    >
+      <div class="col-span-12 row-start-1">
+        <Banner :data-images="bannerImagesList" />
+      </div>
+
+      <div class="col-span-12 row-start-2 mx-6 md:mx-0">
+        <Features />
+      </div>
+      <div class="col-span-12 row-start-3 mx-6 md:mx-0">
+        <Accesories />
+      </div>
+      <div class="col-span-12 row-start-4 mx-6 md:mx-0" id="allgames">
+        <TitleContent title="Juegos" class="static" />
+      </div>
+      <div class="col-span-12 row-start-5 rounded-md sticky top-0 z-20">
+        <Filters
+          v-model:searchTerm="searchTerm"
+          v-model:hasVideo="hasVideo"
+          v-model:hasCrossbuy="hasCrossbuy"
+          v-model:hasHaptic="hasHaptic"
+        />
+      </div>
+      <div class="col-span-12 row-start-6">
+        <AllGames
+          :filter-search-terms="searchTerm"
+          :filter-video="hasVideo"
+          :filter-crossbuy="hasCrossbuy"
+          :filter-haptic="hasHaptic"
+        />
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-/* Transición cuando el card de filtro aparece */
-.filter-transition-enter-active {
-  animation: bounce-in 0.2s ease-out;
-}
-
-.filter-transition-leave-active {
-  animation: bounce-in 0.2s reverse ease-in;
-}
-
-@keyframes bounce-in {
-  0% {
-    transform: scale(0) translateY(50px); /* Empieza pequeño y desplazado hacia abajo */
-    opacity: 0; /* Empieza invisible */
-  }
-  50% {
-    transform: scale(1.1) translateY(-10px); /* Rebote hacia arriba y más grande */
-    opacity: 1; /* Se vuelve visible */
-  }
-  100% {
-    transform: scale(1) translateY(0); /* Llega a su tamaño y posición final */
-    opacity: 1; /* Totalmente visible */
-  }
-}
-
-/* Efecto de salida */
-.filter-transition-leave-to {
-  transform: scale(0) translateY(50px); /* Sale hacia abajo y pequeño */
-  opacity: 0;
-}
-</style>
+<style scoped></style>

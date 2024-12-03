@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import gamesData from "@/public/data.json";
-import TitleContent from "~/components/TitleContent/TitleContent.vue";
 
 type Game = {
   name?: string;
@@ -12,10 +11,14 @@ type Game = {
   bhaptics?: boolean;
 };
 
-const searchTerm = ref("");
-const hasVideo = ref(false);
-const hasCrossbuy = ref(false);
-const hasHaptic = ref(false);
+type AllGamesProps = {
+  filterSearchTerms: string;
+  filterVideo: boolean;
+  filterCrossbuy: boolean;
+  filterHaptic: boolean;
+};
+
+const props = defineProps<AllGamesProps>();
 
 const games = ref<Game[]>([]);
 const loading = ref(false);
@@ -36,7 +39,7 @@ const loadGames = () => {
     games.value.push(...newGames); // Agregar los juegos cargados a la lista
     currentPage++; // Incrementar la página
     loading.value = false; // Dejar de cargar
-  }, 1); // Ajusta el tiempo de espera según sea necesario
+  }, 100); // Ajusta el tiempo de espera según sea necesario
 };
 
 // Alternativa con Intersection Observer
@@ -70,25 +73,28 @@ const finalFilteredGames = computed(() => {
 
   // Revisar si alguno de los filtros está activo
   const isAnyFilterActive =
-    hasVideo.value || hasCrossbuy.value || hasHaptic.value;
+    props.filterVideo || props.filterCrossbuy || props.filterHaptic;
 
   // Si no hay filtros activos, devolver todos los juegos
-  if (!isAnyFilterActive && searchTerm.value.trim() === "") {
+  if (!isAnyFilterActive && props.filterSearchTerms.trim() === "") {
     return filtered;
   }
 
   // Aplicar el filtro de búsqueda, si está definido y tiene más de 4 caracteres
-  if (searchTerm.value.trim() !== "" && searchTerm.value.length >= 4) {
+  if (
+    props.filterSearchTerms.trim() !== "" &&
+    props.filterSearchTerms.length >= 4
+  ) {
     return gamesData.filter((game: Game) =>
-      game.name!.toLowerCase().includes(searchTerm.value.toLowerCase()),
+      game.name!.toLowerCase().includes(props.filterSearchTerms.toLowerCase()),
     );
   }
 
   // Acumular condiciones de filtros activados
   filtered = gamesData.filter((game: Game) => {
-    const matchesVideo = !hasVideo.value || game.yt_link?.trim() !== "";
-    const matchesCrossbuy = !hasCrossbuy.value || game.crossbuy;
-    const matchesHaptic = !hasHaptic.value || game.bhaptics;
+    const matchesVideo = !props.filterVideo || game.yt_link?.trim() !== "";
+    const matchesCrossbuy = !props.filterCrossbuy || game.crossbuy;
+    const matchesHaptic = !props.filterHaptic || game.bhaptics;
 
     // El juego debe cumplir todas las condiciones activas
     return matchesVideo && matchesCrossbuy && matchesHaptic;
@@ -99,15 +105,8 @@ const finalFilteredGames = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col py-4">
-    <TitleContent id="allgames" title="Todos los juegos" />
-    <Filters
-      v-model:searchTerm="searchTerm"
-      v-model:hasVideo="hasVideo"
-      v-model:hasCrossbuy="hasCrossbuy"
-      v-model:hasHaptic="hasHaptic"
-    />
-    <CardGames :game-records="finalFilteredGames" :feature="false" />
+  <div class="min-h-screen flex flex-col">
+    <GameList :game-records="finalFilteredGames"></GameList>
 
     <div v-if="loading" class="text-center py-4 text-white">
       Cargando más juegos...

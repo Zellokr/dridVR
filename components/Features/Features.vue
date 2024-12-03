@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import featureGames from "@/public/features.json";
-
-interface Game {
-  name?: string;
-  affiliate_link: string;
-  img_link: string;
-  yt_url?: string;
-}
-
-const games = ref<Game[]>(featureGames);
 </script>
 
 <template>
-  <div class="h-full flex flex-col py-4">
-    <TitleContent title="Novedades" />
-    <CardGames :game-records="games" feature />
+  <div class="py-4">
+    <TitleContent title="Accesorios" class="flex flex-col gap-y-2">
+      <template #subtitle>
+        Los últimos lanzamientos para tu visor Meta Quest
+      </template>
+    </TitleContent>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4"
+    >
+      <div v-for="game in featureGames" :key="game.id">
+        <Card :game="game" />
+      </div>
+    </div>
   </div>
 </template>

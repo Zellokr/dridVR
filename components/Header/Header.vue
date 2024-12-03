@@ -5,9 +5,7 @@ const goToChannel = () => {
 </script>
 
 <template>
-  <div
-    class="bg-gradient-to-br from-gray-800 via-gray-900 to-black w-full pb-8 border-b border-gray-700 bg-gray-900 shadow-md"
-  >
+  <div class="w-full pb-4">
     <div
       class="flex flex-col justify-center items-center gap-y-6 py-8 md:gap-y-8"
     >
@@ -21,15 +19,15 @@ const goToChannel = () => {
         @click="goToChannel"
       />
       <!-- Texto promocional -->
-      <div class="text-center px-5 md:px-2">
-        <span
-          class="text-white text-lg sm:text-xl md:text-2xl font-bold leading-relaxed block"
-        >
-          ¡Usa estos enlaces de afiliado y consigue un
-          <span class="text-yellow-400">20% de descuento</span> en cualquier
-          juego!
-        </span>
-      </div>
+      <!--      <div class="text-center px-5 md:px-2">-->
+      <!--        <span-->
+      <!--          class="text-white text-lg sm:text-xl md:text-2xl font-bold leading-relaxed block"-->
+      <!--        >-->
+      <!--          ¡Usa estos enlaces de afiliado y consigue un-->
+      <!--          <span class="text-yellow-400">20% de descuento</span> en cualquier-->
+      <!--          juego!-->
+      <!--        </span>-->
+      <!--      </div>-->
     </div>
   </div>
 </template>
