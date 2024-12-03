@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
-    "@nuxtjs/google-analytics",
   ],
   svgo: {
     defaultImports: "component",
