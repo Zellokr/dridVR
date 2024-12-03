@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { bannerImagesList } from "~/constants/bannerImageList";
+import ContentGameList from "~/components/ContentGameList/ContentGameList.vue";
 
 const dialogOpen = ref(false);
 
@@ -93,7 +94,7 @@ onMounted(() => {
         />
       </div>
       <div class="col-span-12 row-start-6">
-        <AllGames
+        <ContentGameList
           :filter-search-terms="searchTerm"
           :filter-video="hasVideo"
           :filter-crossbuy="hasCrossbuy"

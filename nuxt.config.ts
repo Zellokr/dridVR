@@ -14,4 +14,13 @@ export default defineNuxtConfig({
     defaultImports: "component",
   },
   ssr: false,
+  app: {
+    head: {
+      link: [
+        { rel: "preload", href: "/img/banner_image_1.webp", as: "image" },
+        { rel: "preload", href: "/img/banner_image_2.webp", as: "image" },
+        { rel: "preload", href: "/img/Behemoth.webp", as: "image" },
+      ],
+    },
+  },
 });

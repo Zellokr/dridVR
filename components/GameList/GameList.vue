@@ -1,15 +1,8 @@
 <script setup lang="ts">
-type Game = {
-  name?: string;
-  affiliate_link: string;
-  img_link: string;
-  yt_link?: string;
-  crossbuy?: boolean;
-  bhaptics?: boolean;
-};
+import type { SchemaGame } from "~/constants/types";
 
 type CardListProps = {
-  gameRecords: Game[];
+  gameRecords: SchemaGame[];
 };
 
 defineProps<CardListProps>();

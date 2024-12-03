@@ -1,15 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
-import gamesData from "@/public/data.json";
-
-type Game = {
-  name?: string;
-  affiliate_link: string;
-  img_link: string;
-  yt_link?: string;
-  crossbuy?: boolean;
-  bhaptics?: boolean;
-};
+import gamesData from "~/constants/data.json";
+import type { SchemaGame } from "~/constants/types";
 
 type AllGamesProps = {
   filterSearchTerms: string;
@@ -20,7 +12,7 @@ type AllGamesProps = {
 
 const props = defineProps<AllGamesProps>();
 
-const games = ref<Game[]>([]);
+const games = ref<SchemaGame[]>([]);
 const loading = ref(false);
 const pageSize = 10; // Número de juegos a cargar por cada "paginación"
 let currentPage = 0;
@@ -85,13 +77,13 @@ const finalFilteredGames = computed(() => {
     props.filterSearchTerms.trim() !== "" &&
     props.filterSearchTerms.length >= 4
   ) {
-    return gamesData.filter((game: Game) =>
+    return gamesData.filter((game: SchemaGame) =>
       game.name!.toLowerCase().includes(props.filterSearchTerms.toLowerCase()),
     );
   }
 
   // Acumular condiciones de filtros activados
-  filtered = gamesData.filter((game: Game) => {
+  filtered = gamesData.filter((game: SchemaGame) => {
     const matchesVideo = !props.filterVideo || game.yt_link?.trim() !== "";
     const matchesCrossbuy = !props.filterCrossbuy || game.crossbuy;
     const matchesHaptic = !props.filterHaptic || game.bhaptics;

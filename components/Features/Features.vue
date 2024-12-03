@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import featureGames from "@/public/features.json";
+import featureGames from "~/constants/features.json";
 </script>
 
 <template>

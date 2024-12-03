@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import accesories from "@/public/accesories.json";
+import accesories from "~/constants/accesories.json";
 </script>
 
 <template>
