@@ -33,6 +33,7 @@ defineProps<CardProps>();
             :src="game.img_link"
             alt="Game Image"
             class="w-full h-48 object-cover"
+            loading="lazy"
           />
           <div
             v-if="game.yt_link"
