@@ -1,0 +1,13 @@
+
+<svg
+preserveAspectRatio="xMidYMid meet"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+role="img"
+aria-hidden="true"
+class="w-5 h-5 fill-current text-red-500"
+>
+<path
+        d="M22.54 6.42a2.42 2.42 0 00-2.38-2.42H3.84A2.42 2.42 0 001.46 6.42v11.16a2.42 2.42 0 002.38 2.42h16.32a2.42 2.42 0 002.38-2.42zM9.5 16.57V7.43L16 12z"
+/>
+</svg>
