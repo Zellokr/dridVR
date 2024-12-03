@@ -9,7 +9,12 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
+    "nuxt-gtag",
   ],
+  gtag: {
+    enabled: process.env.NODE_ENV === "production",
+    id: "G-814JQT6YBZ",
+  },
   svgo: {
     defaultImports: "component",
   },

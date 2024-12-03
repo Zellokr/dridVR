@@ -20,6 +20,7 @@
     "embla-carousel-vue": "^8.5.1",
     "lucide-vue-next": "^0.462.0",
     "nuxt": "^3.14.1592",
+    "nuxt-gtag": "^3.0.2",
     "nuxt-mdi": "^2.1.1",
     "nuxt-svgo": "^4.0.9",
     "radix-vue": "^1.9.10",
