@@ -39,6 +39,8 @@ const plugin: EmblaPluginType = Autoplay({
             :alt="data.altText"
             class="w-auto object-cover text-2xl font-semibold rounded-xl cursor-pointer"
             @click="handleContent(data)"
+            :sizes="`(max-width: 600px) 480px, (max-width: 1024px) 1024px, 1200px`"
+            loading="lazy"
           />
         </div>
       </CarouselItem>
