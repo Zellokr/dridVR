@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/google-analytics",
   ],
-  googleAnalytics: {
-    id: "G-814JQT6YBZ",
-  },
   svgo: {
     defaultImports: "component",
   },
