@@ -4,7 +4,7 @@ import featureGames from "@/public/features.json";
 
 <template>
   <div class="py-4">
-    <TitleContent title="Accesorios" class="flex flex-col gap-y-2">
+    <TitleContent title="Novedades" class="flex flex-col gap-y-2">
       <template #subtitle>
         Los últimos lanzamientos para tu visor Meta Quest
       </template>
