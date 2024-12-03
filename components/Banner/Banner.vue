@@ -28,6 +28,7 @@ const plugin: EmblaPluginType = Autoplay({
   <Carousel
     class="w-full relative"
     :plugins="[plugin]"
+    :opts="{ loop: true }"
     @mouseenter="plugin.stop"
     @mouseleave="[plugin.reset(), plugin.play()]"
   >
