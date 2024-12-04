@@ -35,7 +35,7 @@ onMounted(() => {
 
 <template>
   <div class="h-full w-full text-gray-200 font-sans">
-    <!-- Diálogo BLACK FRIDAY -->
+    <!-- Diálogo  -->
     <Dialog v-model:open="dialogOpen">
       <DialogTitle class="sr-only" />
       <DialogContent
@@ -44,7 +44,7 @@ onMounted(() => {
         <div class="relative z-10">
           <!-- Título principal -->
           <div class="text-yellow-400 text-3xl font-extrabold tracking-wide">
-            BLACK FRIDAY
+            OFERTAS DE NAVIDAD
           </div>
           <div class="text-gray-300 text-sm font-medium mt-2">
             Se aplica a todos los juegos hasta
