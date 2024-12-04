@@ -72,7 +72,7 @@ onMounted(() => {
     <div
       class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
     >
-      <div class="col-span-12 row-start-1">
+      <div class="col-span-12 row-start-1 mx-6 md:mx-0">
         <Banner :data-images="bannerImagesList" />
       </div>
 
