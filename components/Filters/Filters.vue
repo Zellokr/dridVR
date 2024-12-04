@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
-
+import { redirectToContent } from "~/utils/handleContent";
+const { isMobile } = useDevice();
 // Estado de los filtros y búsqueda
 const searchTerm = ref("");
 const hasVideo = ref(false);
@@ -23,6 +24,7 @@ const deactivateFilters = () => {
   emit("update:hasVideo", hasVideo.value);
   emit("update:hasCrossbuy", hasCrossbuy.value);
   emit("update:hasHaptic", hasHaptic.value);
+  if (isMobile) redirectToContent("allgames");
 };
 
 // Eliminar el texto al activar los filtros
@@ -30,6 +32,7 @@ const removeTextWhenClickSwitch = () => {
   if (hasVideo.value || hasCrossbuy.value || hasHaptic.value) {
     searchTerm.value = "";
     emit("update:searchTerm", searchTerm.value);
+    if (isMobile) redirectToContent("allgames");
   }
 };
 
