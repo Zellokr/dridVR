@@ -8,7 +8,7 @@ import { handleContent } from "~/utils/handleContent";
       <MdiIcon
         icon="mdiInstagram"
         class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
-        @click="handleContent('https://www.youtube.com/@dridvr')"
+        @click="handleContent('https://www.instagram.com/dridgg/')"
       />
       <MdiIcon
         icon="mdiTwitter"
