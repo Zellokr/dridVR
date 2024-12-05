@@ -5,6 +5,69 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { bannerImagesList } from "~/constants/bannerImageList";
 import ContentGameList from "~/components/ContentGameList/ContentGameList.vue";
 
+useHead({
+  title: "Ofertas y descuentos en videojuegos VR para Meta Quest",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Aprovecha ofertas exclusivas y descuentos en videojuegos de realidad virtual para Meta Quest con nuestros enlaces de referidos.",
+    },
+    {
+      name: "keywords",
+      content:
+        "descuentos, videojuegos, VR, Meta Quest, realidad virtual, ofertas navidad, referidos Meta",
+    },
+    { name: "robots", content: "index, follow" },
+    {
+      property: "og:title",
+      content: "Ofertas y descuentos en videojuegos VR para Meta Quest",
+    },
+    {
+      property: "og:description",
+      content:
+        "Encuentra los mejores descuentos en videojuegos VR para Meta Quest con nuestros enlaces de referidos.",
+    },
+    {
+      property: "og:image",
+      content: "https://juegosquestbaratos.com/img/banner_image_1.webp",
+    },
+    {
+      property: "og:image",
+      content: "https://juegosquestbaratos.com/img/banner_image_2.webp",
+    },
+    { property: "og:url", content: "https://juegosquestbaratos.com" },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary_large_image" },
+    {
+      name: "twitter:title",
+      content: "Ofertas y descuentos en videojuegos VR para Meta Quest",
+    },
+    {
+      name: "twitter:description",
+      content: "Aprovecha las mejores ofertas en juegos VR para Meta Quest.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://juegosquestbaratos.com/img/banner_image_1.webp",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "Ofertas de juegos VR para Meta Quest",
+        description:
+          "Descubre descuentos exclusivos en juegos VR para Meta Quest con enlaces de referidos.",
+        url: "https://juegosquestbaratos.com",
+        mainEntity: "",
+      }),
+    },
+  ],
+});
+
 const dialogOpen = ref(false);
 
 const searchTerm = ref("");

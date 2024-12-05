@@ -10,7 +10,13 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "nuxt-gtag",
+    "@nuxtjs/sitemap",
   ],
+  sitemap: {
+    hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
+    routes: ["/"], // Solo la ruta de la página principal
+    gzip: true,
+  },
   gtag: {
     enabled: process.env.NODE_ENV === "production",
     id: "G-814JQT6YBZ",
