@@ -4,7 +4,8 @@
     "affiliate_link":" https:\/\/www.tkqlhce.com\/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F5767635983306831%2F&cjsku=5767635983306831",
     "img_link":"./img/39035399_1051497319913984_2472140349157661669_n.jpg",
     "yt_link":"",
-    "crossbuy":0
+    "crossbuy":1
+    "bhaptics": 0
   },
   {
     "name":"Alien: Rogue Incursion",
@@ -12,6 +13,7 @@
     "img_link":".\/img\/38974750_286589487870366_8249508936193486920_n.jpg",
     "yt_link":"",
     "crossbuy":0
+    "bhaptics": 0
   },
   {
     "name": "Shattered",
@@ -27,6 +29,7 @@
     "img_link":".\/img\/38974912_540662558877575_872631016350842241_n.jpg",
     "yt_link":"",
     "crossbuy":0
+    "bhaptics": 0
   },
   {
     "name": "Workshop Simulator VR",
