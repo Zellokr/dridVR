@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { handleContent } from "~/utils/handleContent";
+import type { HTMLAttributes } from "vue";
+import { cn } from "@/lib/utils";
+
 type GameSchema = {
   name?: string;
   affiliate_link: string;
@@ -11,9 +14,9 @@ type GameSchema = {
 
 type CardProps = {
   game: GameSchema;
-};
+} & { class?: HTMLAttributes["class"] };
 
-defineProps<CardProps>();
+const props = defineProps<CardProps>();
 </script>
 
 <template>
@@ -25,7 +28,12 @@ defineProps<CardProps>();
       class="block"
     >
       <div
-        class="bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2"
+        :class="
+          cn(
+            'bg-gray-800 text-white rounded-b-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2',
+            props.class,
+          )
+        "
       >
         <!-- Imagen -->
         <div class="relative">
@@ -42,9 +50,7 @@ defineProps<CardProps>();
           >
             <SvgoYoutubeIcon />
           </div>
-          <div
-            class="p-4 h-20 flex justify-between items-center bg-gray-800 rounded-lg shadow-md"
-          >
+          <div class="p-4 h-20 flex justify-between items-center shadow-md">
             <h3 class="text-lg font-semibold text-white truncate">
               {{ game.name || "Nombre del Juego" }}
             </h3>

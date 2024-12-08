@@ -38,7 +38,7 @@ const plugin: EmblaPluginType = Autoplay({
           <img
             :src="data.image"
             :alt="data.altText"
-            class="w-auto object-cover text-2xl font-semibold rounded-xl cursor-pointer"
+            class="w-auto object-cover rounded-xl cursor-pointer"
             @click="handleContent(data)"
           />
         </div>

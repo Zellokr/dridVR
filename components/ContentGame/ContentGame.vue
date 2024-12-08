@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import gamesData from "~/constants/data.json";
 import type { SchemaGame } from "~/constants/types";
+import GameList from "~/components/ContentGame/GameList/GameList.vue";
 
 type AllGamesProps = {
   filterSearchTerms: string;

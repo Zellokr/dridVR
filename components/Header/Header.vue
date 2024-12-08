@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { handleContent } from "~/utils/handleContent";
-import SocialsMedia from "~/components/SocialsMedia/SocialsMedia.vue";
+import SocialsMedia from "~/components/Header/SocialsMedia/SocialsMedia.vue";
 </script>
 
 <template>

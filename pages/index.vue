@@ -3,7 +3,13 @@ import { ref } from "vue";
 
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { bannerImagesList } from "~/constants/bannerImageList";
-import ContentGameList from "~/components/ContentGameList/ContentGameList.vue";
+import ContentGameList from "~/components/ContentGame/ContentGame.vue";
+import type { Tab } from "~/components/HandleTabs/types";
+import Accesories from "~/components/HandleTabs/Accesories/Accesories.vue";
+import Features from "~/components/HandleTabs/Features/Features.vue";
+import Visors from "~/components/HandleTabs/Visors/Visors.vue";
+import accesories from "~/constants/accesories.json";
+import visors from "~/constants/visors.json";
 
 useHead({
   title: "Ofertas y descuentos en videojuegos VR para Meta Quest",
@@ -30,11 +36,11 @@ useHead({
     },
     {
       property: "og:image",
-      content: "https://juegosquestbaratos.com/img/banner_image_1.webp",
+      content: "https://juegosquestbaratos.com/img/Banner/banner_image_1.webp",
     },
     {
       property: "og:image",
-      content: "https://juegosquestbaratos.com/img/banner_image_2.webp",
+      content: "https://juegosquestbaratos.com/img/Banner/banner_image_2.webp",
     },
     { property: "og:url", content: "https://juegosquestbaratos.com" },
     { property: "og:type", content: "website" },
@@ -49,7 +55,7 @@ useHead({
     },
     {
       name: "twitter:image",
-      content: "https://juegosquestbaratos.com/img/banner_image_1.webp",
+      content: "https://juegosquestbaratos.com/img/Banner/banner_image_1.webp",
     },
   ],
   script: [
@@ -68,104 +74,132 @@ useHead({
   ],
 });
 
-const dialogOpen = ref(false);
-
 const searchTerm = ref("");
 const hasVideo = ref(false);
 const hasCrossbuy = ref(false);
 const hasHaptic = ref(false);
 
-// Función para verificar si ha pasado un día
-function hasOneDayPassed(lastShown) {
-  const lastDate = new Date(lastShown);
-  const now = new Date();
-  const diffInMs = now - lastDate;
-  const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
-  return diffInMs >= oneDayInMs;
-}
+const tabs: Tab[] = [
+  {
+    label: "Novedades",
+    value: "features",
+    component: Features,
+    icon: "mdiBellRing",
+  },
+  {
+    label: "Visores",
+    value: "visors",
+    icon: "mdiGlasses",
+    component: Visors,
+  },
+  {
+    label: "Accesorios",
+    value: "accesories",
+    icon: "mdiCableData",
+    component: Accesories,
+  },
+];
 
-onMounted(() => {
-  if (process.client) {
-    const lastShown = localStorage.getItem("dialogLastShown");
-
-    if (!lastShown || hasOneDayPassed(lastShown)) {
-      dialogOpen.value = true; // Muestra el diálogo
-      localStorage.setItem("dialogLastShown", new Date().toISOString()); // Actualiza la fecha
-    }
-  }
-});
+const router = useRouter();
 </script>
 
 <template>
-  <div class="h-full w-full text-gray-200 font-sans">
-    <!-- Diálogo  -->
-    <Dialog v-model:open="dialogOpen">
-      <DialogTitle class="sr-only" />
-      <DialogContent
-        class="border border-gray-800 rounded-xl bg-gradient-to-br from-gray-800 via-gray-900 to-black shadow-2xl p-8 max-w-md mx-auto mt-10 text-center"
+  <NuxtLayout name="default-layout">
+    <div class="h-full w-full text-gray-200 font-sans">
+      <div
+        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
       >
-        <div class="relative z-10">
-          <!-- Título principal -->
-          <div class="text-yellow-400 text-3xl font-extrabold tracking-wide">
-            OFERTAS DE NAVIDAD
-          </div>
-          <div class="text-gray-300 text-sm font-medium mt-2">
-            Se aplica a todos los juegos hasta
-            <strong class="text-yellow-300">31/12/24</strong>
-          </div>
-          <!-- Descuento -->
-          <div class="text-8xl font-black text-white mt-4">
-            20<span class="text-yellow-400">%</span>
-          </div>
-          <!-- Botón de llamada a la acción -->
-          <DialogClose as-child>
-            <button
-              class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:ring-2 focus:ring-yellow-300"
-            >
-              ¡Explorar ofertas!
-            </button>
-          </DialogClose>
+        <div class="col-span-12 row-start-2 mx-6 md:mx-0">
+          <Banner :data-images="bannerImagesList" />
         </div>
-      </DialogContent>
-      <DialogDescription class="sr-only" />
-    </Dialog>
-
-    <Header />
-
-    <div
-      class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
-    >
-      <div class="col-span-12 row-start-1 mx-6 md:mx-0">
-        <Banner :data-images="bannerImagesList" />
-      </div>
-
-      <div class="col-span-12 row-start-2 mx-6 md:mx-0">
-        <Features />
-      </div>
-      <div class="col-span-12 row-start-3 mx-6 md:mx-0">
-        <Accesories />
-      </div>
-      <div class="col-span-12 row-start-4 mx-6 md:mx-0" id="allgames">
-        <TitleContent title="Juegos" class="static" />
-      </div>
-      <div class="col-span-12 row-start-5 rounded-md sticky top-0 z-20">
-        <Filters
-          v-model:searchTerm="searchTerm"
-          v-model:hasVideo="hasVideo"
-          v-model:hasCrossbuy="hasCrossbuy"
-          v-model:hasHaptic="hasHaptic"
-        />
-      </div>
-      <div class="col-span-12 row-start-6">
-        <ContentGameList
-          :filter-search-terms="searchTerm"
-          :filter-video="hasVideo"
-          :filter-crossbuy="hasCrossbuy"
-          :filter-haptic="hasHaptic"
-        />
+        <div class="col-span-12 row-start-3 mx-6 md:mx-0">
+          <TitleContent
+            title="Los mejores visores del mercado"
+            class="flex flex-col gap-y-2"
+          >
+            <template #subtitle>
+              Con la compra de cualquier visor... ¡Obtienes
+              <span class="text-yellow-400">60€</span> para gastar en la tienda
+              de Meta!
+            </template>
+          </TitleContent>
+          <CustomGallery :info="visors" />
+          <!--          <HandleTabs default-value="visors" :tabs="tabs" />-->
+          <!--          <button-->
+          <!--            class="w-52 h-52 bg-slate-200"-->
+          <!--            @click="router.push('/Accesories')"-->
+          <!--          ></button>-->
+        </div>
+        <div class="col-span-12 row-start-4 mx-6 md:mx-0">
+          <TitleContent
+            title="Los mejores accesorios para tus Meta Quest"
+            class="flex flex-col gap-y-2"
+          />
+          <CustomGallery :info="accesories" />
+          <!--        <Features />-->
+        </div>
+        <div class="col-span-12 row-start-5 mx-6 md:mx-0">
+          <!--        <Visors />-->
+        </div>
+        <div class="col-span-12 row-start-6 mx-6 md:mx-0" id="allgames">
+          <!--          <TitleContent title="Juegos" class="static" />-->
+        </div>
+        <div class="col-span-12 row-start-7 rounded-md sticky top-0 z-20">
+          <!--          <Filters-->
+          <!--            v-model:searchTerm="searchTerm"-->
+          <!--            v-model:hasVideo="hasVideo"-->
+          <!--            v-model:hasCrossbuy="hasCrossbuy"-->
+          <!--            v-model:hasHaptic="hasHaptic"-->
+          <!--          />-->
+        </div>
+        <div class="col-span-12 row-start-8">
+          <!--          <ContentGameList-->
+          <!--            :filter-search-terms="searchTerm"-->
+          <!--            :filter-video="hasVideo"-->
+          <!--            :filter-crossbuy="hasCrossbuy"-->
+          <!--            :filter-haptic="hasHaptic"-->
+          <!--          />-->
+        </div>
       </div>
     </div>
-  </div>
+  </NuxtLayout>
 </template>
 
-<style scoped></style>
+<style>
+/* Estilos generales para el scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+  background-color: #1e1e1e; /* Color de fondo del scrollbar */
+  border-radius: 6px; /* Redondeo del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #4a4a4a,
+    #2a2a2a
+  ); /* Degradado para el "thumb" */
+  border-radius: 6px; /* Redondeo del thumb */
+  border: 2px solid #1e1e1e; /* Borde alrededor del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #6a6a6a,
+    #3a3a3a
+  ); /* Cambio de color al pasar el cursor */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    to bottom,
+    #8a8a8a,
+    #5a5a5a
+  ); /* Cambio de color al hacer clic */
+}
+
+::-webkit-scrollbar-corner {
+  background: #1e1e1e; /* Color de la esquina del scrollbar */
+}
+</style>

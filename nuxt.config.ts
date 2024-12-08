@@ -11,7 +11,19 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "nuxt-gtag",
     "@nuxtjs/sitemap",
+    "vue3-carousel-nuxt",
+    "@nuxtjs/google-fonts",
   ],
+  googleFonts: {
+    families: {
+      families: {
+        Nunito: true,
+        download: true,
+        inject: true,
+      },
+    },
+    display: "swap", // Mejora el renderizado de las fuentes
+  },
   sitemap: {
     hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
     routes: ["/"], // Solo la ruta de la página principal
