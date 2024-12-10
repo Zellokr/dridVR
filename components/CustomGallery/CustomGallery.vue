@@ -2,7 +2,7 @@
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
-const { isMobile, isDesktop, isTablet } = useDevice();
+const { isMobile, isDesktop } = useDevice();
 
 type dataCard = {
   name: string;
@@ -12,23 +12,24 @@ type dataCard = {
 
 type CardAccesoryProps = {
   info: dataCard[];
+  initialSlide?: number;
 };
 
-defineProps<CardAccesoryProps>();
+const props = withDefaults(defineProps<CardAccesoryProps>(), {
+  initialSlide: 2,
+});
 
 const displayCards = computed(() => {
   if (isMobile) return 1;
-  if (isDesktop) return 5;
-  if (isTablet) return 4;
+  if (isDesktop) return 4;
 });
 
 const config = {
   itemsToShow: displayCards.value,
   wrapAround: true,
   transition: 500,
+  initialSlide: props.initialSlide,
 };
-
-console.log(displayCards.value);
 </script>
 
 <template>
@@ -40,13 +41,19 @@ console.log(displayCards.value);
             class="h-auto w-96 flex flex-col items-center justify-center space-y-4"
           >
             <!-- Imagen -->
-            <img
-              :src="item.img_link"
-              alt="Carousel image"
-              class="h-72 w-full object-cover rounded-lg shadow-lg"
-            />
+            <a
+              :href="item.affiliate_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                :src="item.img_link"
+                alt="Carousel image"
+                class="h-72 w-full object-cover rounded-lg shadow-lg"
+              />
+            </a>
             <!-- Texto debajo de la imagen -->
-            <span class="text-white text-sm text-center">
+            <span class="text-white text-lg text-center font-bold">
               {{ item.name }}
             </span>
           </div>
@@ -75,7 +82,10 @@ console.log(displayCards.value);
 }
 
 .carousel__icon {
-  background-color: #8a8a8a;
+  //background-color: #8a8a8a;
+  background-color: white;
+  border-radius: 25%;
+  transform: translate();
 }
 
 .carousel__track {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CardAccesory from "~/components/HandleTabs/Accesories/CardAccesory/CardAccesory.vue";
-import accesories from "~/constants/visors.json";
+import accesories from "~/constants/accesories.json";
 </script>
 
 <template>

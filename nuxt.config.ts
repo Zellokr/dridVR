@@ -12,18 +12,7 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     "@nuxtjs/sitemap",
     "vue3-carousel-nuxt",
-    "@nuxtjs/google-fonts",
   ],
-  googleFonts: {
-    families: {
-      families: {
-        Nunito: true,
-        download: true,
-        inject: true,
-      },
-    },
-    display: "swap", // Mejora el renderizado de las fuentes
-  },
   sitemap: {
     hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
     routes: ["/"], // Solo la ruta de la página principal
@@ -71,9 +60,17 @@ export default defineNuxtConfig({
       ],
       title: "Los mejores juegos de VR baratos",
       link: [
-        { rel: "preload", href: "/img/banner_image_1.webp", as: "image" },
-        { rel: "preload", href: "/img/banner_image_2.webp", as: "image" },
-        { rel: "preload", href: "/img/Behemoth.webp", as: "image" },
+        {
+          rel: "preload",
+          href: "/img/Banner/banner_image_1.webp",
+          as: "image",
+        },
+        {
+          rel: "preload",
+          href: "/img/Banner/banner_image_2.webp",
+          as: "image",
+        },
+        { rel: "preload", href: "/img/Banner/Behemoth.webp", as: "image" },
       ],
     },
   },

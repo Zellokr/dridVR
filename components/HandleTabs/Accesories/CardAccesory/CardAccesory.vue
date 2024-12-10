@@ -14,7 +14,7 @@ defineProps<CardAccesoryProps>();
 
 <template>
   <div
-    class="grid grid-cols-12 items-center gap-4 p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors shadow-md"
+    class="grid grid-cols-12 items-center gap-4 p-4 hover:bg-gray-600 rounded-lg transition-colors"
     role="group"
     :aria-label="`Accesorio: ${accesory.name}`"
   >
@@ -23,7 +23,7 @@ defineProps<CardAccesoryProps>();
       <img
         :src="accesory.img_link"
         :alt="accesory.name"
-        class="w-full h-20 rounded-sm object-cover"
+        class="w-full h-20 rounded-md object-cover"
       />
     </div>
 
@@ -35,15 +35,16 @@ defineProps<CardAccesoryProps>();
       >
         {{ accesory.name }}
       </span>
-      <a
-        :href="accesory.affiliate_link"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="mt-2 text-sm text-blue-400 hover:underline focus:underline"
-        aria-label="Más información sobre {{ accesory.name }}"
-      >
-        Ver más
-      </a>
+      <span class="text-blue-400"> Meta quest 3</span>
+      <!--      <a-->
+      <!--        :href="accesory.affiliate_link"-->
+      <!--        target="_blank"-->
+      <!--        rel="noopener noreferrer"-->
+      <!--        class="mt-2 text-sm text-green-300 hover:underline focus:underline"-->
+      <!--        aria-label="Más información sobre {{ accesory.name }}"-->
+      <!--      >-->
+      <!--        Ver más-->
+      <!--      </a>-->
     </div>
   </div>
 </template>

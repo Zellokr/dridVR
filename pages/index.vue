@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { bannerImagesList } from "~/constants/bannerImageList";
-import ContentGameList from "~/components/ContentGame/ContentGame.vue";
-import type { Tab } from "~/components/HandleTabs/types";
-import Accesories from "~/components/HandleTabs/Accesories/Accesories.vue";
+
 import Features from "~/components/HandleTabs/Features/Features.vue";
 import Visors from "~/components/HandleTabs/Visors/Visors.vue";
+
 import accesories from "~/constants/accesories.json";
 import visors from "~/constants/visors.json";
 
@@ -74,91 +70,49 @@ useHead({
   ],
 });
 
-const searchTerm = ref("");
-const hasVideo = ref(false);
-const hasCrossbuy = ref(false);
-const hasHaptic = ref(false);
-
-const tabs: Tab[] = [
-  {
-    label: "Novedades",
-    value: "features",
-    component: Features,
-    icon: "mdiBellRing",
-  },
-  {
-    label: "Visores",
-    value: "visors",
-    icon: "mdiGlasses",
-    component: Visors,
-  },
-  {
-    label: "Accesorios",
-    value: "accesories",
-    icon: "mdiCableData",
-    component: Accesories,
-  },
-];
-
-const router = useRouter();
+// const tabs: Tab[] = [
+//   {
+//     label: "Novedades",
+//     value: "features",
+//     component: Features,
+//     icon: "mdiBellRing",
+//   },
+//   {
+//     label: "Visores",
+//     value: "visors",
+//     icon: "mdiGlasses",
+//     component: Visors,
+//   },
+//   {
+//     label: "Accesorios",
+//     value: "accesories",
+//     icon: "mdiCableData",
+//     component: Accessories,
+//   },
+// ];
 </script>
 
 <template>
   <NuxtLayout name="default-layout">
-    <div class="h-full w-full text-gray-200 font-sans">
+    <div class="pb-14">
       <div
-        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
+        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4 space-y-8 mx-6"
       >
-        <div class="col-span-12 row-start-2 mx-6 md:mx-0">
+        <div class="col-span-12 row-start-1">
           <Banner :data-images="bannerImagesList" />
         </div>
-        <div class="col-span-12 row-start-3 mx-6 md:mx-0">
-          <TitleContent
-            title="Los mejores visores del mercado"
-            class="flex flex-col gap-y-2"
-          >
+
+        <div class="col-span-12 row-start-2">
+          <Visors />
+        </div>
+        <div class="col-span-12 row-start-3">
+          <TitleContent title="Accesorios para tus Meta Quest">
             <template #subtitle>
-              Con la compra de cualquier visor... ¡Obtienes
-              <span class="text-yellow-400">60€</span> para gastar en la tienda
-              de Meta!
+              Mejora tu visor Meta Quest con los siguiente accesorios de Kiwi
+              Design
             </template>
           </TitleContent>
-          <CustomGallery :info="visors" />
-          <!--          <HandleTabs default-value="visors" :tabs="tabs" />-->
-          <!--          <button-->
-          <!--            class="w-52 h-52 bg-slate-200"-->
-          <!--            @click="router.push('/Accesories')"-->
-          <!--          ></button>-->
-        </div>
-        <div class="col-span-12 row-start-4 mx-6 md:mx-0">
-          <TitleContent
-            title="Los mejores accesorios para tus Meta Quest"
-            class="flex flex-col gap-y-2"
-          />
           <CustomGallery :info="accesories" />
-          <!--        <Features />-->
-        </div>
-        <div class="col-span-12 row-start-5 mx-6 md:mx-0">
-          <!--        <Visors />-->
-        </div>
-        <div class="col-span-12 row-start-6 mx-6 md:mx-0" id="allgames">
-          <!--          <TitleContent title="Juegos" class="static" />-->
-        </div>
-        <div class="col-span-12 row-start-7 rounded-md sticky top-0 z-20">
-          <!--          <Filters-->
-          <!--            v-model:searchTerm="searchTerm"-->
-          <!--            v-model:hasVideo="hasVideo"-->
-          <!--            v-model:hasCrossbuy="hasCrossbuy"-->
-          <!--            v-model:hasHaptic="hasHaptic"-->
-          <!--          />-->
-        </div>
-        <div class="col-span-12 row-start-8">
-          <!--          <ContentGameList-->
-          <!--            :filter-search-terms="searchTerm"-->
-          <!--            :filter-video="hasVideo"-->
-          <!--            :filter-crossbuy="hasCrossbuy"-->
-          <!--            :filter-haptic="hasHaptic"-->
-          <!--          />-->
         </div>
       </div>
     </div>
