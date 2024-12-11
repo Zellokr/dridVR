@@ -8,4 +8,5 @@ export type DataImage = {
 export type BannerProps = {
   dataImages: DataImage[];
   orientation?: "horizontal" | "vertical";
+  startIndex?: number;
 };

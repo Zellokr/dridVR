@@ -1,4 +1,4 @@
-import type { DataImage } from "~/components/Banner/types";
+import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
   {

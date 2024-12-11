@@ -6,13 +6,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "~/components/ui/carousel";
-import type { BannerProps } from "~/components/Banner/types";
+import type { BannerProps } from "~/components/Body/Banner/types";
 import Autoplay from "embla-carousel-autoplay";
 import { handleContent } from "~/utils/handleContent";
 
 withDefaults(defineProps<BannerProps>(), {
   orientation: "horizontal",
   displayName: false,
+  startIndex: 0,
 });
 
 import type { EmblaPluginType } from "embla-carousel";
@@ -28,7 +29,7 @@ const plugin: EmblaPluginType = Autoplay({
   <Carousel
     class="w-full relative"
     :plugins="[plugin]"
-    :opts="{ loop: true }"
+    :opts="{ loop: true, startIndex: startIndex }"
     @mouseenter="plugin.stop"
     @mouseleave="[plugin.reset(), plugin.play()]"
   >

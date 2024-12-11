@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { bannerImagesList } from "~/constants/bannerImageList";
 
-import Features from "~/components/HandleTabs/Features/Features.vue";
-import Visors from "~/components/HandleTabs/Visors/Visors.vue";
+import Banner from "~/components/Body/Banner/Banner.vue";
+import Visors from "~/components/Body/Visors/Visors.vue";
 
 import accesories from "~/constants/accesories.json";
 import visors from "~/constants/visors.json";
@@ -69,27 +69,6 @@ useHead({
     },
   ],
 });
-
-// const tabs: Tab[] = [
-//   {
-//     label: "Novedades",
-//     value: "features",
-//     component: Features,
-//     icon: "mdiBellRing",
-//   },
-//   {
-//     label: "Visores",
-//     value: "visors",
-//     icon: "mdiGlasses",
-//     component: Visors,
-//   },
-//   {
-//     label: "Accesorios",
-//     value: "accesories",
-//     icon: "mdiCableData",
-//     component: Accessories,
-//   },
-// ];
 </script>
 
 <template>
