@@ -19,6 +19,12 @@ module.exports = {
       },
     },
     extend: {
+      transitionProperty: {
+        "opacity-transform": "opacity, transform",
+      },
+      fontFamily: {
+        tenon: ["tenon"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

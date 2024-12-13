@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     routes: ["/"], // Solo la ruta de la página principal
     gzip: true,
   },
+
   gtag: {
     enabled: process.env.NODE_ENV === "production",
     id: "G-814JQT6YBZ",
@@ -28,6 +29,9 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
+      htmlAttrs: {
+        lang: "es",
+      },
       meta: [
         {
           name: "juegos baratos",

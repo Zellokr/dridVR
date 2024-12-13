@@ -17,63 +17,59 @@ type CardProps = {
 } & { class?: HTMLAttributes["class"] };
 
 const props = defineProps<CardProps>();
+
+import { Card, CardContent } from "@/components/ui/card";
 </script>
 
 <template>
-  <div class="block cursor-pointer shadow-3xl">
-    <a
-      :href="game.affiliate_link"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      class="block"
+  <Card>
+    <CardContent
+      :class="
+        cn('bg-gray-800 text-white shadow-lg overflow-hidden', props.class)
+      "
     >
-      <div
-        :class="
-          cn(
-            'bg-gray-800 text-white rounded-b-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2',
-            props.class,
-          )
-        "
+      <a
+        :href="game.affiliate_link"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
       >
-        <!-- Imagen -->
-        <div class="relative">
-          <img
-            :src="game.img_link"
-            alt="Game Image"
-            class="w-full h-48 object-cover"
-            loading="lazy"
-          />
+        <img
+          :src="game.img_link"
+          alt="Game Image"
+          class="w-full h-48 object-cover"
+          loading="lazy"
+        />
+        <div
+          v-if="game.yt_link"
+          class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
+          @click.stop.prevent="handleContent(game.yt_link)"
+        >
+          <SvgoYoutubeIcon />
+        </div>
+        <div class="p-4 h-20 flex justify-between items-center shadow-md">
+          <h3 class="text-lg font-semibold text-white truncate">
+            {{ game.name || "Nombre del Juego" }}
+          </h3>
           <div
-            v-if="game.yt_link"
-            class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
-            @click.stop.prevent="handleContent(game.yt_link)"
+            v-if="game.crossbuy || game.bhaptics"
+            class="flex items-center gap-x-2 text-white px-2 py-1 rounded-lg shadow-sm"
           >
-            <SvgoYoutubeIcon />
-          </div>
-          <div class="p-4 h-20 flex justify-between items-center shadow-md">
-            <h3 class="text-lg font-semibold text-white truncate">
-              {{ game.name || "Nombre del Juego" }}
-            </h3>
-            <div
-              v-if="game.crossbuy || game.bhaptics"
-              class="flex items-center gap-x-2 text-white px-2 py-1 rounded-lg shadow-sm"
-            >
-              <MdiIcon
-                v-if="game.crossbuy"
-                icon="mdiSync"
-                class="text-white w-4 h-4"
-              />
-              <MdiIcon
-                v-if="game.bhaptics"
-                icon="mdiVibrate"
-                class="text-white w-4 h-4"
-              />
-            </div>
+            <MdiIcon
+              v-if="game.crossbuy"
+              icon="mdiSync"
+              class="text-white w-4 h-4"
+            />
+            <MdiIcon
+              v-if="game.bhaptics"
+              icon="mdiVibrate"
+              class="text-white w-4 h-4"
+            />
           </div>
         </div>
-      </div>
-    </a>
-  </div>
+      </a>
+    </CardContent>
+  </Card>
+  <!--  <div class="block cursor-pointer shadow-3xl"></div>-->
 </template>
 
 <style scoped></style>

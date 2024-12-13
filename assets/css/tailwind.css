@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    'font-family': 'tenon',
+    'src': url('~/assets/fonts/tenon-xbold-2.otf')  format('opentype'),
+}

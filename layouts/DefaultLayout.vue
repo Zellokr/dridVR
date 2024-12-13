@@ -25,7 +25,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-dvh w-full bg-gray-900">
+  <div
+    class="min-h-dvh w-full bg-gradient-to-r from-gray-900 via-gray-950 to-gray-900"
+  >
     <!-- Diálogo  -->
     <Dialog v-model:open="dialogOpen">
       <DialogTitle class="sr-only" />

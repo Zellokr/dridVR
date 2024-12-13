@@ -5,7 +5,7 @@ import Navbar from "~/components/Navbar/Navbar.vue";
 </script>
 
 <template>
-  <div class="w-full shadow-xl mb-12">
+  <div class="w-full mb-12">
     <div
       class="flex flex-col justify-center items-center gap-y-6 py-8 md:gap-y-8"
       id="allgames"
