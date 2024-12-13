@@ -7,15 +7,7 @@
     "crossbuy": 1,
     "bhaptics": 1
   },
-  {
-    "name": "Action Hero",
-    "affiliate_link": "https://www.meta.com/affiliates/XrpHXZ5XM",
-    "img_link": "./img/38982562_1243050280150895_3428655963665173147_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-  
+
   {
     "name": "A Fisherman's Tale",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2299967930057156%2F&cjsku=2299967930057156&widgetid=67409c6d6e73e5d8cacefdc1",
@@ -28,6 +20,14 @@
     "name": "A Fisherman's Tale 2",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F4543286815791830%2F&cjsku=4543286815791830&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/75203624_2218537041837163_6488835997909467578_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Action Hero",
+    "affiliate_link": "https://www.meta.com/affiliates/XrpHXZ5XM",
+    "img_link": "./img/38982562_1243050280150895_3428655963665173147_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
