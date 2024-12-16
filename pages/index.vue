@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { bannerImagesList } from "~/constants/bannerImageList";
-import ContentGameList from "~/components/ContentGameList/ContentGameList.vue";
+
+import Banner from "~/components/Body/Banner/Banner.vue";
 
 useHead({
   title: "Ofertas y descuentos en videojuegos VR para Meta Quest",
@@ -30,11 +28,11 @@ useHead({
     },
     {
       property: "og:image",
-      content: "https://juegosquestbaratos.com/img/banner_image_1.webp",
+      content: "https://juegosquestbaratos.com/img/Banner/banner_image_1.webp",
     },
     {
       property: "og:image",
-      content: "https://juegosquestbaratos.com/img/banner_image_2.webp",
+      content: "https://juegosquestbaratos.com/img/Banner/banner_image_2.webp",
     },
     { property: "og:url", content: "https://juegosquestbaratos.com" },
     { property: "og:type", content: "website" },
@@ -49,7 +47,7 @@ useHead({
     },
     {
       name: "twitter:image",
-      content: "https://juegosquestbaratos.com/img/banner_image_1.webp",
+      content: "https://juegosquestbaratos.com/img/Banner/banner_image_1.webp",
     },
   ],
   script: [
@@ -67,105 +65,136 @@ useHead({
     },
   ],
 });
-
-const dialogOpen = ref(false);
-
-const searchTerm = ref("");
-const hasVideo = ref(false);
-const hasCrossbuy = ref(false);
-const hasHaptic = ref(false);
-
-// Función para verificar si ha pasado un día
-function hasOneDayPassed(lastShown) {
-  const lastDate = new Date(lastShown);
-  const now = new Date();
-  const diffInMs = now - lastDate;
-  const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
-  return diffInMs >= oneDayInMs;
-}
-
-onMounted(() => {
-  if (process.client) {
-    const lastShown = localStorage.getItem("dialogLastShown");
-
-    if (!lastShown || hasOneDayPassed(lastShown)) {
-      dialogOpen.value = true; // Muestra el diálogo
-      localStorage.setItem("dialogLastShown", new Date().toISOString()); // Actualiza la fecha
-    }
-  }
-});
 </script>
 
 <template>
-  <div class="h-full w-full text-gray-200 font-sans">
-    <!-- Diálogo  -->
-    <Dialog v-model:open="dialogOpen">
-      <DialogTitle class="sr-only" />
-      <DialogContent
-        class="border border-gray-800 rounded-xl bg-gradient-to-br from-gray-800 via-gray-900 to-black shadow-2xl p-8 max-w-md mx-auto mt-10 text-center"
+  <NuxtLayout name="default-layout">
+    <div class="pb-14">
+      <div
+        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 md:gap-y-28 mx-6"
       >
-        <div class="relative z-10">
-          <!-- Título principal -->
-          <div class="text-yellow-400 text-3xl font-extrabold tracking-wide">
-            OFERTAS DE NAVIDAD
-          </div>
-          <div class="text-gray-300 text-sm font-medium mt-2">
-            Se aplica a todos los juegos hasta
-            <strong class="text-yellow-300">31/12/24</strong>
-          </div>
-          <!-- Descuento -->
-          <div class="text-8xl font-black text-white mt-4">
-            20<span class="text-yellow-400">%</span>
-          </div>
-          <!-- Botón de llamada a la acción -->
-          <DialogClose as-child>
-            <button
-              class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-lg transition-transform transform hover:scale-105 focus:ring-2 focus:ring-yellow-300"
-            >
-              ¡Explorar ofertas!
-            </button>
-          </DialogClose>
+        <div class="col-span-12 row-start-1">
+          <Banner :data-images="bannerImagesList" />
         </div>
-      </DialogContent>
-      <DialogDescription class="sr-only" />
-    </Dialog>
-
-    <Header />
-
-    <div
-      class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4"
-    >
-      <div class="col-span-12 row-start-1 mx-6 md:mx-0">
-        <Banner :data-images="bannerImagesList" />
-      </div>
-
-      <div class="col-span-12 row-start-2 mx-6 md:mx-0">
-        <Features />
-      </div>
-      <div class="col-span-12 row-start-3 mx-6 md:mx-0">
-        <Accesories />
-      </div>
-      <div class="col-span-12 row-start-4 mx-6 md:mx-0" id="allgames">
-        <TitleContent title="Juegos" class="static" />
-      </div>
-      <div class="col-span-12 row-start-5 rounded-md sticky top-0 z-20">
-        <Filters
-          v-model:searchTerm="searchTerm"
-          v-model:hasVideo="hasVideo"
-          v-model:hasCrossbuy="hasCrossbuy"
-          v-model:hasHaptic="hasHaptic"
-        />
-      </div>
-      <div class="col-span-12 row-start-6">
-        <ContentGameList
-          :filter-search-terms="searchTerm"
-          :filter-video="hasVideo"
-          :filter-crossbuy="hasCrossbuy"
-          :filter-haptic="hasHaptic"
-        />
+        <ScrollReveal class="col-span-12 row-start-2">
+          <nuxt-link to="/games">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14 md:gap-x-8"
+            >
+              <nuxt-img
+                src="/img/ImagenWebJuegos.webp"
+                alt="Imagen de 3 juegos de realidad virtual, el primero es Batman Arkham Shadow, el segundo es Asgard's Wrath y el tercero es Metro Awakening"
+                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
+              />
+              <div class="flex flex-col gap-y-4 order-1">
+                <span class="text-white font-bold text-xl md:text-4xl"
+                  >Juega más, paga menos</span
+                >
+                <p
+                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
+                >
+                  Cualquier juego que compres desde aquí tendrá un descuento
+                  automático, gracias a mis enlaces de afiliados de Meta, algo
+                  que te hará pagar menos, de forma legal y me estarás apoyando
+                  a mi, directamente
+                </p>
+              </div>
+            </div>
+          </nuxt-link>
+        </ScrollReveal>
+        <ScrollReveal class="col-span-12 row-start-3">
+          <nuxt-link to="/accessories">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 place-items-center content-center gap-y-14"
+            >
+              <div class="flex flex-col gap-y-4 lg:order-2 xl:order-2">
+                <span class="text-white font-bold text-xl md:text-4xl"
+                  >El mejor visor, con regalo</span
+                >
+                <p
+                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
+                >
+                  Al comprar desde aquí un visor Meta Quest 3, Meta Quest 3S o
+                  Meta Quest Pro, obtendrás 60 euros en tu cartera en la Meta
+                  Store, para que puedas comprar algunos y estrenar tu visor
+                  como se merece.
+                </p>
+              </div>
+              <nuxt-img
+                src="/img/visoresmetaquestimagen.webp"
+                alt="Imagen de las gafas de realidad virtual Meta Quest 3"
+                class="rounded-xl cursor-pointer order-2"
+              />
+            </div>
+          </nuxt-link>
+        </ScrollReveal>
+        <ScrollReveal class="col-span-12 row-start-4">
+          <nuxt-link to="/Accessories">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14"
+            >
+              <nuxt-img
+                src="/img/kiwidesignbannerweb.webp"
+                alt="Imagen con accesorios de realidad virtual con el marca de accesorios Kiwi Design"
+                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
+              />
+              <div class="flex flex-col gap-y-4 order-1">
+                <span class="text-white font-bold text-xl md:text-4xl"
+                  >Más cómodo, más tiempo</span
+                >
+                <p
+                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
+                >
+                  Gracias a los accesorios de Kiwi Design tu visor Meta Quest
+                  dará en salto en el confort y en la duración, gracias a sus
+                  correas customs que mejoran la distribución del peso, el punto
+                  de apoyo y además, incluyen una batería extra para extender
+                  tus horas en el mundo virtual.
+                </p>
+              </div>
+            </div>
+          </nuxt-link>
+        </ScrollReveal>
       </div>
     </div>
-  </div>
+  </NuxtLayout>
 </template>
 
-<style scoped></style>
+<style>
+/* Estilos generales para el scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+  background-color: #1e1e1e; /* Color de fondo del scrollbar */
+  border-radius: 6px; /* Redondeo del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #4a4a4a,
+    #2a2a2a
+  ); /* Degradado para el "thumb" */
+  border-radius: 6px; /* Redondeo del thumb */
+  border: 2px solid #1e1e1e; /* Borde alrededor del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #6a6a6a,
+    #3a3a3a
+  ); /* Cambio de color al pasar el cursor */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    to bottom,
+    #8a8a8a,
+    #5a5a5a
+  ); /* Cambio de color al hacer clic */
+}
+
+::-webkit-scrollbar-corner {
+  background: #1e1e1e; /* Color de la esquina del scrollbar */
+}
+</style>

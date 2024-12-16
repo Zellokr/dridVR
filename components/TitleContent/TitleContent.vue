@@ -10,10 +10,8 @@ defineProps<TitleContentProps>();
 
 <template>
   <!-- Título de juegos -->
-  <div :id="id">
-    <span
-      class="text-white text-4xl md:text-5xl font-bold text-center md:text-left"
-    >
+  <div :id="id" class="flex flex-col">
+    <span class="text-white text-3xl md:text-4xl font-bold">
       {{ title }}
     </span>
 

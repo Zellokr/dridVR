@@ -1,7 +1,3 @@
 <template>
-  <div class="h-full w-full bg-gray-900">
-    <NuxtPage />
-  </div>
+  <NuxtPage />
 </template>
-<script setup lang="ts">
-</script>

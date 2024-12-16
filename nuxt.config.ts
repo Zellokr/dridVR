@@ -11,11 +11,44 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "nuxt-gtag",
     "@nuxtjs/sitemap",
+    "vue3-carousel-nuxt",
+    "@nuxt/image",
   ],
+  build: {
+    analyze: {
+      gzipSize: true,
+      enabled: true,
+      brotliSize: true,
+    },
+  },
   sitemap: {
     hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
-    routes: ["/"], // Solo la ruta de la página principal
+    routes: ["/", "/accessories", "games"], // Solo la ruta de la página principal
     gzip: true,
+  },
+  nitro: {
+    compressPublicAssets: true,
+    routeRules: {
+      "/": {
+        swr: true,
+        cache: {
+          maxAge: 60,
+        },
+      },
+      "/games": {
+        swr: 3600,
+      },
+      "/accessories": {
+        swr: 3600,
+      },
+    },
+  },
+  ssr: true,
+  webpack: {
+    optimization: {
+      minimize: true,
+    },
+    optimizeCSS: true,
   },
   gtag: {
     enabled: process.env.NODE_ENV === "production",
@@ -24,9 +57,12 @@ export default defineNuxtConfig({
   svgo: {
     defaultImports: "component",
   },
-  ssr: false,
+
   app: {
     head: {
+      htmlAttrs: {
+        lang: "es",
+      },
       meta: [
         {
           name: "juegos baratos",
@@ -59,9 +95,17 @@ export default defineNuxtConfig({
       ],
       title: "Los mejores juegos de VR baratos",
       link: [
-        { rel: "preload", href: "/img/banner_image_1.webp", as: "image" },
-        { rel: "preload", href: "/img/banner_image_2.webp", as: "image" },
-        { rel: "preload", href: "/img/Behemoth.webp", as: "image" },
+        // {
+        //   rel: "preload",
+        //   href: "/img/Banner/banner_image_1.webp",
+        //   as: "image",
+        // },
+        // {
+        //   rel: "preload",
+        //   href: "/img/Banner/banner_image_2.webp",
+        //   as: "image",
+        // },
+        // { rel: "preload", href: "/img/Banner/Behemoth.webp", as: "image" },
       ],
     },
   },

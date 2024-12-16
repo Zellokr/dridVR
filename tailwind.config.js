@@ -1,14 +1,14 @@
-const animate = require("tailwindcss-animate")
+const animate = require("tailwindcss-animate");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx,vue}',
-    './components/**/*.{ts,tsx,vue}',
-    './app/**/*.{ts,tsx,vue}',
-    './src/**/*.{ts,tsx,vue}',
-	],
+    "./pages/**/*.{ts,tsx,vue}",
+    "./components/**/*.{ts,tsx,vue}",
+    "./app/**/*.{ts,tsx,vue}",
+    "./src/**/*.{ts,tsx,vue}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,6 +19,12 @@ module.exports = {
       },
     },
     extend: {
+      transitionProperty: {
+        "opacity-transform": "opacity, transform",
+      },
+      transitionDuration: {
+        1500: "1500ms", // 2 segundos
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -36,4 +42,4 @@ module.exports = {
     },
   },
   plugins: [animate],
-}
+};
