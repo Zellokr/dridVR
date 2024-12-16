@@ -12,13 +12,23 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     "@nuxtjs/sitemap",
     "vue3-carousel-nuxt",
+    "@nuxt/image",
   ],
+  build: {
+    analyze: {
+      gzipSize: true,
+      enabled: true,
+      brotliSize: true,
+    },
+  },
   sitemap: {
     hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
     routes: ["/"], // Solo la ruta de la página principal
     gzip: true,
   },
-
+  nitro: {
+    compressPublicAssets: true,
+  },
   gtag: {
     enabled: process.env.NODE_ENV === "production",
     id: "G-814JQT6YBZ",

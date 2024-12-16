@@ -22,6 +22,9 @@ module.exports = {
       transitionProperty: {
         "opacity-transform": "opacity, transform",
       },
+      transitionDuration: {
+        1500: "1500ms", // 2 segundos
+      },
       fontFamily: {
         tenon: ["tenon"],
       },

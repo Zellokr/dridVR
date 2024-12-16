@@ -10,18 +10,26 @@ import type { BannerProps } from "~/components/Body/Banner/types";
 import Autoplay from "embla-carousel-autoplay";
 import { handleContent } from "~/utils/handleContent";
 
-withDefaults(defineProps<BannerProps>(), {
+const props = withDefaults(defineProps<BannerProps>(), {
   orientation: "horizontal",
   displayName: false,
   startIndex: 0,
 });
 
-import type { EmblaPluginType } from "embla-carousel";
+import type { EmblaPluginType, EmblaOptionsType } from "embla-carousel";
+
+const opts: EmblaOptionsType = {
+  loop: true,
+  startIndex: props.startIndex,
+  dragFree: false,
+  watchDrag: false,
+};
 
 const plugin: EmblaPluginType = Autoplay({
   delay: 5000,
   stopOnMouseEnter: true,
   stopOnInteraction: false,
+  jump: false,
 });
 </script>
 
@@ -29,19 +37,25 @@ const plugin: EmblaPluginType = Autoplay({
   <Carousel
     class="w-full relative"
     :plugins="[plugin]"
-    :opts="{ loop: true, startIndex: startIndex }"
+    :opts="opts"
     @mouseenter="plugin.stop"
     @mouseleave="[plugin.reset(), plugin.play()]"
   >
     <CarouselContent>
       <CarouselItem v-for="(data, index) in dataImages" :key="index">
         <div class="flex flex-col group">
-          <img
+          <nuxt-img
             :src="data.image"
             :alt="data.altText"
-            class="w-auto object-cover rounded-xl cursor-pointer"
+            class="rounded-xl cursor-pointer"
             @click="handleContent(data)"
           />
+          <!--          <img-->
+          <!--            :src="data.image"-->
+          <!--            :alt="data.altText"-->
+          <!--            class="rounded-xl cursor-pointer"-->
+          <!--            @click="handleContent(data)"-->
+          <!--          />-->
         </div>
       </CarouselItem>
     </CarouselContent>

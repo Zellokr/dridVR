@@ -2,6 +2,7 @@
 import { bannerImagesList } from "~/constants/bannerImageList";
 
 import Banner from "~/components/Body/Banner/Banner.vue";
+import { handleContent } from "~/utils/handleContent";
 
 useHead({
   title: "Ofertas y descuentos en videojuegos VR para Meta Quest",
@@ -71,53 +72,96 @@ useHead({
   <NuxtLayout name="default-layout">
     <div class="pb-14">
       <div
-        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 mx-6"
+        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-48 mx-6"
       >
         <div class="col-span-12 row-start-1">
           <Banner :data-images="bannerImagesList" />
         </div>
-
         <ScrollReveal class="col-span-12 row-start-2">
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 place-content-between place-items-center gap-y-28"
-          >
-            <h1
-              class="text-white font-semibold text-2xl max-w-[30rem] break-words"
+          <nuxt-link to="/Games">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 place-content-between place-items-center"
             >
-              En nuestra página web encontrarás una selección exclusiva de los
-              mejores juegos de realidad virtual. A través de nuestra
-              plataforma, te ofrecemos enlaces de afiliados con descuentos
-              especiales, para que disfrutes de tus títulos favoritos al mejor
-              precio. Nuestro objetivo es brindarte una experiencia cómoda y
-              accesible, mientras ahorras en tus compras
-            </h1>
-            <img src="/drid1.jpg" alt="" class="rounded-xl h-full" />
-          </div>
+              <!--              <img-->
+              <!--                src="/img/ImagenWebJuegos.webp"-->
+              <!--                alt=""-->
+              <!--                class="rounded-xl h-full"-->
+              <!--              />-->
+              <nuxt-img
+                src="/img/ImagenWebJuegos.webp"
+                alt="Imagen de 3 juegos de realidad virtual, el primero es Batman Arkham Shadow, el segundo es Asgard's Wrath y el tercero es Metro Awakening"
+                class="rounded-xl cursor-pointer"
+              />
+              <h1
+                class="text-white font-semibold text-2xl max-w-[30rem] break-words"
+              >
+                En nuestra página web encontrarás una selección exclusiva de los
+                mejores juegos de realidad virtual. A través de nuestra
+                plataforma, te ofrecemos enlaces de afiliados con descuentos
+                especiales, para que disfrutes de tus títulos favoritos al mejor
+                precio. Nuestro objetivo es brindarte una experiencia cómoda y
+                accesible, mientras ahorras en tus compras
+              </h1>
+            </div>
+          </nuxt-link>
         </ScrollReveal>
-        <!--        <ScrollReveal class="col-span-12 row-start-3">-->
-        <!--          <div-->
-        <!--            class="grid grid-cols-2 place-content-between place-items-center"-->
-        <!--          >-->
-        <!--            <img src="/drid.jpg" alt="" class="rounded-xl h-96" />-->
-        <!--            <div class="text-white font-semibold w-10/12 break-all">-->
-        <!--              ¡Hola! Mi nombre es Yeray, y los videojuegos siempre han sido una-->
-        <!--              parte fundamental de mi vida. Durante varios años fui jugador-->
-        <!--              profesional, dedicando mi tiempo y esfuerzo a competir al más alto-->
-        <!--              nivel. Esa experiencia no solo me enseñó la importancia de la-->
-        <!--              dedicación y el trabajo en equipo, sino también me permitió vivir-->
-        <!--              de cerca la evolución de la industria de los videojuegos. Hoy en-->
-        <!--              día, me he enfocado en algo que me apasiona aún más: compartir mis-->
-        <!--              conocimientos y entusiasmo sobre videojuegos de realidad virtual-->
-        <!--              (VR). En mi canal de YouTube, hablo de las últimas novedades,-->
-        <!--              analizo los lanzamientos más interesantes y ofrezco consejos para-->
-        <!--              disfrutar al máximo esta tecnología revolucionaria. Si eres fan de-->
-        <!--              los videojuegos, la realidad virtual o simplemente quieres-->
-        <!--              mantenerte informado sobre este mundo en constante cambio, ¡te-->
-        <!--              invito a unirte a mi comunidad! Juntos exploraremos el futuro del-->
-        <!--              gaming.-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </ScrollReveal>-->
+        <ScrollReveal class="col-span-12 row-start-3">
+          <nuxt-link to="/Accessories">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 place-items-center content-center"
+            >
+              <h1
+                class="text-white font-semibold text-2xl max-w-[30rem] break-words"
+              >
+                En nuestra página web encontrarás una selección exclusiva de los
+                mejores juegos de realidad virtual. A través de nuestra
+                plataforma, te ofrecemos enlaces de afiliados con descuentos
+                especiales, para que disfrutes de tus títulos favoritos al mejor
+                precio. Nuestro objetivo es brindarte una experiencia cómoda y
+                accesible, mientras ahorras en tus compras
+              </h1>
+              <!--              <img-->
+              <!--                src="/img/visoresmetaquestimagen.webp"-->
+              <!--                alt=""-->
+              <!--                class="rounded-xl h-full"-->
+              <!--              />-->
+              <nuxt-img
+                src="/img/visoresmetaquestimagen.webp"
+                alt="Imagen de las gafas de realidad virtual Meta Quest 3"
+                class="rounded-xl cursor-pointer"
+              />
+            </div>
+          </nuxt-link>
+        </ScrollReveal>
+        <ScrollReveal class="col-span-12 row-start-4">
+          <nuxt-link to="/Accessories">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 place-content-between place-items-center gap-y-28"
+            >
+              <!--              <img-->
+              <!--                src="/img/kiwidesignbannerweb.webp"-->
+              <!--                alt=""-->
+              <!--                class="rounded-xl h-full"-->
+              <!--              />-->
+              <nuxt-img
+                src="/img/kiwidesignbannerweb.webp"
+                alt="Imagen con accesorios de realidad virtual con el marca de accesorios Kiwi Design"
+                class="rounded-xl cursor-pointer"
+              />
+              <h1
+                class="text-white font-semibold text-2xl max-w-[30rem] break-words"
+              >
+                En nuestra página web encontrarás una selección exclusiva de los
+                mejores juegos de realidad virtual. A través de nuestra
+                plataforma, te ofrecemos enlaces de afiliados con descuentos
+                especiales, para que disfrutes de tus títulos favoritos al mejor
+                precio. Nuestro objetivo es brindarte una experiencia cómoda y
+                accesible, mientras ahorras en tus compras
+              </h1>
+            </div>
+          </nuxt-link>
+        </ScrollReveal>
+
         <!--        <div class="col-span-12 row-start-2">-->
         <!--          <Visors />-->
         <!--        </div>-->

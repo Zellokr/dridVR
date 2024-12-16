@@ -2,7 +2,7 @@
   <div
     ref="element"
     :class="[
-      'transition-opacity duration-1000 ease-in-out',
+      'transition-opacity duration-1500 ease-in-out',
       { 'opacity-0': !isVisible, 'opacity-100': isVisible },
     ]"
   >
