@@ -4,6 +4,51 @@ import Accesories from "~/components/Body/Accesories/Accesories.vue";
 import Visors from "~/components/Body/Visors/Visors.vue";
 import Banner from "~/components/Body/Banner/Banner.vue";
 import visors from "~/constants/visors.json";
+
+useHead({
+  title: "Accesorios para gafas de realidad virtual",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Aprovecha ofertas exclusivas y descuentos en videojuegos de realidad virtual para Meta Quest con nuestros enlaces de referidos.",
+    },
+    {
+      name: "keywords",
+      content:
+        "descuentos, videojuegos, VR, Meta Quest, realidad virtual, ofertas navidad, referidos Meta",
+    },
+    { name: "robots", content: "index, follow" },
+    {
+      property: "og:title",
+      content: "Ofertas y descuentos en videojuegos VR para Meta Quest",
+    },
+    {
+      property: "og:description",
+      content:
+        "Encuentra los mejores descuentos en videojuegos VR para Meta Quest con nuestros enlaces de referidos.",
+    },
+    {
+      property: "og:url",
+      content: "https://juegosquestbaratos.com/Accessories",
+    },
+    { property: "og:type", content: "website" },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "Ofertas de juegos VR para Meta Quest",
+        description:
+          "Descubre descuentos exclusivos en juegos VR para Meta Quest con enlaces de referidos.",
+        url: "https://juegosquestbaratos.com/Accessories",
+        mainEntity: "",
+      }),
+    },
+  ],
+});
 </script>
 
 <template>
