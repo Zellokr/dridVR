@@ -3,7 +3,7 @@ import { handleContent } from "~/utils/handleContent";
 import type { HTMLAttributes } from "vue";
 import { cn } from "@/lib/utils";
 
-type GameSchema = {
+export type GameSchema = {
   name?: string;
   affiliate_link: string;
   img_link: string;
