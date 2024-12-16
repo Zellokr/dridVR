@@ -17,6 +17,7 @@ defineProps<CardProps>();
     class="grid grid-cols-12 items-center gap-4 p-4 hover:bg-gray-600 rounded-lg transition-colors"
     role="group"
     :aria-label="`Accesorio: ${content.name}`"
+    @click="handleContent(content.affiliate_link)"
   >
     <!-- Imagen del accesorio -->
     <div class="col-span-4 sm:col-span-3">
@@ -36,15 +37,12 @@ defineProps<CardProps>();
         {{ content.name }}
       </span>
       <span class="text-blue-400"> Meta quest 3</span>
-      <!--      <a-->
-      <!--        :href="content.affiliate_link"-->
-      <!--        target="_blank"-->
-      <!--        rel="noopener noreferrer"-->
-      <!--        class="mt-2 text-sm text-green-300 hover:underline focus:underline"-->
-      <!--        aria-label="Más información sobre {{ content.name }}"-->
-      <!--      >-->
-      <!--        Ver más-->
-      <!--      </a>-->
+      <span
+        class="mt-2 text-sm text-green-300 hover:underline focus:underline"
+        aria-label="Más información sobre {{ content.name }}"
+      >
+        Ver más
+      </span>
     </div>
   </div>
 </template>

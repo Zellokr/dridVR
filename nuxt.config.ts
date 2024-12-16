@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  ssr: true,
+  ssr: false,
   webpack: {
     optimization: {
       minimize: true,
@@ -106,13 +106,6 @@ export default defineNuxtConfig({
         //   as: "image",
         // },
         // { rel: "preload", href: "/img/Banner/Behemoth.webp", as: "image" },
-      ],
-      script: [
-        {
-          src: "-",
-          async: true,
-          type: "text/partytown",
-        },
       ],
     },
   },

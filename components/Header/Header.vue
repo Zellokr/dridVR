@@ -11,9 +11,9 @@ import Navbar from "~/components/Navbar/Navbar.vue";
       id="allgames"
     >
       <nuxt-img
-        src="/img/logo_optimized.png"
+        src="/img/logo.png"
         alt="Drid logo"
-        class="rounded-xl cursor-pointer transition-transform duration-200 hover:scale-105"
+        class="rounded-xl cursor-pointer transition-transform duration-200 hover:scale-105 w-auto h-24"
         @click="handleContent('https://www.youtube.com/@dridvr')"
         format="webp"
       />

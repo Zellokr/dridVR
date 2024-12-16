@@ -88,7 +88,7 @@ useHead({
               />
               <div class="flex flex-col gap-y-4 order-1">
                 <span class="text-white font-bold text-xl md:text-4xl"
-                  >"Juega más, paga menos"</span
+                  >Juega más, paga menos</span
                 >
                 <p
                   class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
@@ -109,7 +109,7 @@ useHead({
             >
               <div class="flex flex-col gap-y-4 lg:order-2 xl:order-2">
                 <span class="text-white font-bold text-xl md:text-4xl"
-                  >"El mejor visor, con regalo"</span
+                  >El mejor visor, con regalo</span
                 >
                 <p
                   class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
@@ -140,7 +140,7 @@ useHead({
               />
               <div class="flex flex-col gap-y-4 order-1">
                 <span class="text-white font-bold text-xl md:text-4xl"
-                  >"Más cómodo, más tiempo"</span
+                  >Más cómodo, más tiempo</span
                 >
                 <p
                   class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"

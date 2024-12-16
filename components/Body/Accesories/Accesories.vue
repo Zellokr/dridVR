@@ -4,11 +4,11 @@ import accesories from "~/constants/accesories.json";
 </script>
 
 <template>
-  <div class="flex">
-    <TitleContent
-      title="Los mejores accesorios para tus Meta Quest"
-      class="flex flex-col gap-y-2"
-    >
+  <div class="flex justify-start">
+    <TitleContent title="KIWI design">
+      <template #subtitle>
+        Los mejores accesorios para tus Meta Quest
+      </template>
     </TitleContent>
   </div>
 
