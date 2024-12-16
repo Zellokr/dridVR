@@ -7,6 +7,7 @@
     "crossbuy": 1,
     "bhaptics": 1
   },
+
   {
     "name": "A Fisherman's Tale",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2299967930057156%2F&cjsku=2299967930057156&widgetid=67409c6d6e73e5d8cacefdc1",
@@ -19,6 +20,14 @@
     "name": "A Fisherman's Tale 2",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F4543286815791830%2F&cjsku=4543286815791830&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/75203624_2218537041837163_6488835997909467578_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Action Hero",
+    "affiliate_link": "https://www.meta.com/affiliates/XrpHXZ5XM",
+    "img_link": "./img/Games/38982562_1243050280150895_3428655963665173147_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -37,6 +46,14 @@
     "img_link": "./img/Games/75476755_1358893394442021_6165375168624617341_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "A Space Pawdyssey",
+    "affiliate_link": "https://www.meta.com/affiliates/4VWoKT3r8",
+    "img_link": "./img/Games/38982471_926493019401722_9033726221010714067_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -712,6 +729,14 @@
     "bhaptics": 0
   },
   {
+    "name": "CoasterMania",
+    "affiliate_link": "https://www.meta.com/affiliates/8QHr6CGVi",
+    "img_link": "./img/Games/38974901_2846053412238331_9017819232098815783_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Color Space",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2702419963135346%2F&cjsku=2702419963135346&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39036706_682853542925536_3308804217065704261_n.jpg",
@@ -1208,6 +1233,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Exercise Demons!",
+    "affiliate_link": "https://www.meta.com/affiliates/EBYrMxNvs",
+    "img_link": "./img/Games/38984467_1596216931238458_3397907054143763844_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "EXOcars",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F8057795767629913%2F&cjsku=8057795767629913&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38974864_560179896480317_1822325151492117063_n.jpg",
@@ -1664,6 +1697,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Home Sports",
+    "affiliate_link": "https://www.meta.com/affiliates/92FUSjkQH",
+    "img_link": "./img/Games/65228806_1233728020960956_1028749234868121410_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Homestar VR: Special Edition",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2913996261988381%2F&cjsku=2913996261988381&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/86659802_1277166265954891_476994465012424159_n.jpg",
@@ -1851,6 +1892,14 @@
     "name": "Just Dance VR – Welcome to Dancity",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6646371635430939%2F&cjsku=6646371635430939&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38982524_1108895410803471_5360663234192641476_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Just Hoops",
+    "affiliate_link": "https://www.meta.com/affiliates/5TJbmTksm",
+    "img_link": "./img/Games/capsule_616x353.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -2341,6 +2390,14 @@
     "img_link": "./img/Games/38982671_689545995896850_4061996718881594804_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Noun Town Home",
+    "affiliate_link": "https://www.meta.com/affiliates/8SAewYE3s",
+    "img_link": "./img/Games/75395599_1079719773541654_1118675067869853168_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -3014,6 +3071,14 @@
     "yt_link": " https://youtu.be/W0X-n0KZuI8?si=wF6msqHTw4R0Zwgb",
     "crossbuy": 0,
     "bhaptics": 1
+  },
+  {
+    "name": "Slot Car VR",
+    "affiliate_link": "https://www.meta.com/affiliates/7xkegbEAU",
+    "img_link": "./img/Games/39036661_1356464159042008_4441969028253288908_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
   },
   {
     "name": "Some Assembly Required",
@@ -4085,6 +4150,14 @@
     "img_link": "./img/Games/39001667_470512550899871_4606584255550721107_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "X8 CONTRA Super Wall STORM",
+    "affiliate_link": "https://www.meta.com/affiliates/9bXcHmXtn",
+    "img_link": "./img/Games/38982539_1256107898840218_9207743311835333620_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {

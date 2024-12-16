@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
-    routes: ["/"], // Solo la ruta de la página principal
+    routes: ["/", "/accessories", "games"], // Solo la ruta de la página principal
     gzip: true,
   },
   nitro: {
@@ -35,15 +35,15 @@ export default defineNuxtConfig({
           maxAge: 60,
         },
       },
-      "/Games": {
+      "/games": {
         swr: 3600,
       },
-      "/Accessories": {
+      "/accessories": {
         swr: 3600,
       },
     },
   },
-  ssr: false,
+  ssr: true,
   webpack: {
     optimization: {
       minimize: true,

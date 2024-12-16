@@ -49,7 +49,7 @@ const config = {
               <img
                 :src="item.img_link"
                 alt="Carousel image"
-                class="h-72 w-full object-cover rounded-lg shadow-lg"
+                class="h-72 w-full object-cover shadow-lg"
               />
             </a>
             <!-- Texto debajo de la imagen -->
@@ -85,7 +85,7 @@ const config = {
   //background-color: #8a8a8a;
   background-color: white;
   border-radius: 25%;
-  transform: translate();
+  transform: translate(25rem);
 }
 
 .carousel__track {

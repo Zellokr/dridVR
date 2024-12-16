@@ -77,7 +77,7 @@ useHead({
           <Banner :data-images="bannerImagesList" />
         </div>
         <ScrollReveal class="col-span-12 row-start-2">
-          <nuxt-link to="/Games">
+          <nuxt-link to="/games">
             <div
               class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14 md:gap-x-8"
             >
@@ -103,7 +103,7 @@ useHead({
           </nuxt-link>
         </ScrollReveal>
         <ScrollReveal class="col-span-12 row-start-3">
-          <nuxt-link to="/Accessories">
+          <nuxt-link to="/accessories">
             <div
               class="grid grid-cols-1 lg:grid-cols-2 place-items-center content-center gap-y-14"
             >

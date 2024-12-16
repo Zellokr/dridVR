@@ -39,13 +39,14 @@ import { Card, CardContent } from "@/components/ui/card";
           class="w-full h-48 object-cover"
           loading="lazy"
         />
-        <div
+        <a
           v-if="game.yt_link"
+          :href="game.yt_link"
           class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
           @click.stop.prevent="handleContent(game.yt_link)"
         >
           <SvgoYoutubeIcon />
-        </div>
+        </a>
         <div class="p-4 h-20 flex justify-between items-center shadow-md">
           <h3 class="text-lg font-semibold text-white truncate">
             {{ game.name || "Nombre del Juego" }}
