@@ -129,7 +129,7 @@ useHead({
           </nuxt-link>
         </ScrollReveal>
         <ScrollReveal class="col-span-12 row-start-4">
-          <nuxt-link to="/Accessories">
+          <nuxt-link to="/accessories">
             <div
               class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14"
             >

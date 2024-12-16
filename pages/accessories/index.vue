@@ -30,7 +30,7 @@ useHead({
     },
     {
       property: "og:url",
-      content: "https://juegosquestbaratos.com/Accessories",
+      content: "https://juegosquestbaratos.com/accessories",
     },
     { property: "og:type", content: "website" },
   ],
@@ -43,7 +43,7 @@ useHead({
         name: "Ofertas de juegos VR para Meta Quest",
         description:
           "Descubre descuentos exclusivos en juegos VR para Meta Quest con enlaces de referidos.",
-        url: "https://juegosquestbaratos.com/Accessories",
+        url: "https://juegosquestbaratos.com/accessories",
         mainEntity: "",
       }),
     },
