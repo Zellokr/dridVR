@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   sitemap: {
     hostname: "https://juegosquestbaratos.com", // Asegúrate de cambiar esto a tu dominio real
     routes: ["/", "/accessories", "games"], // Solo la ruta de la página principal
-    gzip: true,
   },
   nitro: {
     compressPublicAssets: true,
