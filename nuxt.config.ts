@@ -28,6 +28,27 @@ export default defineNuxtConfig({
   },
   nitro: {
     compressPublicAssets: true,
+    routeRules: {
+      "/": {
+        swr: true,
+        cache: {
+          maxAge: 60,
+        },
+      },
+      "/Games": {
+        swr: 3600,
+      },
+      "/Accessories": {
+        swr: 3600,
+      },
+    },
+  },
+  ssr: true,
+  webpack: {
+    optimization: {
+      minimize: true,
+    },
+    optimizeCSS: true,
   },
   gtag: {
     enabled: process.env.NODE_ENV === "production",
@@ -36,7 +57,7 @@ export default defineNuxtConfig({
   svgo: {
     defaultImports: "component",
   },
-  ssr: false,
+
   app: {
     head: {
       htmlAttrs: {
@@ -74,17 +95,24 @@ export default defineNuxtConfig({
       ],
       title: "Los mejores juegos de VR baratos",
       link: [
+        // {
+        //   rel: "preload",
+        //   href: "/img/Banner/banner_image_1.webp",
+        //   as: "image",
+        // },
+        // {
+        //   rel: "preload",
+        //   href: "/img/Banner/banner_image_2.webp",
+        //   as: "image",
+        // },
+        // { rel: "preload", href: "/img/Banner/Behemoth.webp", as: "image" },
+      ],
+      script: [
         {
-          rel: "preload",
-          href: "/img/Banner/banner_image_1.webp",
-          as: "image",
+          src: "-",
+          async: true,
+          type: "text/partytown",
         },
-        {
-          rel: "preload",
-          href: "/img/Banner/banner_image_2.webp",
-          as: "image",
-        },
-        { rel: "preload", href: "/img/Banner/Behemoth.webp", as: "image" },
       ],
     },
   },

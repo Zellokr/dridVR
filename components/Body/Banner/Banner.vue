@@ -49,6 +49,7 @@ const plugin: EmblaPluginType = Autoplay({
             :alt="data.altText"
             class="rounded-xl cursor-pointer"
             @click="handleContent(data)"
+            format="webp"
           />
           <!--          <img-->
           <!--            :src="data.image"-->

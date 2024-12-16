@@ -25,9 +25,6 @@ module.exports = {
       transitionDuration: {
         1500: "1500ms", // 2 segundos
       },
-      fontFamily: {
-        tenon: ["tenon"],
-      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

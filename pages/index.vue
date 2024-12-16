@@ -2,7 +2,6 @@
 import { bannerImagesList } from "~/constants/bannerImageList";
 
 import Banner from "~/components/Body/Banner/Banner.vue";
-import { handleContent } from "~/utils/handleContent";
 
 useHead({
   title: "Ofertas y descuentos en videojuegos VR para Meta Quest",
@@ -72,7 +71,7 @@ useHead({
   <NuxtLayout name="default-layout">
     <div class="pb-14">
       <div
-        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-48 mx-6"
+        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 md:gap-y-28 mx-6"
       >
         <div class="col-span-12 row-start-1">
           <Banner :data-images="bannerImagesList" />
@@ -80,55 +79,51 @@ useHead({
         <ScrollReveal class="col-span-12 row-start-2">
           <nuxt-link to="/Games">
             <div
-              class="grid grid-cols-1 md:grid-cols-2 place-content-between place-items-center"
+              class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14 md:gap-x-8"
             >
-              <!--              <img-->
-              <!--                src="/img/ImagenWebJuegos.webp"-->
-              <!--                alt=""-->
-              <!--                class="rounded-xl h-full"-->
-              <!--              />-->
               <nuxt-img
                 src="/img/ImagenWebJuegos.webp"
                 alt="Imagen de 3 juegos de realidad virtual, el primero es Batman Arkham Shadow, el segundo es Asgard's Wrath y el tercero es Metro Awakening"
-                class="rounded-xl cursor-pointer"
+                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
               />
-              <h1
-                class="text-white font-semibold text-2xl max-w-[30rem] break-words"
-              >
-                En nuestra página web encontrarás una selección exclusiva de los
-                mejores juegos de realidad virtual. A través de nuestra
-                plataforma, te ofrecemos enlaces de afiliados con descuentos
-                especiales, para que disfrutes de tus títulos favoritos al mejor
-                precio. Nuestro objetivo es brindarte una experiencia cómoda y
-                accesible, mientras ahorras en tus compras
-              </h1>
+              <div class="flex flex-col gap-y-4 order-1">
+                <span class="text-white font-bold text-xl md:text-4xl"
+                  >"Juega más, paga menos"</span
+                >
+                <p
+                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
+                >
+                  Cualquier juego que compres desde aquí tendrá un descuento
+                  automático, gracias a mis enlaces de afiliados de Meta, algo
+                  que te hará pagar menos, de forma legal y me estarás apoyando
+                  a mi, directamente
+                </p>
+              </div>
             </div>
           </nuxt-link>
         </ScrollReveal>
         <ScrollReveal class="col-span-12 row-start-3">
           <nuxt-link to="/Accessories">
             <div
-              class="grid grid-cols-1 md:grid-cols-2 place-items-center content-center"
+              class="grid grid-cols-1 lg:grid-cols-2 place-items-center content-center gap-y-14"
             >
-              <h1
-                class="text-white font-semibold text-2xl max-w-[30rem] break-words"
-              >
-                En nuestra página web encontrarás una selección exclusiva de los
-                mejores juegos de realidad virtual. A través de nuestra
-                plataforma, te ofrecemos enlaces de afiliados con descuentos
-                especiales, para que disfrutes de tus títulos favoritos al mejor
-                precio. Nuestro objetivo es brindarte una experiencia cómoda y
-                accesible, mientras ahorras en tus compras
-              </h1>
-              <!--              <img-->
-              <!--                src="/img/visoresmetaquestimagen.webp"-->
-              <!--                alt=""-->
-              <!--                class="rounded-xl h-full"-->
-              <!--              />-->
+              <div class="flex flex-col gap-y-4 lg:order-2 xl:order-2">
+                <span class="text-white font-bold text-xl md:text-4xl"
+                  >"El mejor visor, con regalo"</span
+                >
+                <p
+                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
+                >
+                  Al comprar desde aquí un visor Meta Quest 3, Meta Quest 3S o
+                  Meta Quest Pro, obtendrás 60 euros en tu cartera en la Meta
+                  Store, para que puedas comprar algunos y estrenar tu visor
+                  como se merece.
+                </p>
+              </div>
               <nuxt-img
                 src="/img/visoresmetaquestimagen.webp"
                 alt="Imagen de las gafas de realidad virtual Meta Quest 3"
-                class="rounded-xl cursor-pointer"
+                class="rounded-xl cursor-pointer order-2"
               />
             </div>
           </nuxt-link>
@@ -136,44 +131,30 @@ useHead({
         <ScrollReveal class="col-span-12 row-start-4">
           <nuxt-link to="/Accessories">
             <div
-              class="grid grid-cols-1 md:grid-cols-2 place-content-between place-items-center gap-y-28"
+              class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14"
             >
-              <!--              <img-->
-              <!--                src="/img/kiwidesignbannerweb.webp"-->
-              <!--                alt=""-->
-              <!--                class="rounded-xl h-full"-->
-              <!--              />-->
               <nuxt-img
                 src="/img/kiwidesignbannerweb.webp"
                 alt="Imagen con accesorios de realidad virtual con el marca de accesorios Kiwi Design"
-                class="rounded-xl cursor-pointer"
+                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
               />
-              <h1
-                class="text-white font-semibold text-2xl max-w-[30rem] break-words"
-              >
-                En nuestra página web encontrarás una selección exclusiva de los
-                mejores juegos de realidad virtual. A través de nuestra
-                plataforma, te ofrecemos enlaces de afiliados con descuentos
-                especiales, para que disfrutes de tus títulos favoritos al mejor
-                precio. Nuestro objetivo es brindarte una experiencia cómoda y
-                accesible, mientras ahorras en tus compras
-              </h1>
+              <div class="flex flex-col gap-y-4 order-1">
+                <span class="text-white font-bold text-xl md:text-4xl"
+                  >"Más cómodo, más tiempo"</span
+                >
+                <p
+                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
+                >
+                  Gracias a los accesorios de Kiwi Design tu visor Meta Quest
+                  dará en salto en el confort y en la duración, gracias a sus
+                  correas customs que mejoran la distribución del peso, el punto
+                  de apoyo y además, incluyen una batería extra para extender
+                  tus horas en el mundo virtual.
+                </p>
+              </div>
             </div>
           </nuxt-link>
         </ScrollReveal>
-
-        <!--        <div class="col-span-12 row-start-2">-->
-        <!--          <Visors />-->
-        <!--        </div>-->
-        <!--        <div class="col-span-12 row-start-3">-->
-        <!--          <TitleContent title="Accesorios para tus Meta Quest">-->
-        <!--            <template #subtitle>-->
-        <!--              Mejora tu visor Meta Quest con los siguiente accesorios de Kiwi-->
-        <!--              Design-->
-        <!--            </template>-->
-        <!--          </TitleContent>-->
-        <!--          <CustomGallery :info="accesories" />-->
-        <!--        </div>-->
       </div>
     </div>
   </NuxtLayout>
