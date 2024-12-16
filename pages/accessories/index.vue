@@ -53,23 +53,21 @@ useHead({
 
 <template>
   <NuxtLayout name="default-layout">
-    <ScrollReveal>
-      <div class="pb-14">
-        <div
-          class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4 space-y-8 mx-6"
-        >
-          <div class="col-span-12 row-start-1">
-            <Banner :data-images="bannerImagesList" :start-index="1" />
-          </div>
-          <div class="col-span-12 row-start-2">
-            <Visors />
-            <!--            <CustomGallery :info="visors" :initial-slide="1" />-->
-          </div>
-          <div class="col-span-12 row-start-3">
-            <Accesories />
-          </div>
+    <div class="pb-14">
+      <div
+        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-4 space-y-8 mx-6"
+      >
+        <div class="col-span-12 row-start-1">
+          <Banner :data-images="bannerImagesList" :start-index="1" />
+        </div>
+        <div class="col-span-12 row-start-2">
+          <Visors />
+          <!--            <CustomGallery :info="visors" :initial-slide="1" />-->
+        </div>
+        <div class="col-span-12 row-start-3">
+          <Accesories />
         </div>
       </div>
-    </ScrollReveal>
+    </div>
   </NuxtLayout>
 </template>
