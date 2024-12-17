@@ -32,7 +32,7 @@ const removeTextWhenClickSwitch = () => {
   if (hasVideo.value || hasCrossbuy.value || hasHaptic.value) {
     searchTerm.value = "";
     emit("update:searchTerm", searchTerm.value);
-    if (isMobile) redirectToContent("allgames");
+    // if (isMobile) redirectToContent("allgames");
   }
 };
 
