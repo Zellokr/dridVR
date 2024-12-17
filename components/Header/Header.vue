@@ -8,7 +8,6 @@ import Navbar from "~/components/Navbar/Navbar.vue";
   <div class="w-full mb-12">
     <div
       class="flex flex-col justify-center items-center gap-y-6 py-8 md:gap-y-8"
-      id="allgames"
     >
       <nuxt-img
         src="/img/logo.png"

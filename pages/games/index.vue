@@ -94,6 +94,7 @@ useHead({
         />
       </div>
       <div class="col-span-12 row-start-6">
+        <TitleContent title="Todos los juegos" id="allgames" />
         <ContentGameList
           :filter-search-terms="searchTerm"
           :filter-video="hasVideo"
