@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { bannerImagesList } from "~/constants/bannerImageList";
-import Accesories from "~/components/Body/Accesories/Accesories.vue";
+import Accesories from "~/components/Body/Accessories/Accessories.vue";
 import Visors from "~/components/Body/Visors/Visors.vue";
 import Banner from "~/components/Body/Banner/Banner.vue";
 import visors from "~/constants/visors.json";
@@ -65,7 +65,10 @@ useHead({
           <!--            <CustomGallery :info="visors" :initial-slide="1" />-->
         </div>
         <div class="col-span-12 row-start-3">
-          <Accesories />
+          <Accesories
+            title="KIWI design"
+            subtitle="Los mejores accesorios para tus Meta Quest"
+          />
         </div>
       </div>
     </div>

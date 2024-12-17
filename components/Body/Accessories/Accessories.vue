@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import CardAccesory from "~/components/CustomCards/SmallCard/Card.vue";
 import accesories from "~/constants/accesories.json";
+
+type AccessoriesProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+defineProps<AccessoriesProps>();
 </script>
 
 <template>
   <div class="flex justify-start">
-    <TitleContent title="KIWI design">
-      <template #subtitle>
-        Los mejores accesorios para tus Meta Quest
+    <TitleContent :title="title!">
+      <template v-if="subtitle" #subtitle>
+        {{ subtitle }}
       </template>
     </TitleContent>
   </div>
