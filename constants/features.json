@@ -1,5 +1,13 @@
 [
   {
+    "name": "Dino Hab",
+    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F8411450325609423%2F&cjsku=8411450325609423&widgetid=67409c6d6e73e5d8cacefdc1",
+    "img_link": "./img/Games/75258662_1635770870335383_4584383431585026337_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Party Versus",
     "affiliate_link": "https://www.meta.com/affiliates/5mmzKFXwv",
     "img_link": "./img/Games/38974920_1097787462079581_731283788788588506_n.webp",
@@ -30,13 +38,6 @@
     "yt_link": "https://youtu.be/7zgNt6Shtwg",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-  {
-    "name": "Exercise your Demons!",
-    "affiliate_link": "https://www.meta.com/affiliates/EBYrMxNvs",
-    "img_link": "./img/Games/38984467_1596216931238458_3397907054143763844_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+ 
 ]
