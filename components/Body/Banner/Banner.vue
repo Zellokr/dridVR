@@ -8,7 +8,6 @@ import {
 } from "~/components/ui/carousel";
 import type { BannerProps } from "~/components/Body/Banner/types";
 import Autoplay from "embla-carousel-autoplay";
-import { handleContent } from "~/utils/handleContent";
 
 const props = withDefaults(defineProps<BannerProps>(), {
   orientation: "horizontal",
@@ -43,21 +42,18 @@ const plugin: EmblaPluginType = Autoplay({
   >
     <CarouselContent>
       <CarouselItem v-for="(data, index) in dataImages" :key="index">
-        <div class="flex flex-col group">
+        <a
+          :href="data.url"
+          :target="data.url!.startsWith('http') ? '_blank' : '_self'"
+          class="flex flex-col group"
+        >
           <nuxt-img
             :src="data.image"
             :alt="data.altText"
             class="rounded-xl cursor-pointer"
-            @click="handleContent(data)"
             format="webp"
           />
-          <!--          <img-->
-          <!--            :src="data.image"-->
-          <!--            :alt="data.altText"-->
-          <!--            class="rounded-xl cursor-pointer"-->
-          <!--            @click="handleContent(data)"-->
-          <!--          />-->
-        </div>
+        </a>
       </CarouselItem>
     </CarouselContent>
     <CarouselPrevious

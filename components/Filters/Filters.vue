@@ -2,13 +2,12 @@
 import { ref, computed } from "vue";
 import { redirectToContent } from "~/utils/handleContent";
 const { isMobile } = useDevice();
-// Estado de los filtros y búsqueda
+
 const searchTerm = ref("");
 const hasVideo = ref(false);
 const hasCrossbuy = ref(false);
 const hasHaptic = ref(false);
 
-// Emisión de eventos utilizando defineEmits
 const emit = defineEmits<{
   (event: "update:searchTerm", value: string): void;
   (event: "update:hasVideo", value: boolean): void;
@@ -16,7 +15,6 @@ const emit = defineEmits<{
   (event: "update:hasHaptic", value: boolean): void;
 }>();
 
-// Función para resetear filtros
 const deactivateFilters = () => {
   hasVideo.value = false;
   hasCrossbuy.value = false;
@@ -27,7 +25,6 @@ const deactivateFilters = () => {
   if (isMobile) redirectToContent("allgames");
 };
 
-// Eliminar el texto al activar los filtros
 const removeTextWhenClickSwitch = () => {
   if (hasVideo.value || hasCrossbuy.value || hasHaptic.value) {
     searchTerm.value = "";
@@ -36,7 +33,6 @@ const removeTextWhenClickSwitch = () => {
   }
 };
 
-// Computados para emitir los valores cuando cambian
 const computedSearchTerm = computed(() => {
   return searchTerm.value;
 });
@@ -50,7 +46,6 @@ const computedHasHaptic = computed(() => {
   return hasHaptic.value;
 });
 
-// Emisión de los cambios de los filtros de manera reactiva
 watch(
   [
     computedSearchTerm,
@@ -71,7 +66,6 @@ watch(
   <div
     class="bg-gray-800 grid grid-cols-1 md:grid-cols-2 gap-4 p-4 border border-slate-700 fixed bottom-0 left-0 w-full z-20 gap-x-8 md:relative md:mx-0 rounded-t-lg md:rounded-t-none"
   >
-    <!-- Input de búsqueda -->
     <div class="flex items-center bg-gray-700 text-white rounded-lg w-full">
       <MdiIcon icon="mdiMagnify" class="text-white w-5 h-5 ml-3" />
       <input
@@ -82,12 +76,9 @@ watch(
         class="bg-transparent text-white p-2 pl-3 w-full focus:outline-none"
       />
     </div>
-
-    <!-- Filtros -->
     <div
       class="flex justify-evenly gap-x-8 md:gap-x-0 md:justify-evenly w-full"
     >
-      <!-- Filtro Youtube -->
       <div class="flex flex-col">
         <label for="filterYoutube" class="text-white flex items-center">
           <span class="mr-2">Youtube</span>
@@ -107,8 +98,6 @@ watch(
           ></div>
         </div>
       </div>
-
-      <!-- Filtro CrossBuy -->
       <div class="flex flex-col">
         <label for="filterCrossbuy" class="text-white flex items-center">
           <span class="mr-2">CrossBuy</span>
@@ -128,8 +117,6 @@ watch(
           ></div>
         </div>
       </div>
-
-      <!-- Filtro Haptic -->
       <div class="flex flex-col">
         <label for="filterVibrate" class="text-white flex items-center">
           <span class="mr-2">bHaptics</span>

@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <nav class="flex items-center gap-x-4 font-light">
     <NuxtLink

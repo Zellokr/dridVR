@@ -62,7 +62,6 @@ useHead({
         </div>
         <div class="col-span-12 row-start-2">
           <Visors />
-          <!--            <CustomGallery :info="visors" :initial-slide="1" />-->
         </div>
         <div class="col-span-12 row-start-3">
           <Accesories

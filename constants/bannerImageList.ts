@@ -9,7 +9,7 @@ export const bannerImagesList: DataImage[] = [
   {
     image: "img/Banner/banner_image_1.webp",
     altText: "Banner de videojuegos",
-    url: "",
+    url: "/games",
     contentId: "",
   },
   {

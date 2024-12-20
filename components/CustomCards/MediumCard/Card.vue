@@ -48,9 +48,9 @@ import { Card, CardContent } from "@/components/ui/card";
           <SvgoYoutubeIcon />
         </a>
         <div class="p-4 h-20 flex justify-between items-center shadow-md">
-          <h3 class="text-lg font-semibold text-white truncate">
+          <span class="text-lg font-semibold text-white truncate">
             {{ game.name || "Nombre del Juego" }}
-          </h3>
+          </span>
           <div
             v-if="game.crossbuy || game.bhaptics"
             class="flex items-center gap-x-2 text-white px-2 py-1 rounded-lg shadow-sm"

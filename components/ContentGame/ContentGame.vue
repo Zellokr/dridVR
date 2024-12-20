@@ -15,31 +15,28 @@ const props = defineProps<AllGamesProps>();
 
 const games = ref<SchemaGame[]>([]);
 const loading = ref(false);
-const pageSize = 10; // Número de juegos a cargar por cada "paginación"
+const pageSize = 10;
 let currentPage = 0;
 
 const loadGames = () => {
-  if (loading.value) return; // Evitar cargas múltiples a la vez
+  if (loading.value) return;
   loading.value = true;
 
-  // Cargar una sección de juegos desde el JSON
   const start = currentPage * pageSize;
   const end = start + pageSize;
   const newGames = gamesData.slice(start, end);
 
-  // Simula un retardo para la carga de datos
   setTimeout(() => {
-    games.value.push(...newGames); // Agregar los juegos cargados a la lista
-    currentPage++; // Incrementar la página
-    loading.value = false; // Dejar de cargar
-  }, 100); // Ajusta el tiempo de espera según sea necesario
+    games.value.push(...newGames);
+    currentPage++;
+    loading.value = false;
+  }, 100);
 };
 
-// Alternativa con Intersection Observer
 const observer = ref<IntersectionObserver | null>(null);
 
 onMounted(() => {
-  const sentinel = document.getElementById("scroll-sentinel"); // Elemento al final de la lista
+  const sentinel = document.getElementById("scroll-sentinel");
   if (sentinel) {
     observer.value = new IntersectionObserver(
       ([entry]) => {
@@ -47,33 +44,29 @@ onMounted(() => {
           loadGames();
         }
       },
-      { rootMargin: "100px" }, // Cargar antes de llegar al final
+      { rootMargin: "100px" },
     );
     observer.value.observe(sentinel);
   }
-  loadGames(); // Cargar los primeros juegos al iniciar la página
+  loadGames();
 });
 
 onUnmounted(() => {
   if (observer.value) {
-    observer.value.disconnect(); // Limpiar el observador
+    observer.value.disconnect();
   }
 });
 
 const finalFilteredGames = computed(() => {
-  // Comenzamos con todos los juegos
   let filtered = games.value;
 
-  // Revisar si alguno de los filtros está activo
   const isAnyFilterActive =
     props.filterVideo || props.filterCrossbuy || props.filterHaptic;
 
-  // Si no hay filtros activos, devolver todos los juegos
   if (!isAnyFilterActive && props.filterSearchTerms.trim() === "") {
     return filtered;
   }
 
-  // Aplicar el filtro de búsqueda, si está definido y tiene más de 4 caracteres
   if (
     props.filterSearchTerms.trim() !== "" &&
     props.filterSearchTerms.length >= 4
@@ -83,13 +76,11 @@ const finalFilteredGames = computed(() => {
     );
   }
 
-  // Acumular condiciones de filtros activados
   filtered = gamesData.filter((game: SchemaGame) => {
     const matchesVideo = !props.filterVideo || game.yt_link?.trim() !== "";
     const matchesCrossbuy = !props.filterCrossbuy || game.crossbuy;
     const matchesHaptic = !props.filterHaptic || game.bhaptics;
 
-    // El juego debe cumplir todas las condiciones activas
     return matchesVideo && matchesCrossbuy && matchesHaptic;
   });
 
@@ -100,7 +91,6 @@ const finalFilteredGames = computed(() => {
 <template>
   <div class="min-h-screen flex flex-col">
     <GameList :game-records="finalFilteredGames"></GameList>
-
     <div v-if="loading" class="text-center py-4 text-white">
       Cargando más juegos...
     </div>
@@ -111,6 +101,5 @@ const finalFilteredGames = computed(() => {
       No se ha encontrado el juego...
     </div>
     <div id="scroll-sentinel" class="h-1"></div>
-    <!-- Elemento observado -->
   </div>
 </template>

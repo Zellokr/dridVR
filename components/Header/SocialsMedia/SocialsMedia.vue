@@ -8,7 +8,6 @@
         aria-label="instagram"
       />
     </a>
-
     <a href="https://twitter.com/DriDGG" target="_blank">
       <MdiIcon
         key="twitter"

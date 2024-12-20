@@ -3,12 +3,11 @@ import { Dialog, DialogContent } from "~/components/ui/dialog";
 import { ref } from "vue";
 
 const dialogOpen = ref(false);
-
 const hasOneDayPassed = (lastShown) => {
   const lastDate = new Date(lastShown);
   const now = new Date();
   const diffInMs = now - lastDate;
-  const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
+  const oneDayInMs = 24 * 60 * 60 * 1000;
   return diffInMs >= oneDayInMs;
 };
 
@@ -28,7 +27,6 @@ onMounted(() => {
   <div
     class="min-h-dvh w-full bg-gradient-to-r from-gray-900 via-gray-950 to-gray-900"
   >
-    <!-- Diálogo  -->
     <Dialog v-model:open="dialogOpen">
       <DialogTitle class="sr-only" />
       <DialogContent
