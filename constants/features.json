@@ -1,4 +1,20 @@
 [
+{
+    "name": "I Am Security",
+    "affiliate_link": "https://www.meta.com/affiliates/8CAjJ7nd9",
+    "img_link": "./img/Games/38982588_1963713480780843_7074311938336325947_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Shopenkraft's Magic Goods",
+    "affiliate_link": "https://www.meta.com/affiliates/5F1y5VcxA",
+    "img_link": "./img/Games/38982672_1566555377547365_295253404156200680_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Grimlord",
     "affiliate_link": "https://www.meta.com/affiliates/5hxxqgnMX",
@@ -22,22 +38,7 @@
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-  {
-    "name": "Just Hoops",
-    "affiliate_link": "https://www.meta.com/affiliates/5TJbmTksm",
-    "img_link": "./img/Games/capsule_616x353.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-  {
-    "name": "X8 CONTRA Super Wall STORM",
-    "affiliate_link": "https://www.meta.com/affiliates/9bXcHmXtn",
-    "img_link": "./img/Games/38982539_1256107898840218_9207743311835333620_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+ 
  
 ]
