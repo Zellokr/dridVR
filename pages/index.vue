@@ -84,7 +84,7 @@ useHead({
               <nuxt-img
                 src="/img/ImagenWebJuegos.webp"
                 alt="Imagen de 3 juegos de realidad virtual, el primero es Batman Arkham Shadow, el segundo es Asgard's Wrath y el tercero es Metro Awakening"
-                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
+                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1 object-cover"
               />
               <div class="flex flex-col gap-y-4 order-1">
                 <span class="text-white font-bold text-xl md:text-4xl"

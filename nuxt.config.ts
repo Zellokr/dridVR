@@ -42,7 +42,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  ssr: true,
+  ssr: false,
   webpack: {
     optimization: {
       minimize: true,

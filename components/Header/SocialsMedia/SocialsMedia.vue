@@ -1,36 +1,20 @@
+<script setup lang="ts">
+import { socialMediaList } from "~/constants/socialMedia";
+</script>
+
 <template>
   <transition-group name="scale" tag="div" class="flex space-x-3.5">
-    <a href="https://www.instagram.com/dridgg/" target="_blank">
-      <MdiIcon
-        key="instagram"
-        icon="mdiInstagram"
-        class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
-        aria-label="instagram"
-      />
-    </a>
-    <a href="https://twitter.com/DriDGG" target="_blank">
-      <MdiIcon
-        key="twitter"
-        icon="mdiTwitter"
-        class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
-        aria-label="twitter"
-      />
-    </a>
-    <a href="https://www.youtube.com/@dridvr" target="_blank">
-      <MdiIcon
-        key="youtube"
-        icon="mdiYoutube"
-        class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
-        aria-label="youtube"
-      />
-    </a>
-    <a href="https://www.twitch.tv/dridgg" target="_blank">
-      <MdiIcon
-        key="twitch"
-        icon="mdiTwitch"
-        class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
-        aria-label="twitch"
-      />
-    </a>
+    <div
+      v-for="(social, index) in socialMediaList as any"
+      :key="social.id || index"
+    >
+      <a :href="social.url" target="_blank">
+        <MdiIcon
+          :icon="social.icon"
+          class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
+          :aria-label="social.altText"
+        />
+      </a>
+    </div>
   </transition-group>
 </template>
