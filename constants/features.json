@@ -1,4 +1,13 @@
 [
+
+{
+    "name": "Premier League Player",
+    "affiliate_link": "https://www.meta.com/affiliates/2AWQ3xQUyf",
+    "img_link": "./img/Games/39031640_946747257310074_1601593241668887601_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
 {
     "name": "I Am Security",
     "affiliate_link": "https://www.meta.com/affiliates/8CAjJ7nd9",
@@ -30,15 +39,8 @@
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-  {
-    "name": "Party Versus",
-    "affiliate_link": "https://www.meta.com/affiliates/5mmzKFXwv",
-    "img_link": "./img/Games/38974920_1097787462079581_731283788788588506_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+  
  
  
 ]
