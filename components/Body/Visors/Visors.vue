@@ -12,7 +12,7 @@ import Card from "~/components/CustomCards/MediumCard/Card.vue";
       <template #subtitle>
         <p>
           Con la compra de cualquier visor... ¡Obtienes
-          <span class="text-yellow-400">60€</span> para gastar en la tienda de
+          <span class="text-yellow-400">30€</span> para gastar en la tienda de
           Meta!
         </p>
       </template>
