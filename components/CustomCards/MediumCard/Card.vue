@@ -36,7 +36,7 @@ import { Card, CardContent } from "@/components/ui/card";
         <img
           :src="game.img_link"
           alt="Game Image"
-          class="w-full h-48 object-cover"
+          class="w-full h-64 object-cover"
           loading="lazy"
         />
         <a
