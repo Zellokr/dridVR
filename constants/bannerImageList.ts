@@ -19,13 +19,9 @@ export const bannerImagesList: DataImage[] = [
   },
 
   {
-    image: "img/Banner/ActionHero.webp",
-    altText: "Videojuego de realidad virtual llamado Action Hero",
-    url: "https://www.meta.com/affiliates/XrpHXZ5XM",
-  },
-  {
-    image: "img/Banner/Behemoth.webp",
-    altText: "Videojuego de realidad virtual llamado Behemonth",
-    url: "https://www.meta.com/affiliates/5V5SDnsqk",
-  },
+    image: "img/Banner/bannerMadison.webp",
+    altText: "Videojuego de realidad virtual llamado Madison",
+    url: "https://www.meta.com/affiliates/C8U9uZbvT",
+  }
+  
 ];
