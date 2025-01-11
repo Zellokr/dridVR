@@ -5,7 +5,6 @@ import Features from "~/components/Body/Features/Features.vue";
 import { bannerImagesList } from "~/constants/bannerImageList";
 import Banner from "~/components/Body/Banner/Banner.vue";
 import featureGames from "~/constants/features.json";
-import featureGoty from "~/constants/goty.json";
 
 const searchTerm = ref("");
 const hasVideo = ref(false);
@@ -78,14 +77,14 @@ useHead({
           subtitle="Los últimos lanzamientos para tu visor Meta Quest"
         />
       </div>
-      <div class="col-span-12 row-start-4">
-        <Features
-          :data-list="featureGoty"
-          title="GOTY"
-          subtitle="Nominados como mejor juego del año 2024"
-        />
-      </div>
-      <div class="col-span-12 row-start-5 rounded-md sticky top-0 z-20">
+      <!--      <div class="col-span-12 row-start-4">-->
+      <!--        <Features-->
+      <!--          :data-list="featureGoty"-->
+      <!--          title="GOTY"-->
+      <!--          subtitle="Nominados como mejor juego del año 2024"-->
+      <!--        />-->
+      <!--      </div>-->
+      <div class="col-span-12 row-start-4 rounded-md sticky top-0 z-20">
         <Filters
           v-model:searchTerm="searchTerm"
           v-model:hasVideo="hasVideo"
@@ -93,7 +92,7 @@ useHead({
           v-model:hasHaptic="hasHaptic"
         />
       </div>
-      <div class="col-span-12 row-start-6">
+      <div class="col-span-12 row-start-5">
         <TitleContent title="Todos los juegos" id="allgames" />
         <ContentGameList
           :filter-search-terms="searchTerm"

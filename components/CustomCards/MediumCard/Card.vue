@@ -14,7 +14,7 @@ export type GameSchema = {
 
 type CardProps = {
   game: GameSchema;
-} & { class?: HTMLAttributes["class"] };
+} & { class?: HTMLAttributes["class"]; sizeImage?: string };
 
 const props = defineProps<CardProps>();
 
@@ -33,10 +33,11 @@ import { Card, CardContent } from "@/components/ui/card";
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
-        <img
+        <nuxt-img
           :src="game.img_link"
           alt="Game Image"
-          class="w-full h-64 object-cover"
+          class="w-full object-cover"
+          :class="[sizeImage ? `h-${sizeImage}` : 'h-52']"
           loading="lazy"
         />
         <a
