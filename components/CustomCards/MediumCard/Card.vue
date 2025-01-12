@@ -14,7 +14,7 @@ export type GameSchema = {
 
 type CardProps = {
   game: GameSchema;
-} & { class?: HTMLAttributes["class"]; sizeImage: string };
+} & { class?: HTMLAttributes["class"]; sizeImage?: string };
 
 const props = defineProps<CardProps>();
 
