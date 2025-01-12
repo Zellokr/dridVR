@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import CardAccesory from "~/components/CustomCards/SmallCard/Card.vue";
-import accesories from "~/constants/accesories.json";
+import HandleTabs from "~/components/tabs/HandleTabs/HandleTabs.vue";
+import type { Tab } from "~/components/tabs/HandleTabs/types";
+import Kiwi from "~/components/tabs/HandleTabs/Kiwi/Kiwi.vue";
 
 type AccessoriesProps = {
   title?: string;
@@ -8,6 +9,14 @@ type AccessoriesProps = {
 };
 
 defineProps<AccessoriesProps>();
+
+const tabs: Tab[] = [
+  {
+    value: "Kiwi Design",
+    label: "Kiwi Design",
+    component: Kiwi,
+  },
+];
 </script>
 
 <template>
@@ -18,11 +27,5 @@ defineProps<AccessoriesProps>();
       </template>
     </TitleContent>
   </div>
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 cursor-pointer"
-  >
-    <div v-for="accesory in accesories" :key="accesory.id">
-      <CardAccesory :content="accesory" />
-    </div>
-  </div>
+  <HandleTabs :default-value="tabs[0].value" :tabs="tabs"> </HandleTabs>
 </template>

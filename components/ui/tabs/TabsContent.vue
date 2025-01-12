@@ -18,7 +18,7 @@ const delegatedProps = computed(() => {
   <TabsContent
     :class="
       cn(
-        'mt-2 relative ring-offset-white h-[52rem] max-h-[52rem] sm:h-[28rem] sm:max-h-[28rem] md:h-[48rem] md:max-h-[48rem] lg:h-[28rem] lg:max-h-[28rem] overflow-y-auto  bg-gray-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300',
+        'mt-2 relative ring-offset-white h-[52rem] max-h-[52rem] sm:h-[28rem] sm:max-h-[28rem] md:h-[52rem] md:max-h-[52rem] lg:h-[36rem] lg:max-h-[36rem] overflow-y-auto  bg-gray-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300',
         props.class,
       )
     "
