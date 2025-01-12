@@ -11,6 +11,7 @@ import { socialMediaList } from "~/constants/socialMedia";
       <a :href="social.url" target="_blank">
         <MdiIcon
           :icon="social.icon"
+          preserve-aspect-ratio="xMaxYMax slice"
           class="text-white w-8 h-8 cursor-pointer transition-transform duration-200 hover:scale-125"
           :aria-label="social.altText"
         />
