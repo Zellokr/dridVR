@@ -50,7 +50,7 @@ const plugin: EmblaPluginType = Autoplay({
           <nuxt-img
             :src="data.image"
             :alt="data.altText"
-            class="rounded-xl cursor-pointer"
+            class="rounded-xl cursor-pointer object-cover"
             format="webp"
           />
         </a>
