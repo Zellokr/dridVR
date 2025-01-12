@@ -21,6 +21,7 @@ defineProps<{
               <span class="text-sm md:text-lg">{{ tab.label }}</span>
 
               <MdiIcon
+                preserve-aspect-ratio="xMaxYMax slice"
                 v-if="tab.icon && !isMobile"
                 :icon="tab.icon"
                 class="text-white w-6 h-6"

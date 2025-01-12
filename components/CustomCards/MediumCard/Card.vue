@@ -59,10 +59,12 @@ import { Card, CardContent } from "@/components/ui/card";
             <MdiIcon
               v-if="game.crossbuy"
               icon="mdiSync"
+              preserve-aspect-ratio="xMaxYMax slice"
               class="text-white w-4 h-4"
             />
             <MdiIcon
               v-if="game.bhaptics"
+              preserve-aspect-ratio="xMaxYMax slice"
               icon="mdiVibrate"
               class="text-white w-4 h-4"
             />
