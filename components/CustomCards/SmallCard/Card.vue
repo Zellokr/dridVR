@@ -20,7 +20,7 @@ defineProps<CardProps>();
   >
     <div class="grid grid-cols-12 gap-4 items-center">
       <div class="col-span-4 sm:col-span-3">
-        <nuxt-img
+        <img
           :src="content.img_link"
           :alt="content.name"
           class="w-full sm:h-24 rounded-md object-cover transition-transform duration-300 group-hover:scale-105"
