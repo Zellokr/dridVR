@@ -1,14 +1,6 @@
 [
 
 
-{
-    "name": "Epyka",
-    "affiliate_link": "https://www.tkqlhce.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F8266573286749577%2F&cjsku=8266573286749577",
-    "img_link": "./img/Games/65402515_1274507043116638_5507809731882587397_n.jpg",
-    "yt_link": "https://youtu.be/PCp66SYIc_U",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
   {
     "name": "GRIM",
     "affiliate_link": "https://www.tkqlhce.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6488902397838458%2F&cjsku=6488902397838458",
@@ -33,10 +25,18 @@
     "crossbuy": 0,
     "bhaptics": 0
   }, 
-  {
-    "name": "Shardfall",
-    "affiliate_link": "https://www.meta.com/affiliates/8SbKqx2df",
-    "img_link": "./img/Games/38974502_1134243121562565_3775105874734327496_n.jpg",
+{
+    "name": "Beyond Blue: After the Storm",
+    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2448060205267927%2F&cjsku=2448060205267927&widgetid=67409c6d6e73e5d8cacefdc1",
+    "img_link": "./img/Games/beyondblueafterthestorm.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "Fitness Fable",
+    "affiliate_link": "https://www.jdoqocy.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6807522865968285%2F&cjsku=6807522865968285",
+    "img_link": "./img/Games/fitnessfable.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
