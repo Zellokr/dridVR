@@ -3,9 +3,9 @@ import type { DataImage } from "~/components/Body/Banner/types";
 export const bannerImagesList: DataImage[] = [
   
   {
-    image: "img/Banner/banner_batman.webp",
+    image: "img/Banner/AlienBanner.webp",
     altText: "Banner de videojuegos",
-    url: "https://www.meta.com/affiliates/9NewPp4bR",
+    url: "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F24882487241367228%2F&cjsku=24882487241367228&widgetid=67409c6d6e73e5d8cacefdc1",
     contentId: "",
   },
   {
