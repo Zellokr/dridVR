@@ -2,11 +2,26 @@
 
 
  
-  
-    {
-    "name": "Ghosts Photographers",
-    "affiliate_link": "https://www.meta.com/affiliates/5q7E8uDer",
-    "img_link": "./img/Games/473397316_1186177939788225_1756666180850751384_n.jpg",
+  {
+    "name": "Horror Simulator",
+    "affiliate_link": "https://www.meta.com/affiliates/66WxHjPhr",
+    "img_link": "./img/Games/473392301_1604363023773514_3745445134538776615_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+ {
+    "name": "Pixel Dungeon",
+    "affiliate_link": "https://www.meta.com/affiliates/727DW56xg",
+    "img_link": "./img/Games/39003280_970588081770360_7637084800045220338_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+ {
+    "name": "Selina: Mind at Large",
+    "affiliate_link": "https://www.meta.com/affiliates/YnZJm9H83",
+    "img_link": "./img/Games/86621346_478560641356696_1295891030396117628_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -20,25 +35,9 @@
     "bhaptics": 0
   },
 {
-    "name": "Selina: Mind at Large",
-    "affiliate_link": "https://www.meta.com/affiliates/YnZJm9H83",
-    "img_link": "./img/Games/86621346_478560641356696_1295891030396117628_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Alien: Rogue Incursion",
-    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F24882487241367228%2F&cjsku=24882487241367228&widgetid=67409c6d6e73e5d8cacefdc1",
-    "img_link": "./img/Games/38974750_286589487870366_8249508936193486920_n.jpg",
-    "yt_link": "https://youtu.be/5bfVC_olvEs?si=PpAUInM2IX6qFiPb",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
- {
-    "name": "Heart-Lung Machine",
-    "affiliate_link": "https://www.meta.com/affiliates/U55zXeTwf",
-    "img_link": "./img/Games/473391911_620446883790848_601696746680586824_n.jpg",
+    "name": "Ghosts Photographers",
+    "affiliate_link": "https://www.meta.com/affiliates/5q7E8uDer",
+    "img_link": "./img/Games/473397316_1186177939788225_1756666180850751384_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
