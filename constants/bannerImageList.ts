@@ -3,9 +3,9 @@ import type { DataImage } from "~/components/Body/Banner/types";
 export const bannerImagesList: DataImage[] = [
   
   {
-    image: "img/Banner/AlienBanner.webp",
+    image: "img/Banner/Exfilzone.webp",
     altText: "Banner de videojuegos",
-    url: "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F24882487241367228%2F&cjsku=24882487241367228&widgetid=67409c6d6e73e5d8cacefdc1",
+    url: "https://www.meta.com/affiliates/5UwuzwgNo",
     contentId: "",
   },
   {
@@ -15,9 +15,9 @@ export const bannerImagesList: DataImage[] = [
     contentId: "",
   },
   {
-    image: "img/Banner/grimbanner.jpg",
+    image: "img/Banner/SilentNorth.webp",
     altText: "Videojuego de realidad virtual llamado GRIM",
-    url: "https://www.tkqlhce.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6488902397838458%2F&cjsku=6488902397838458",
+    url: "https://www.kqzyfj.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6245697225519539%2F&cjsku=6245697225519539",
   },
   {
     image: "img/Banner/banner_image_2.webp",
@@ -26,9 +26,9 @@ export const bannerImagesList: DataImage[] = [
   },
 
   {
-    image: "img/Banner/bannerMadison.webp",
+    image: "img/Banner/Allonboard.webp",
     altText: "Videojuego de realidad virtual llamado Madison",
-    url: "https://www.meta.com/affiliates/C8U9uZbvT",
+    url: "https://www.meta.com/affiliates/BZLoLXW5W",
   }
   
 ];
