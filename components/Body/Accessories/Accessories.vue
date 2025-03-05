@@ -2,6 +2,7 @@
 import HandleTabs from "~/components/tabs/HandleTabs/HandleTabs.vue";
 import type { Tab } from "~/components/tabs/HandleTabs/types";
 import Kiwi from "~/components/tabs/HandleTabs/Kiwi/Kiwi.vue";
+import Wield from "~/components/tabs/HandleTabs/Wield/Wield.vue";
 
 type AccessoriesProps = {
   title?: string;
@@ -11,6 +12,11 @@ type AccessoriesProps = {
 defineProps<AccessoriesProps>();
 
 const tabs: Tab[] = [
+  {
+    value: "WieldVR",
+    label: "WieldVR",
+    component: Wield,
+  },
   {
     value: "Kiwi Design",
     label: "Kiwi Design",

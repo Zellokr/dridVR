@@ -3,7 +3,6 @@ import { bannerImagesList } from "~/constants/bannerImageList";
 import Accesories from "~/components/Body/Accessories/Accessories.vue";
 import Visors from "~/components/Body/Visors/Visors.vue";
 import Banner from "~/components/Body/Banner/Banner.vue";
-import visors from "~/constants/visors.json";
 
 useHead({
   title: "Accesorios para gafas de realidad virtual",
@@ -65,7 +64,7 @@ useHead({
         </div>
         <div class="col-span-12 row-start-3">
           <Accesories
-            title="KIWI design"
+            title="Accesorios VR"
             subtitle="Los mejores accesorios para tus Meta Quest"
           />
         </div>

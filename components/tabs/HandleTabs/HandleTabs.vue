@@ -10,36 +10,32 @@ defineProps<{
 }>();
 </script>
 
-<style scoped></style>
 <template>
-  <div class="mt-4">
-    <client-only>
-      <Tabs :default-value="defaultValue">
-        <TabsList class="grid w-full lg:grid-cols-5 grid-cols-3 gap-x-1">
-          <TabsTrigger v-for="tab in tabs" :key="tab.value" :value="tab.value">
-            <div class="inline-flex items-center gap-x-4">
-              <span class="text-sm md:text-lg">{{ tab.label }}</span>
+  <client-only>
+    <Tabs :default-value="defaultValue">
+      <TabsList class="grid w-full lg:grid-cols-5 grid-cols-3 gap-x-1">
+        <TabsTrigger v-for="tab in tabs" :key="tab.value" :value="tab.value">
+          <div class="inline-flex items-center gap-x-4">
+            <span class="text-sm md:text-lg">{{ tab.label }}</span>
 
-              <MdiIcon
-                preserve-aspect-ratio="xMaxYMax slice"
-                v-if="tab.icon && !isMobile"
-                :icon="tab.icon"
-                class="text-white w-6 h-6"
-              />
-            </div>
-            <div></div>
-          </TabsTrigger>
-        </TabsList>
+            <MdiIcon
+              preserve-aspect-ratio="xMaxYMax slice"
+              v-if="tab.icon && !isMobile"
+              :icon="tab.icon"
+              class="text-white w-6 h-6"
+            />
+          </div>
+        </TabsTrigger>
+      </TabsList>
 
-        <TabsContent
-          v-for="tab in tabs"
-          :key="tab.value"
-          :value="tab.value"
-          class="p-4 shadow-xl"
-        >
-          <component :is="tab.component!" />
-        </TabsContent>
-      </Tabs>
-    </client-only>
-  </div>
+      <TabsContent
+        v-for="tab in tabs"
+        :key="tab.value"
+        :value="tab.value"
+        class="p-4 shadow-xl"
+      >
+        <component :is="tab.component!" />
+      </TabsContent>
+    </Tabs>
+  </client-only>
 </template>

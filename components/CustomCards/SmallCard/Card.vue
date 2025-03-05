@@ -4,6 +4,7 @@ type SmallCardSchema = {
   affiliate_link: string;
   img_link: string;
   amazon_link?: string;
+  logo?: string;
 };
 
 type CardProps = {
@@ -40,7 +41,7 @@ defineProps<CardProps>();
               <a :href="content.affiliate_link" target="_blank">
                 <nuxt-img
                   class="w-8 h-8 cursor-pointer transition-transform duration-300 hover:scale-110"
-                  src="/icons/kiwi.webp"
+                  :src="content.logo"
                 />
               </a>
               <a
