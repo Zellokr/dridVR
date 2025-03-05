@@ -5,7 +5,7 @@
     "img_link": "./img/Accesories/Quest3whitebgweb.webp",
     "category": "Strap",
     "brand": "WieldVR",
-    "logo": "./icons/wield.webp"
+    "logo": "./Icons/wield.webp"
   },
   {
     "name": "Additional Controller Mounts",
@@ -13,7 +13,7 @@
     "img_link": "./img/Accesories/PSVR2TMcontrollerGrip.webp",
     "category": "Strap",
     "brand": "WieldVR",
-    "logo": "./icons/wield.webp"
+    "logo": "./Icons/wield.webp"
   },
   {
     "name": "Premium Neck Sling",
@@ -21,6 +21,6 @@
     "img_link": "./img/Accesories/PremiumSling.webp",
     "category": "Strap",
     "brand": "WieldVR",
-    "logo": "./icons/wield.webp"
+    "logo": "./Icons/wield.webp"
   }
 ]
