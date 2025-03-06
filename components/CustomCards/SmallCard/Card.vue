@@ -28,22 +28,21 @@ defineProps<{ content: Accessory }>();
       Para: {{ platform }}
     </div>
     <span class="text-green-400 font-bold">{{ content.discountCode }}</span>
-
-    <div class="flex items-center gap-4 mt-4 rounded-full p-2">
-      <span class="font-bold text-lg text-white">Cómpralo en: </span>
+    <span class="font-bold text-lg text-white">Cómpralo en: </span>
+    <div class="flex items-center gap-4 mt-2 p-2">
       <a
         v-if="content.affiliate_link"
         :href="content.affiliate_link"
         target="_blank"
       >
         <nuxt-img
-          class="w-12 h-11 hover:scale-110 transition-transform rounded-full"
+          class="w-12 h-11 hover:scale-110 transition-transform"
           :src="content.logo"
         />
       </a>
       <a v-if="content.amazon_link" :href="content.amazon_link" target="_blank">
         <nuxt-img
-          class="w-12 h-11 hover:scale-110 transition-transform rounded-full"
+          class="w-12 h-11 hover:scale-110 transition-transform"
           src="/icons/AmazonIcon.webp"
         />
       </a>
