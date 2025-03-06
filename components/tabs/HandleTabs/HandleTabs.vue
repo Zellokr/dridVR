@@ -34,7 +34,7 @@ defineProps<{
         :value="tab.value"
         class="p-4 shadow-xl"
       >
-        <component :is="tab.component!" />
+        <component :is="tab.component!" v-bind="tab.props!" />
       </TabsContent>
     </Tabs>
   </client-only>

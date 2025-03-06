@@ -1,0 +1,18 @@
+type Visors = {
+  name: string;
+  affiliate_link: string;
+  img_link: string;
+};
+export const visors: Visors[] = [
+  {
+    name: "Meta Quest 3",
+    affiliate_link: "https://www.meta.com/affiliates/DQCXmgkma",
+    img_link:
+      "https://lookaside.fbsbx.com/elementpath/media/?media_id=157327897433582&version=1730492448&transcode_extension=webp",
+  },
+  {
+    name: "Meta Quest 3S",
+    affiliate_link: "https://www.meta.com/affiliates/AbzRrTmFY",
+    img_link: "https://static.xx.fbcdn.net/rsrc.php/v1/yV/r/DIQNob5e8y6.jpg",
+  },
+];

@@ -73,7 +73,4 @@ import { Card, CardContent } from "@/components/ui/card";
       </a>
     </CardContent>
   </Card>
-  <!--  <div class="block cursor-pointer shadow-3xl"></div>-->
 </template>
-
-<style scoped></style>

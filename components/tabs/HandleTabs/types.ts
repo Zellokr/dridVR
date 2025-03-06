@@ -5,4 +5,5 @@ export type Tab = {
   label: string;
   component?: ReturnType<typeof defineComponent>;
   icon?: MdiIconString;
+  props?: Record<string, any>;
 };

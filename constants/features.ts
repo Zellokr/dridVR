@@ -1,0 +1,47 @@
+import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
+
+export const featureGames: GameSchema[] = [
+  {
+    name: "Farming Simulator VR",
+    affiliate_link:
+      "https://www.tkqlhce.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6951948781556245%2F&cjsku=6951948781556245",
+    img_link: "./img/Games/39035391_475553498837357_5557784264540528780_n.jpg",
+    yt_link: "https://youtu.be/XRAFS3p6lK4",
+    crossbuy: false,
+    bhaptics: false,
+  },
+  {
+    name: "Horror Simulator",
+    affiliate_link: "https://www.meta.com/affiliates/66WxHjPhr",
+    img_link:
+      "./img/Games/473392301_1604363023773514_3745445134538776615_n.jpg",
+    yt_link: "",
+    crossbuy: false,
+    bhaptics: false,
+  },
+  {
+    name: "Pixel Dungeon",
+    affiliate_link: "https://www.meta.com/affiliates/727DW56xg",
+    img_link: "./img/Games/39003280_970588081770360_7637084800045220338_n.jpg",
+    yt_link: "",
+    crossbuy: false,
+    bhaptics: false,
+  },
+  {
+    name: "All on Board!",
+    affiliate_link: "https://www.meta.com/affiliates/BZLoLXW5W",
+    img_link: "./img/Games/39001673_1065436804464818_7303136108083252172_n.jpg",
+    yt_link: "",
+    crossbuy: false,
+    bhaptics: false,
+  },
+  {
+    name: "Detective VR",
+    affiliate_link:
+      "https://www.jdoqocy.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F9146074265423412%2F&cjsku=9146074265423412",
+    img_link: "./img/Games/75287554_1262133815097073_8638913783606384385_n.jpg",
+    yt_link: "https://youtu.be/P6qS8wo2ndI?si=GuNMtICaJR2PhUbJ",
+    crossbuy: false,
+    bhaptics: false,
+  },
+];
