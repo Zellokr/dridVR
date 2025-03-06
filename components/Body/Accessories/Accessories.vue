@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HandleTabs from "~/components/tabs/HandleTabs/HandleTabs.vue";
-import Content from "~/components/Tabs/HandleTabs/AccessoryTab/AccessoryTab.vue";
+import AccessoryTab from "~/components/Tabs/HandleTabs/AccessoryTab/AccessoryTab.vue";
 
 import type { Tab } from "~/components/tabs/HandleTabs/types";
 import { accessories } from "~/constants/accessories";
@@ -24,13 +24,13 @@ const tabs: Tab[] = [
   {
     value: "WieldVR",
     label: "WieldVR",
-    component: Content,
+    component: AccessoryTab,
     props: { accessories: wieldVrAccessories.value },
   },
   {
     value: "Kiwi Design",
     label: "Kiwi Design",
-    component: Content,
+    component: AccessoryTab,
     props: { accessories: kiwiAccesories.value },
   },
 ];
