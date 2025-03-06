@@ -1,7 +1,6 @@
 import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
-  
   {
     image: "img/Banner/Exfilzone.webp",
     altText: "Banner de videojuegos",
@@ -29,6 +28,5 @@ export const bannerImagesList: DataImage[] = [
     image: "img/Banner/Allonboard.webp",
     altText: "Videojuego de realidad virtual llamado Madison",
     url: "https://www.meta.com/affiliates/BZLoLXW5W",
-  }
-  
+  },
 ];

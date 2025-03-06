@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SchemaGame } from "~/constants/types";
+import type { SchemaGame } from "~/utils/types";
 import Card from "~/components/CustomCards/MediumCard/Card.vue";
 
 type CardListProps = {
