@@ -20,7 +20,14 @@ defineProps<{ content: Accessory }>();
     >
       {{ content.name }}
     </span>
-    <span class="text-blue-400 text-sm"> Meta Quest 3 </span>
+    <div
+      v-for="(platform, index) in content.platforms"
+      :key="index"
+      class="text-blue-400 text-sm break-words"
+    >
+      Para: {{ platform }}
+    </div>
+    <span class="text-green-400 font-bold">{{ content.discountCode }}</span>
 
     <div class="flex items-center gap-4 mt-4 rounded-full p-2">
       <span class="font-bold text-lg text-white">Cómpralo en: </span>

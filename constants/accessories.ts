@@ -6,6 +6,8 @@ export type Accessory = {
   category: string;
   brand: string;
   logo: string;
+  platforms: string[];
+  discountCode?: string;
 };
 
 export const accessories: Accessory[] = [
@@ -20,6 +22,7 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "H4 Boost Halo Battery Strap ",
@@ -31,6 +34,7 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "K4 Comfort Strap ",
@@ -43,6 +47,7 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "K4 Boost Battery Strap ",
@@ -54,6 +59,7 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "G4 Pro Performance Controller Grips ",
@@ -66,6 +72,7 @@ export const accessories: Accessory[] = [
     category: "Mandos",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "G4 Max Extended Controller Grip",
@@ -77,6 +84,7 @@ export const accessories: Accessory[] = [
     category: "Mandos",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "V3 Facial Interface",
@@ -88,6 +96,7 @@ export const accessories: Accessory[] = [
     category: "Facial",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "P4 Portable Carrying Case",
@@ -97,6 +106,7 @@ export const accessories: Accessory[] = [
     category: "Varios",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "Vertical Charging Stand",
@@ -106,6 +116,7 @@ export const accessories: Accessory[] = [
     category: "Varios",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "Link Cable with 5Gbps Super Speed",
@@ -115,6 +126,7 @@ export const accessories: Accessory[] = [
     category: "Pcvr",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "V2 VR Pulley System",
@@ -125,6 +137,7 @@ export const accessories: Accessory[] = [
     category: "Pcvr",
     brand: "Kiwi design",
     logo: "/icons/kiwi.webp",
+    platforms: ["Meta Quest 3, Quest 3S"],
   },
   {
     name: "Wield VR OneStock",
@@ -133,6 +146,8 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "WieldVR",
     logo: "/icons/wield.webp",
+    platforms: ["Meta Quest 2, 3, Valve Index, PSVR2"],
+    discountCode: "Código descuento: DRIDVR",
   },
   {
     name: "Additional Controller Mounts",
@@ -141,6 +156,8 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "WieldVR",
     logo: "/icons/wield.webp",
+    platforms: ["Meta Quest 2, 3, Valve Index, PSVR2"],
+    discountCode: "Código descuento: DRIDVR",
   },
   {
     name: "Premium Neck Sling",
@@ -149,5 +166,7 @@ export const accessories: Accessory[] = [
     category: "Strap",
     brand: "WieldVR",
     logo: "/icons/wield.webp",
+    platforms: ["Meta Quest 2, 3, Valve Index, PSVR2"],
+    discountCode: "Código descuento: DRIDVR",
   },
 ];
