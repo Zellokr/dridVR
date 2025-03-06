@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import CardAccesory from "~/components/CustomCards/SmallCard/Card.vue";
+
 import type { Accessory } from "~/constants/accessories";
 
 type ContentProps = {
-  accessories: Accessory[];
+  accessories?: Accessory[];
 };
 
 defineProps<ContentProps>();
