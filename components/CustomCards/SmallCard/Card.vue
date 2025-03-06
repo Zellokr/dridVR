@@ -25,7 +25,7 @@ defineProps<{ content: Accessory }>();
       :key="index"
       class="text-blue-400 text-sm break-words"
     >
-      Para: {{ platform }}
+      {{ platform }}
     </div>
     <span class="text-green-400 font-bold">{{ content.discountCode }}</span>
     <span class="font-bold text-lg text-white">Cómpralo en: </span>
