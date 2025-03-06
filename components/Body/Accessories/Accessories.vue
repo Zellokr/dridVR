@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import HandleTabs from "~/components/tabs/HandleTabs/HandleTabs.vue";
-import type { Tab } from "~/components/tabs/HandleTabs/types";
-
-import { accessories } from "~/constants/accessories";
 import Content from "~/components/Tabs/HandleTabs/AccessoryTab/AccessoryTab.vue";
+
+import type { Tab } from "~/components/tabs/HandleTabs/types";
+import { accessories } from "~/constants/accessories";
 
 type AccessoriesProps = {
   title?: string;
