@@ -2,9 +2,25 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
   {
+    "name": "Symphoni",
+    "affiliate_link": "https://www.meta.com/affiliates/DPcKYKFRe",
+    "img_link": "./img/Games/473391904_3707250382829048_3886230964039064979_n.jpg",
+    "yt_link": "",
+    "crossbuy": false,
+    "bhaptics": false,
+  },
+   {
+    "name": "Rogue Piñatas: VRMageddon",
+    "affiliate_link": "https://www.meta.com/affiliates/A47a9B9LR",
+    "img_link": "./img/Games/38974573_2438397013163309_3925724153479588440_n.jpg",
+    "yt_link": "",
+    "crossbuy": false,
+    "bhaptics": false,
+  },
+  
+  {
     name: "Farming Simulator VR",
-    affiliate_link:
-      "https://www.tkqlhce.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6951948781556245%2F&cjsku=6951948781556245",
+    affiliate_link: "https://www.meta.com/affiliates/AL1Qk8tz4",
     img_link: "./img/Games/39035391_475553498837357_5557784264540528780_n.jpg",
     yt_link: "https://youtu.be/XRAFS3p6lK4",
     crossbuy: false,
@@ -26,22 +42,5 @@ export const featureGames: GameSchema[] = [
     yt_link: "",
     crossbuy: false,
     bhaptics: false,
-  },
-  {
-    name: "All on Board!",
-    affiliate_link: "https://www.meta.com/affiliates/BZLoLXW5W",
-    img_link: "./img/Games/39001673_1065436804464818_7303136108083252172_n.jpg",
-    yt_link: "",
-    crossbuy: false,
-    bhaptics: false,
-  },
-  {
-    name: "Detective VR",
-    affiliate_link:
-      "https://www.jdoqocy.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F9146074265423412%2F&cjsku=9146074265423412",
-    img_link: "./img/Games/75287554_1262133815097073_8638913783606384385_n.jpg",
-    yt_link: "https://youtu.be/P6qS8wo2ndI?si=GuNMtICaJR2PhUbJ",
-    crossbuy: false,
-    bhaptics: false,
-  },
+  } 
 ];
