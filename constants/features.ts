@@ -2,6 +2,22 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
   {
+    "name": "Path of Fury - Episode I: Tetsuo's Tower",
+    "affiliate_link": "https://www.meta.com/affiliates/9uuEUvNNc",
+    "img_link": "./img/Games/39003251_887905526469693_7022835035658312726_n.jpg",
+    "yt_link": "https://youtu.be/IsoL98puCvU",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Deep Cuts",
+    "affiliate_link": "https://www.meta.com/affiliates/ZHDwvhfSw",
+    "img_link": "./img/Games/75404393_1245195096932932_6540335587779577871_n.jpg",
+    "yt_link": "https://youtu.be/ysNL-p9ymUY",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Symphoni",
     "affiliate_link": "https://www.meta.com/affiliates/DPcKYKFRe",
     "img_link": "./img/Games/473391904_3707250382829048_3886230964039064979_n.jpg",
@@ -25,22 +41,6 @@ export const featureGames: GameSchema[] = [
     yt_link: "https://youtu.be/XRAFS3p6lK4",
     crossbuy: false,
     bhaptics: false,
-  },
-  {
-    name: "Horror Simulator",
-    affiliate_link: "https://www.meta.com/affiliates/66WxHjPhr",
-    img_link:
-      "./img/Games/473392301_1604363023773514_3745445134538776615_n.jpg",
-    yt_link: "",
-    crossbuy: false,
-    bhaptics: false,
-  },
-  {
-    name: "Pixel Dungeon",
-    affiliate_link: "https://www.meta.com/affiliates/727DW56xg",
-    img_link: "./img/Games/39003280_970588081770360_7637084800045220338_n.jpg",
-    yt_link: "",
-    crossbuy: false,
-    bhaptics: false,
-  } 
+  }
+
 ];
