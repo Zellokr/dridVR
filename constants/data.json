@@ -1753,6 +1753,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Hellsplit: Arena",
+    "affiliate_link": "https://www.meta.com/affiliates/ETUegrnYQ",
+    "img_link": "./img/Games/473392019_679491944433263_2769409538974515627_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 1
+  },
+  {
     "name": "Hellsweeper VR",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3589244014451286%2F&cjsku=3589244014451286&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/57569449_3873458496308835_1229068317940913622_n.jpg",
@@ -2444,7 +2452,7 @@
     "name": "Mythic Realms",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F8364993590228690%2F&cjsku=8364993590228690&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38982616_818876450429225_6183193778885571007_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/YvIremtelJQ",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -3036,6 +3044,14 @@
     "name": "Rogue Piñatas: VRMageddon",
     "affiliate_link": "https://www.meta.com/affiliates/A47a9B9LR",
     "img_link": "./img/Games/38974573_2438397013163309_3925724153479588440_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Room Escape",
+    "affiliate_link": "https://www.meta.com/affiliates/EMHjhVL8S",
+    "img_link": "./img/Games/38982556_2844243415743519_5900441646358582691_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -4062,7 +4078,7 @@
     "img_link": "./img/Games/39003282_854448726857599_9065044912203246537_n.jpg",
     "yt_link": " https://youtu.be/MzbDKyMeld4?si=ffs8LIY3sgQR5GrP",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Underworld Overseer",
