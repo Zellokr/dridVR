@@ -23,7 +23,7 @@ export const featureGames: GameSchema[] = [
     "img_link": "./img/Games/39003251_887905526469693_7022835035658312726_n.jpg",
     "yt_link": "https://youtu.be/IsoL98puCvU",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Mythic Realms",
