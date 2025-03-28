@@ -16,7 +16,7 @@ export const featureGames: GameSchema[] = [
     "img_link": "./img/Games/473391959_1361330961893506_8319810583334241405_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
-    "bhaptics": 0
+    "bhaptics": 1
   },
    {
     "name": "Horror Nights",
