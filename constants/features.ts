@@ -1,6 +1,31 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
+ {
+    "name": "Magitek",
+    "affiliate_link": "https://www.meta.com/affiliates/K8Wm8dQEC",
+    "img_link": "./img/Games/75404383_386969957427569_8522271678978038126_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   
+    {
+    "name": "The Living Remain",
+    "affiliate_link": "https://www.meta.com/affiliates/6NQHyVpTr",
+    "img_link": "./img/Games/473391959_1361330961893506_8319810583334241405_n.jpg",
+    "yt_link": "",
+    "crossbuy": 1,
+    "bhaptics": 0
+  },
+   {
+    "name": "Horror Nights",
+    "affiliate_link": "https://www.meta.com/affiliates/JcCFGnDK4",
+    "img_link": "./img/Games/428937943_1291277371896287_1808349440630409531_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
    {
     "name": "Hellsplit: Arena",
     "affiliate_link": "https://www.meta.com/affiliates/ETUegrnYQ",
@@ -9,6 +34,7 @@ export const featureGames: GameSchema[] = [
     "crossbuy": 0,
     "bhaptics": 1
   },
+   
   {
     "name": "Room Escape",
     "affiliate_link": "https://www.meta.com/affiliates/EMHjhVL8S",
@@ -16,31 +42,8 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-  {
-    "name": "Path of Fury - Episode I: Tetsuo's Tower",
-    "affiliate_link": "https://www.meta.com/affiliates/9uuEUvNNc",
-    "img_link": "./img/Games/39003251_887905526469693_7022835035658312726_n.jpg",
-    "yt_link": "https://youtu.be/IsoL98puCvU",
-    "crossbuy": 0,
-    "bhaptics": 1
-  },
-  {
-    "name": "Mythic Realms",
-    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F8364993590228690%2F&cjsku=8364993590228690&widgetid=67409c6d6e73e5d8cacefdc1",
-    "img_link": "./img/Games/38982616_818876450429225_6183193778885571007_n.jpg",
-    "yt_link": "https://youtu.be/YvIremtelJQ",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-  {
-    "name": "Deep Cuts",
-    "affiliate_link": "https://www.meta.com/affiliates/ZHDwvhfSw",
-    "img_link": "./img/Games/75404393_1245195096932932_6540335587779577871_n.jpg",
-    "yt_link": "https://youtu.be/ysNL-p9ymUY",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+ 
   
 
 ];
