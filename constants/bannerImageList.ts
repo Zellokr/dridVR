@@ -1,11 +1,11 @@
 import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
+  
   {
-    image: "img/Banner/Exfilzone.webp",
-    altText: "Banner de videojuegos",
-    url: "https://www.meta.com/affiliates/5UwuzwgNo",
-    contentId: "",
+    image: "img/Banner/onwardbanner.webp",
+    altText: "Videojuego de realidad virtual llamado Madison",
+    url: "https://www.meta.com/affiliates/BZLoLXW5W",
   },
   {
     image: "img/Banner/banner_image_1.webp",
@@ -25,8 +25,9 @@ export const bannerImagesList: DataImage[] = [
   },
 
   {
-    image: "img/Banner/Allonboard.webp",
-    altText: "Videojuego de realidad virtual llamado Madison",
-    url: "https://www.meta.com/affiliates/BZLoLXW5W",
-  },
+    image: "img/Banner/Exfilzone.webp",
+    altText: "Banner de videojuegos",
+    url: "https://www.meta.com/affiliates/5UwuzwgNo",
+    contentId: "",
+  }
 ];
