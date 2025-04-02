@@ -1,6 +1,15 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
+ 
+ {
+    "name": "Train Sim World® VR: New York",
+    "affiliate_link": "https://www.meta.com/affiliates/Bv75ikEax",
+    "img_link": "./img/Games/473391890_941396308178649_954464569837495294_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
  {
     "name": "Magitek",
     "affiliate_link": "https://www.meta.com/affiliates/K8Wm8dQEC",
@@ -14,7 +23,7 @@ export const featureGames: GameSchema[] = [
     "name": "The Living Remain",
     "affiliate_link": "https://www.meta.com/affiliates/6NQHyVpTr",
     "img_link": "./img/Games/473391959_1361330961893506_8319810583334241405_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/bNvjD0IiIgs?si=ny9lcDUk9AHpLY7S",
     "crossbuy": 1,
     "bhaptics": 1
   },
@@ -33,15 +42,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 1
-  },
-   
-  {
-    "name": "Room Escape",
-    "affiliate_link": "https://www.meta.com/affiliates/EMHjhVL8S",
-    "img_link": "./img/Games/38982556_2844243415743519_5900441646358582691_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
  
   
