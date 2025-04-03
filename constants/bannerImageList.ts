@@ -3,9 +3,9 @@ import type { DataImage } from "~/components/Body/Banner/types";
 export const bannerImagesList: DataImage[] = [
   
   {
-    image: "img/Banner/onwardbanner.webp",
-    altText: "Videojuego de realidad virtual llamado Madison",
-    url: "https://www.meta.com/affiliates/BZLoLXW5W",
+    image: "img/Banner/wandererbanner.jpg",
+    altText: "Videojuego de realidad virtual llamado Wanderer",
+    url: "https://www.meta.com/affiliates/A4H6uARZ1",
   },
   {
     image: "img/Banner/banner_image_1.webp",
