@@ -1,7 +1,15 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
- 
+
+ {
+    "name": "Wanderer: The Fragments of Fate",
+    "affiliate_link": "https://www.meta.com/affiliates/A4H6uARZ1",
+    "img_link": "./img/Games/473391978_1139357121321461_4656953004146868115_n.jpg",
+    "yt_link": "https://youtu.be/1BE4RBAfL5o",
+    "crossbuy": 1,
+    "bhaptics": 0
+  },
  {
     "name": "Train Sim World® VR: New York",
     "affiliate_link": "https://www.meta.com/affiliates/Bv75ikEax",
@@ -34,14 +42,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-   {
-    "name": "Hellsplit: Arena",
-    "affiliate_link": "https://www.meta.com/affiliates/ETUegrnYQ",
-    "img_link": "./img/Games/473392019_679491944433263_2769409538974515627_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 1
   }
  
   
