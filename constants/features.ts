@@ -1,7 +1,14 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
-
+{
+    "name": "Sid Meier's Civilization® VII - VR",
+    "affiliate_link": "https://www.meta.com/affiliates/ED1G655iA",
+    "img_link": "./img/Games/473391887_8440619972704489_4528435562144445268_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
  {
     "name": "Wanderer: The Fragments of Fate",
     "affiliate_link": "https://www.meta.com/affiliates/A4H6uARZ1",
@@ -34,14 +41,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/bNvjD0IiIgs?si=ny9lcDUk9AHpLY7S",
     "crossbuy": 1,
     "bhaptics": 1
-  },
-   {
-    "name": "Horror Nights",
-    "affiliate_link": "https://www.meta.com/affiliates/JcCFGnDK4",
-    "img_link": "./img/Games/428937943_1291277371896287_1808349440630409531_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
  
   
