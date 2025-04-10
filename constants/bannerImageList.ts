@@ -14,9 +14,9 @@ export const bannerImagesList: DataImage[] = [
     contentId: "",
   },
   {
-    image: "img/Banner/SilentNorth.webp",
-    altText: "Videojuego de realidad virtual llamado GRIM",
-    url: "https://www.kqzyfj.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6245697225519539%2F&cjsku=6245697225519539",
+    image: "img/Banner/bannerciv7.webp",
+    altText: "Videojuego de realidad virtual llamado CIVILIZATION",
+    url: "https://www.meta.com/affiliates/ED1G655iA",
   },
   {
     image: "img/Banner/banner_image_2.webp",
