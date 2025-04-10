@@ -18,29 +18,29 @@ export const featureGames: GameSchema[] = [
     "bhaptics": 0
   },
  {
-    "name": "Train Sim World® VR: New York",
-    "affiliate_link": "https://www.meta.com/affiliates/Bv75ikEax",
-    "img_link": "./img/Games/473391890_941396308178649_954464569837495294_n.jpg",
+    "name": "Cooking Clash",
+    "affiliate_link": "https://www.meta.com/affiliates/2HVSnojyji",
+    "img_link": "./img/Games/38974524_1141405707608281_1577521188320323765_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
- {
-    "name": "Magitek",
-    "affiliate_link": "https://www.meta.com/affiliates/K8Wm8dQEC",
-    "img_link": "./img/Games/75404383_386969957427569_8522271678978038126_n.jpg",
+{
+    "name": "Crystal Commanders",
+    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F24406315732346709%2F&cjsku=24406315732346709&widgetid=67409c6d6e73e5d8cacefdc1",
+    "img_link": "./img/Games/75439601_1500016790633227_1867518665895769982_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
    
     {
-    "name": "The Living Remain",
-    "affiliate_link": "https://www.meta.com/affiliates/6NQHyVpTr",
-    "img_link": "./img/Games/473391959_1361330961893506_8319810583334241405_n.jpg",
-    "yt_link": "https://youtu.be/bNvjD0IiIgs?si=ny9lcDUk9AHpLY7S",
-    "crossbuy": 1,
-    "bhaptics": 1
+    "name": "Harpagun",
+    "affiliate_link": "https://www.meta.com/affiliates/AG2xWU51j",
+    "img_link": "./img/Games/473393450_1373422160353174_6191879637626026118_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
   }
  
   
