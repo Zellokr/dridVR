@@ -22,7 +22,7 @@ export const featureGames: GameSchema[] = [
     "name": "Sid Meier's Civilization® VII - VR",
     "affiliate_link": "https://www.meta.com/affiliates/ED1G655iA",
     "img_link": "./img/Games/473391887_8440619972704489_4528435562144445268_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/-ojiYXrEYKQ?si=vn6wGFfBuUkWci8l",
     "crossbuy": 0,
     "bhaptics": 0
   },
