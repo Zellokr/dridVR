@@ -11,6 +11,14 @@ export const featureGames: GameSchema[] = [
     "bhaptics": 0
   },
     {
+    "name": "Vestiges: Fallen Tribes",
+    "affiliate_link": "https://www.meta.com/affiliates/8pYHxwxJf",
+    "img_link": "./img/Games/473391911_1318805985880780_3863151067358234080_n.jpg",
+    "yt_link": "https://youtu.be/FD1hgNGKLgQ?si=xhnqOWQKIKeSmC2A",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
     "name": "GORN 2",
     "affiliate_link": "https://www.meta.com/affiliates/BMzsUVsLu",
     "img_link": "./img/Games/473391974_941044658239557_467380685610637309_n.jpg",
@@ -22,14 +30,6 @@ export const featureGames: GameSchema[] = [
     "name": "Harpagun",
     "affiliate_link": "https://www.meta.com/affiliates/AG2xWU51j",
     "img_link": "./img/Games/473393450_1373422160353174_6191879637626026118_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Cooking Clash",
-    "affiliate_link": "https://www.meta.com/affiliates/2HVSnojyji",
-    "img_link": "./img/Games/38974524_1141405707608281_1577521188320323765_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
