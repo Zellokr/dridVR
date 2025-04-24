@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
     {
+    "name": "Ghost Town",
+    "affiliate_link": "https://www.meta.com/affiliates/6faeBg6Ke",
+    "img_link": "./img/Games/473391899_1346443866774466_5902162057010451886_n.jpg",
+    "yt_link": "https://youtu.be/v7cnPIsCXSA?si=lKwjjgp5Jbl3OSvJ",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
     "name": "GORN 2",
     "affiliate_link": "https://www.meta.com/affiliates/BMzsUVsLu",
     "img_link": "./img/Games/473391974_941044658239557_467380685610637309_n.jpg",
@@ -33,16 +41,7 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/1BE4RBAfL5o",
     "crossbuy": 1,
     "bhaptics": 0
-  },
- {
-    "name": "Magitek",
-    "affiliate_link": "https://www.meta.com/affiliates/K8Wm8dQEC",
-    "img_link": "./img/Games/75404383_386969957427569_8522271678978038126_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
- 
   
 
 ];
