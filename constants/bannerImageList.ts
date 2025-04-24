@@ -1,12 +1,13 @@
 import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
-  
   {
-    image: "img/Banner/wandererbanner.jpg",
-    altText: "Videojuego de realidad virtual llamado Wanderer",
-    url: "https://www.meta.com/affiliates/A4H6uARZ1",
+    image: "img/Banner/Exfilzone.webp",
+    altText: "Banner de videojuegos",
+    url: "https://www.meta.com/affiliates/5UwuzwgNo",
+    contentId: "",
   },
+  
   {
     image: "img/Banner/banner_image_1.webp",
     altText: "Banner de videojuegos",
@@ -25,9 +26,8 @@ export const bannerImagesList: DataImage[] = [
   },
 
   {
-    image: "img/Banner/Exfilzone.webp",
-    altText: "Banner de videojuegos",
-    url: "https://www.meta.com/affiliates/5UwuzwgNo",
-    contentId: "",
+    image: "img/Banner/wandererbanner.jpg",
+    altText: "Videojuego de realidad virtual llamado Wanderer",
+    url: "https://www.meta.com/affiliates/A4H6uARZ1",
   }
 ];
