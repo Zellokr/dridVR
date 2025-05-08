@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Card, { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
+import Card, { type GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 type FeaturesProps = {
   dataList: GameSchema[];
