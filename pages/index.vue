@@ -65,11 +65,43 @@ useHead({
     },
   ],
 });
+
+// const showNewsletter = ref(false)
+
+onMounted(async () => {
+  // const lastShown = localStorage.getItem('newsletterLastShown')
+  //
+  // const now = new Date()
+  // const oneWeek = 7 * 24 * 60 * 60 * 1000
+  //
+  // if (!lastShown || new Date(lastShown).getTime() + oneWeek < now.getTime()) {
+  //   showNewsletter.value = true
+  //   localStorage.setItem('newsletterLastShown', now.toISOString())
+  // }
+  try {
+    const response = await $fetch("https://api.brevo.com/v3/contacts/lists/2/contacts", {
+      method: 'GET',
+      headers: {
+        'api-key': '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', // Reemplaza con tu clave de API real
+        'content-type': 'application/json'
+      }
+    })
+    console.log(response)
+  } catch (error) {
+    console.error('Error:', error)
+  }
+})
+
+
+
 </script>
 
 <template>
   <NuxtLayout name="default-layout">
     <div class="pb-14">
+<!--      <div v-if="showNewsletter">-->
+<!--        <NewsletterForm />-->
+<!--      </div>-->
       <div
         class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 md:gap-y-28 mx-6"
       >
@@ -115,7 +147,7 @@ useHead({
                   class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
                 >
                   Al comprar desde aquí un visor Meta Quest 3, Meta Quest 3S o
-                  Meta Quest Pro, obtendrás 60 euros en tu cartera en la Meta
+                  Meta Quest Pro, obtendrás 30 euros en tu cartera en la Meta
                   Store, para que puedas comprar algunos y estrenar tu visor
                   como se merece.
                 </p>
@@ -134,22 +166,22 @@ useHead({
               class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14"
             >
               <nuxt-img
-                src="/img/kiwidesignbannerweb.webp"
+                src="/img/Wield.jpg"
+                format="webp"
                 alt="Imagen con accesorios de realidad virtual con el marca de accesorios Kiwi Design"
                 class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
               />
               <div class="flex flex-col gap-y-4 order-1">
                 <span class="text-white font-bold text-xl md:text-4xl"
-                  >Más cómodo, más tiempo</span
+                  >Apunten, ¡fuego!</span
                 >
                 <p
                   class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
                 >
-                  Gracias a los accesorios de Kiwi Design tu visor Meta Quest
-                  dará en salto en el confort y en la duración, gracias a sus
-                  correas customs que mejoran la distribución del peso, el punto
-                  de apoyo y además, incluyen una batería extra para extender
-                  tus horas en el mundo virtual.
+                  Con el Onestock de WieldVR apuntar ya no será un problema,
+                  gracias a su adaptable diseño, y fácil aprendizaje,
+                  no perderás ningún segundo intentando encontrar el punto de mira,
+                  será tan sencillo como apuntar y ¡disparar!
                 </p>
               </div>
             </div>
@@ -160,4 +192,4 @@ useHead({
   </NuxtLayout>
 </template>
 
-<style></style>
+
