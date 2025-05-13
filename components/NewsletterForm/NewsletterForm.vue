@@ -9,19 +9,38 @@ function closeModal() {
 </script>
 
 <template>
-  <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
-    <div class="relative max-w-full w-[90%] sm:w-[600px]">
+  <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div class="relative max-w-full w-[90%] bg-[#f1f4f7] sm:w-[600px] lg:px-4">
       <button @click="closeModal"
-              class="absolute z-10 top-2 right-3 text-gray-800 hover:text-black text-2xl font-bold rounded-full w-8 h-8 flex items-center justify-center ">
+              class="absolute z-10 lg:top-2 lg:right-1 right-3 top-0 text-gray-800 hover:text-black text-2xl font-bold rounded-full w-8 h-8 flex items-center justify-center">
         &times;
       </button>
 
       <iframe
           title="brevoForm"
-          class="w-full h-[500px] rounded shadow"
-          src="https://sibforms.com/serve/MUIFAL-nFSMZm6tG8LOx2PMLVwbvkNhGv8PRk-nhlgAIkV2WIrhJjUc4VkQyfsoR-UnN3JFp32hVlpAy5ipu50flVF1bKCG9vFC6pnIFwmBc6Y8Jt2iplr6iMIYwr83wJPTgYgXHGiaG7_oZnlY5GaApVn38hbyPTaW-Ofks317B7Ko6ehDTatYTSgYBomU6qmAxciXKVQXwfCKt"
+          class="w-full h-[500px] rounded "
+          src="https://sibforms.com/serve/MUIFACDrndl2myUXWVVFkClABONnpkqVs_cJLZ0Vy1IZBIHLP4ZbZwk9DDGROZJwSOoAcgSFSb0Sn44IB70PLMtk3qYAcJoiLpxuGppl6dbY94MSjSX1CtN3aKGkCr1eiGhfSrd7zEzLOUw00tJ_DmqnLzpRxTVEH0epzxyNjXEK8OgzBPzOs1mr0UrkgWpjCycayfl2wl8oU0i1"
       ></iframe>
     </div>
   </div>
+
 </template>
 
+<style scoped>
+/* Estilos generales para el scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+  background-color: #1e1e1e; /* Color de fondo del scrollbar */
+  border-radius: 6px; /* Redondeo del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+      to bottom,
+      #4a4a4a,
+      #2a2a2a
+  ); /* Degradado para el "thumb" */
+  border-radius: 6px; /* Redondeo del thumb */
+  border: 2px solid #1e1e1e; /* Borde alrededor del thumb */
+}
+</style>

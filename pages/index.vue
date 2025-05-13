@@ -66,29 +66,17 @@ useHead({
   ],
 });
 
-// const showNewsletter = ref(false)
+const showNewsletter = ref(false)
 
 onMounted(async () => {
-  // const lastShown = localStorage.getItem('newsletterLastShown')
-  //
-  // const now = new Date()
-  // const oneWeek = 7 * 24 * 60 * 60 * 1000
-  //
-  // if (!lastShown || new Date(lastShown).getTime() + oneWeek < now.getTime()) {
-  //   showNewsletter.value = true
-  //   localStorage.setItem('newsletterLastShown', now.toISOString())
-  // }
-  try {
-    const response = await $fetch("https://api.brevo.com/v3/contacts/lists/2/contacts", {
-      method: 'GET',
-      headers: {
-        'api-key': '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', // Reemplaza con tu clave de API real
-        'content-type': 'application/json'
-      }
-    })
-    console.log(response)
-  } catch (error) {
-    console.error('Error:', error)
+  const lastShown = localStorage.getItem('newsletterLastShown')
+
+  const now = new Date()
+  const oneWeek = 7 * 24 * 60 * 60 * 1000
+
+  if (!lastShown || new Date(lastShown).getTime() + oneWeek < now.getTime()) {
+    showNewsletter.value = true
+    localStorage.setItem('newsletterLastShown', now.toISOString())
   }
 })
 
@@ -99,9 +87,9 @@ onMounted(async () => {
 <template>
   <NuxtLayout name="default-layout">
     <div class="pb-14">
-<!--      <div v-if="showNewsletter">-->
-<!--        <NewsletterForm />-->
-<!--      </div>-->
+      <div v-if="showNewsletter">
+        <NewsletterForm />
+      </div>
       <div
         class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 md:gap-y-28 mx-6"
       >
