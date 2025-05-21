@@ -8,8 +8,8 @@ export type GameSchema = {
   affiliate_link: string;
   img_link: string;
   yt_link?: string;
-  crossbuy?: boolean;
-  bhaptics?: boolean;
+  crossbuy?: number;
+  bhaptics?: number;
 };
 
 type CardProps = {
