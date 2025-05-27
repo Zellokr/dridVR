@@ -5,7 +5,7 @@ export const featureGames: GameSchema[] = [
         "name": "Into the radius 2",
         "affiliate_link": "https://www.meta.com/es-es/experiences/into-the-radius-2/6605328856182465/?PID=101284762&cjevent=98482816367411f0810c00a60a18b8f7&utm_source=cj&utm_medium=affiliate&utm_campaign=creatoraffiliate&utm_parent=frl",
         "img_link": "./img/Games/491819281_1220450749669486_3954912497666550359_n.jpg",
-        "yt_link": "",
+        "yt_link": "https://youtu.be/EGwLNm3HVOQ?si=vUHvlwHmGswR5dJq",
         "crossbuy": 0,
         "bhaptics": 1
     },
