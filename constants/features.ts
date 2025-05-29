@@ -1,6 +1,16 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
+    
+    
+    {
+    "name": "Hard Bullet",
+    "affiliate_link": "https://www.meta.com/affiliates/929QN6foh",
+    "img_link": "./img/Games/75196230_865179729110613_8326642492619511638_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 1
+  },
     {
         "name": "Into the radius 2",
         "affiliate_link": "https://www.meta.com/es-es/experiences/into-the-radius-2/6605328856182465/?PID=101284762&cjevent=98482816367411f0810c00a60a18b8f7&utm_source=cj&utm_medium=affiliate&utm_campaign=creatoraffiliate&utm_parent=frl",
@@ -32,13 +42,5 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/FD1hgNGKLgQ?si=xhnqOWQKIKeSmC2A",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-    {
-    "name": "GORN 2",
-    "affiliate_link": "https://www.meta.com/affiliates/BMzsUVsLu",
-    "img_link": "./img/Games/473391974_941044658239557_467380685610637309_n.jpg",
-    "yt_link": "https://youtu.be/1Kyb6GT_1gQ",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
+  }
 ];
