@@ -1,13 +1,27 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
-    
-    
+    {
+    "name": "The Break-in",
+    "affiliate_link": "https://www.meta.com/affiliates/5UeKrV7ic",
+    "img_link": "./img/Games/499301272_2471704439860100_3033600562958149160_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "Bad Bunny Bonanza",
+    "affiliate_link": "https://www.meta.com/affiliates/AWAfZhXXD",
+    "img_link": "./img/Games/499305529_1391268078742409_4176060152067807961_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Hard Bullet",
     "affiliate_link": "https://www.meta.com/affiliates/929QN6foh",
     "img_link": "./img/Games/75196230_865179729110613_8326642492619511638_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/S_DhA5EKoj4?si=v53ywHiQ5C9FSj3I",
     "crossbuy": 0,
     "bhaptics": 1
   },
@@ -26,21 +40,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/itxnMdIPEFI",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-    {
-    "name": "Ghost Town",
-    "affiliate_link": "https://www.meta.com/affiliates/6faeBg6Ke",
-    "img_link": "./img/Games/473391899_1346443866774466_5902162057010451886_n.jpg",
-    "yt_link": "https://youtu.be/v7cnPIsCXSA?si=lKwjjgp5Jbl3OSvJ",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Vestiges: Fallen Tribes",
-    "affiliate_link": "https://www.meta.com/affiliates/8pYHxwxJf",
-    "img_link": "./img/Games/473391911_1318805985880780_3863151067358234080_n.jpg",
-    "yt_link": "https://youtu.be/FD1hgNGKLgQ?si=xhnqOWQKIKeSmC2A",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+  
 ];
