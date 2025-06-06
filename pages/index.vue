@@ -70,7 +70,7 @@ const showNewsletter = ref(true)
 const loading = ref(false)
 
 onMounted(async () => {
-  loading.value = true
+
   const userId = localStorage.getItem('contactId');
 
   if (userId) {
@@ -79,6 +79,7 @@ onMounted(async () => {
   }
 
   try {
+    loading.value = true
     const res = await $fetch('/api/contacts');
 
     if (res.success) {
@@ -97,11 +98,12 @@ onMounted(async () => {
           showNewsletter.value = true;
         }
       }
+      loading.value = false
     }
   } catch (error) {
     console.error('Error al obtener los contactos:', error);
   }
-  loading.value = false
+
 });
 
 const handleCloseModal = () => {
