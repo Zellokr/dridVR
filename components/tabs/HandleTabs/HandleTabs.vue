@@ -14,7 +14,7 @@ defineProps<{
   <client-only>
     <Tabs :default-value="defaultValue">
       <TabsList class="grid w-full lg:grid-cols-5 grid-cols-3 gap-x-1">
-        <TabsTrigger v-for="tab in tabs" :key="tab.value" :value="tab.value">
+        <TabsTrigger v-for="tab in tabs" :key="tab.value" :value="tab.value" class="cursor-pointer">
           <div class="inline-flex items-center gap-x-4">
             <span class="text-sm md:text-lg">{{ tab.label }}</span>
 

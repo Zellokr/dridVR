@@ -25,7 +25,7 @@ import { Card, CardContent } from "@/components/ui/card";
   <Card>
     <CardContent
       :class="
-        cn('bg-gray-800 text-white shadow-lg overflow-hidden', props.class)
+        cn('bg-gray-800 text-white shadow-lg overflow-hidden relative', props.class)
       "
     >
       <a

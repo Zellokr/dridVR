@@ -44,5 +44,5 @@ const tabs: Tab[] = [
       </template>
     </TitleContent>
   </div>
-  <HandleTabs :default-value="tabs[0].value" :tabs="tabs"> </HandleTabs>
+  <HandleTabs :default-value="tabs[0].value" :tabs="tabs" />
 </template>

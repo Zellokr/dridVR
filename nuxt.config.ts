@@ -1,9 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  css: ['~/assets/css/tailwind.css'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
   modules: [
-    "@nuxtjs/tailwindcss",
     "nuxt-mdi",
     "nuxt-svgo",
     "shadcn-nuxt",
@@ -13,7 +20,12 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "vue3-carousel-nuxt",
     "@nuxt/image",
+    'shadcn-nuxt'
   ],
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
+  },
   build: {
     analyze: {
       gzipSize: true,
@@ -42,13 +54,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  ssr: false,
-  webpack: {
-    optimization: {
-      minimize: true,
-    },
-    optimizeCSS: true,
-  },
+  ssr: true,
   gtag: {
     enabled: process.env.NODE_ENV === "production",
     id: "G-814JQT6YBZ",
@@ -69,7 +75,6 @@ export default defineNuxtConfig({
   svgo: {
     defaultImports: "component",
   },
-
   app: {
     head: {
       htmlAttrs: {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { bannerImagesList } from "~/constants/bannerImageList";
-
+import Newsletter from "~/components/Newsletter/Newsletter.vue";
 import Banner from "~/components/Body/Banner/Banner.vue";
 
 useHead({
@@ -66,29 +66,57 @@ useHead({
   ],
 });
 
-const showNewsletter = ref(false)
+const showNewsletter = ref(true)
+const loading = ref(false)
 
 onMounted(async () => {
-  const lastShown = localStorage.getItem('newsletterLastShown')
+  loading.value = true
+  const userId = localStorage.getItem('contactId');
 
-  const now = new Date()
-  const oneWeek = 7 * 24 * 60 * 60 * 1000
-
-  if (!lastShown || new Date(lastShown).getTime() + oneWeek < now.getTime()) {
-    showNewsletter.value = true
-    localStorage.setItem('newsletterLastShown', now.toISOString())
+  if (userId) {
+    showNewsletter.value = false;
+    return
   }
-})
 
+  try {
+    const res = await $fetch('/api/contacts');
 
+    if (res.success) {
+      const isUserInList = res.data.contacts.some((user: any) => user.id === userId);
+
+      if (!isUserInList) {
+        const lastShown = localStorage.getItem('newsletterLastShown');
+        const now = new Date();
+        const oneWeek = 7 * 24 * 60 * 60 * 1000; // una semana en milisegundos
+
+        if (lastShown) {
+          const lastShownDate = new Date(lastShown);
+          const diff = now.getTime() - lastShownDate.getTime();
+          showNewsletter.value = diff >= oneWeek;
+        } else {
+          showNewsletter.value = true;
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error al obtener los contactos:', error);
+  }
+  loading.value = false
+});
+
+const handleCloseModal = () => {
+  showNewsletter.value = false
+  const now = new Date()
+  localStorage.setItem('newsletterLastShown', now.toISOString())
+}
 
 </script>
 
 <template>
-  <NuxtLayout name="default-layout">
-    <div class="pb-14">
+  <NuxtLayout name="default-layout" v-if="!loading">
+    <div class="pb-14" >
       <div v-if="showNewsletter">
-        <NewsletterForm />
+        <Newsletter :display-modal="showNewsletter" @close="handleCloseModal" />
       </div>
       <div
         class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 md:gap-y-28 mx-6"

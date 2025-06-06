@@ -6,46 +6,67 @@ defineProps<{ content: Accessory }>();
 
 <template>
   <NuxtLink
-    class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-700 focus:ring-2 focus:ring-blue-400"
-    :aria-label="`Más información sobre ${content.name}`"
+      class="group flex flex-col dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-4 h-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+      :aria-label="`Más información sobre ${content.name}`"
   >
-    <img
-      :src="content.img_link"
-      :alt="content.name"
-      class="w-40 h-40 md:w-52 md:h-52 rounded-md object-cover transition-transform duration-300 hover:scale-105"
-    />
-    <span
-      class="text-white text-lg font-semibold truncate mt-2"
-      :title="content.name"
-    >
-      {{ content.name }}
-    </span>
-    <div
-      v-for="(platform, index) in content.platforms"
-      :key="index"
-      class="text-blue-400 text-sm break-words"
-    >
-      {{ platform }}
+    <!-- Imagen reducida y centrada -->
+    <div class="w-full max-w-[180px] md:max-w-[200px] mx-auto overflow-hidden rounded-md">
+      <img
+          :src="content.img_link"
+          :alt="content.name"
+          class="w-full h-36 md:h-40 object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
+      />
     </div>
-    <span class="text-green-400 font-bold">{{ content.discountCode }}</span>
-    <span class="font-bold text-lg text-white">Cómpralo en: </span>
-    <div class="flex items-center gap-4 mt-2 p-2">
-      <a
-        v-if="content.affiliate_link"
-        :href="content.affiliate_link"
-        target="_blank"
+
+    <div class="mt-4 flex flex-col flex-1 items-center text-center">
+      <h3
+          class="text-base md:text-lg font-semibold text-gray-900 dark:text-white truncate"
+          :title="content.name"
       >
-        <nuxt-img
-          class="w-12 h-11 hover:scale-110 transition-transform"
-          :src="content.logo"
-        />
-      </a>
-      <a v-if="content.amazon_link" :href="content.amazon_link" target="_blank">
-        <nuxt-img
-          class="w-12 h-11 hover:scale-110 transition-transform"
-          src="/icons/AmazonIcon.webp"
-        />
-      </a>
+        {{ content.name }}
+      </h3>
+
+      <div class="flex flex-wrap justify-center gap-1 text-sm text-blue-600 dark:text-blue-300 mt-1">
+        <span v-for="(platform, index) in content.platforms" :key="index">{{ platform }}</span>
+      </div>
+
+      <div v-if="content.discountCode" class="text-green-600 dark:text-green-400 font-medium mt-2">
+        Código: {{ content.discountCode }}
+      </div>
+
+      <div class="mt-auto w-full">
+        <span class="text-sm text-gray-700 dark:text-gray-300 font-medium block mt-4">
+          Cómpralo en:
+        </span>
+
+        <div class="flex justify-center items-center gap-3 mt-2">
+          <a
+              v-if="content.affiliate_link"
+              :href="content.affiliate_link"
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+            <nuxt-img
+                :src="content.logo"
+                class="w-8 h-8 hover:scale-110 transition-transform"
+                alt="Affiliate Logo"
+            />
+          </a>
+
+          <a
+              v-if="content.amazon_link"
+              :href="content.amazon_link"
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+            <nuxt-img
+                src="/icons/AmazonIcon.webp"
+                class="w-8 h-8 hover:scale-110 transition-transform"
+                alt="Amazon"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   </NuxtLink>
 </template>
