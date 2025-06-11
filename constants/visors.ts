@@ -15,4 +15,20 @@ export const visors: Visors[] = [
     affiliate_link: "https://www.meta.com/affiliates/AbzRrTmFY",
     img_link: "https://static.xx.fbcdn.net/rsrc.php/v1/yV/r/DIQNob5e8y6.jpg",
   },
+  {
+    name: "Ray-Ban Meta Wayfarer",
+    affiliate_link: "https://www.meta.com/affiliates/6aVLtNBoJ ",
+    img_link:
+        "/img/visors/rayban_negro.webp",
+  },
+  {
+    name: "Ray-Ban Meta Headliner",
+    affiliate_link: "https://www.meta.com/affiliates/AotVJW2jv",
+    img_link: "/img/visors/rayban_marron.webp",
+  },
+  {
+    name: "Ray-Ban Meta Skyler",
+    affiliate_link: "https://www.meta.com/affiliates/AvDLehe8K",
+    img_link: "/img/visors/rayban_blanca.webp",
+  },
 ];

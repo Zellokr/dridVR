@@ -88,7 +88,7 @@ onMounted(async () => {
       if (!isUserInList) {
         const lastShown = localStorage.getItem('newsletterLastShown');
         const now = new Date();
-        const oneWeek = 7 * 24 * 60 * 60 * 1000; // una semana en milisegundos
+        const oneWeek = 7 * 24 * 60 * 60 * 1000;
 
         if (lastShown) {
           const lastShownDate = new Date(lastShown);

@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { bannerImagesList } from "~/constants/bannerImageList";
 import Accesories from "~/components/Body/Accessories/Accessories.vue";
-import Visors from "~/components/Body/Visors/Visors.vue";
+import MetaQuest from "~/components/Body/Visors/MetaQuest.vue";
 import Banner from "~/components/Body/Banner/Banner.vue";
+import { visors } from "~/constants/visors";
+import Rayban from "~/components/Body/Visors/Rayban.vue";
 
 useHead({
   title: "Accesorios para gafas de realidad virtual",
@@ -48,6 +50,19 @@ useHead({
     },
   ],
 });
+
+const metaQuestVisors = computed(() => {
+  return visors.filter(
+      (visor) => visor.name.toLowerCase().includes("meta quest")
+  );
+})
+
+const raybanVisors = computed(() => {
+  return visors.filter(
+      (visor) => visor.name.toLowerCase().includes("ray-ban")
+  );
+})
+
 </script>
 
 <template>
@@ -60,9 +75,12 @@ useHead({
           <Banner :data-images="bannerImagesList" :start-index="1" />
         </div>
         <div class="col-span-12 row-start-2">
-          <Visors />
+          <MetaQuest :visors="metaQuestVisors" title="Los mejores visores del mercado" />
         </div>
         <div class="col-span-12 row-start-3">
+          <Rayban :visors="raybanVisors" title="Ray-Ban Meta Smart Glasses" />
+        </div>
+        <div class="col-span-12 row-start-4">
           <Accesories
             title="Accesorios VR"
             subtitle="Los mejores accesorios para tus Meta Quest"
