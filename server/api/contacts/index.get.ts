@@ -15,7 +15,6 @@ export default defineEventHandler(async (event) => {
     } catch (error) {
         console.error('Error al obtener contactos de Brevo:', error);
 
-        // Devuelve un error claro al cliente
         return sendError(event, createError({
             statusCode: 500,
             statusMessage: 'No se pudieron obtener los contactos de Brevo.',
