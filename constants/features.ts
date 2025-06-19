@@ -1,7 +1,22 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
-    
+    {
+    "name": "OVRDark",
+    "affiliate_link": "https://www.meta.com/affiliates/6g3DmKuSf",
+    "img_link": "./img/Games/491821178_699116806391236_6789409973693712689_n.jpg",
+    "yt_link": "https://youtu.be/WvRbBlmynTY?si=bsDRfhFSINn9zX2p",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "Zombie Army VR",
+    "affiliate_link": "https://www.meta.com/affiliates/Bmn2TgX7A",
+    "img_link": "./img/Games/39031314_1088763006331079_1076932804715345620_n.jpg",
+    "yt_link": "https://youtu.be/xjnDs57cncc",
+    "crossbuy": 1,
+    "bhaptics": 1
+  },
     {
     "name": "Little Thief",
     "affiliate_link": "https://www.meta.com/affiliates/EngnMGXvq",
@@ -25,22 +40,7 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-     {
-    "name": "Bad Bunny Bonanza",
-    "affiliate_link": "https://www.meta.com/affiliates/AWAfZhXXD",
-    "img_link": "./img/Games/499305529_1391268078742409_4176060152067807961_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "The Break-in",
-    "affiliate_link": "https://www.meta.com/affiliates/5UeKrV7ic",
-    "img_link": "./img/Games/499301272_2471704439860100_3033600562958149160_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+   
   
 ];
