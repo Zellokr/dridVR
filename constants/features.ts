@@ -1,6 +1,15 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
+
+    {
+    "name": "VRacer Hoverbike",
+    "affiliate_link": "https://www.meta.com/affiliates/G9hmEs2FU",
+    "img_link": "./img/Games/499293825_1149633430257111_6441454107052445735_n.jpg",
+    "yt_link": "https://youtu.be/4f6MsLWp1zw",
+    "crossbuy": 0,
+    "bhaptics": 1
+  },
     {
     "name": "OVRDark",
     "affiliate_link": "https://www.meta.com/affiliates/6g3DmKuSf",
@@ -29,14 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "Wordomi",
     "affiliate_link": "https://www.meta.com/affiliates/CdLuD9SiE",
     "img_link": "./img/Games/499303370_2070587570102093_8966402959895610440_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "The Phoenix Gene",
-    "affiliate_link": "https://www.meta.com/affiliates/AoxrxKikS",
-    "img_link": "./img/Games/38974638_551872451119311_3161064064341951833_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
