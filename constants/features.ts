@@ -3,41 +3,41 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
     {
-    "name": "VRacer Hoverbike",
-    "affiliate_link": "https://www.meta.com/affiliates/G9hmEs2FU",
-    "img_link": "./img/Games/499293825_1149633430257111_6441454107052445735_n.jpg",
-    "yt_link": "https://youtu.be/4f6MsLWp1zw",
-    "crossbuy": 0,
-    "bhaptics": 1
-  },
-    {
-    "name": "OVRDark",
-    "affiliate_link": "https://www.meta.com/affiliates/6g3DmKuSf",
-    "img_link": "./img/Games/491821178_699116806391236_6789409973693712689_n.jpg",
-    "yt_link": "https://youtu.be/WvRbBlmynTY?si=bsDRfhFSINn9zX2p",
+    "name": "Cues",
+    "affiliate_link": "https://www.meta.com/affiliates/9uJnVtdtK",
+    "img_link": "./img/Games/39031631_590426196787195_5642446749436630898_n.jpg",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
-    {
-    "name": "Zombie Army VR",
-    "affiliate_link": "https://www.meta.com/affiliates/Bmn2TgX7A",
-    "img_link": "./img/Games/39031314_1088763006331079_1076932804715345620_n.jpg",
-    "yt_link": "https://youtu.be/xjnDs57cncc",
-    "crossbuy": 1,
-    "bhaptics": 1
+  {
+    "name": "Motion Soccer PRO",
+    "affiliate_link": "https://www.meta.com/affiliates/CPyRu3CkA",
+    "img_link": "./img/Games/38982629_582120361466313_308609222389375327_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
   },
-    {
-    "name": "Little Thief",
-    "affiliate_link": "https://www.meta.com/affiliates/EngnMGXvq",
-    "img_link": "./img/Games/473393827_1073842481262502_1368921964521548366_n.jpg",
+     {
+    "name": "EDMUND PUZZLE AND THE MYSTERY OF THE SACRED RELICS",
+    "affiliate_link": "https://www.meta.com/affiliates/AqrnixSpM",
+    "img_link": "./img/Games/57570310_6477123942364183_7018038926051172481_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
     {
-    "name": "Wordomi",
-    "affiliate_link": "https://www.meta.com/affiliates/CdLuD9SiE",
-    "img_link": "./img/Games/499303370_2070587570102093_8966402959895610440_n.jpg",
+    "name": "Neolithic Dawn",
+    "affiliate_link": "https://www.meta.com/affiliates/CA4Gda2Z8",
+    "img_link": "./img/Games/39031586_408298952226104_1060054367771282837_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "Cave Crave",
+    "affiliate_link": "https://www.meta.com/affiliates/Fu93S3SSp",
+    "img_link": "./img/Games/39003279_600519945723348_4352044849213558559_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
