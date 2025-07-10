@@ -2,6 +2,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+     {
+    "name": "Bearly Escape",
+    "affiliate_link": "https://www.meta.com/affiliates/5ineEiitJ",
+    "img_link": "./img/Games/491831382_1412915676518706_1152898940958832296_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Cues",
     "affiliate_link": "https://www.meta.com/affiliates/9uJnVtdtK",
@@ -30,14 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "Neolithic Dawn",
     "affiliate_link": "https://www.meta.com/affiliates/CA4Gda2Z8",
     "img_link": "./img/Games/39031586_408298952226104_1060054367771282837_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Cave Crave",
-    "affiliate_link": "https://www.meta.com/affiliates/Fu93S3SSp",
-    "img_link": "./img/Games/39003279_600519945723348_4352044849213558559_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
