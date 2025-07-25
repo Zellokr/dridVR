@@ -2,6 +2,22 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+   {
+    "name": "99 DROPS",
+    "affiliate_link": "https://www.meta.com/affiliates/6zrm2FJ4M",
+    "img_link": "./img/Games/499295625_1923943391780416_2836023731105236100_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Elsewhere Electric",
+    "affiliate_link": "https://www.meta.com/affiliates/AyUT1A8ms",
+    "img_link": "./img/Games/499619836_722636813697848_8504768594959971390_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Squishies - Roll them Home!",
     "affiliate_link": "https://www.meta.com/affiliates/AnLmza1iq",
@@ -22,22 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "Requisition VR",
     "affiliate_link": "https://www.anrdoezrs.net/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6637952719604708%2F&cjsku=6637952719604708",
     "img_link": "./img/Games/473391820_2695014487555867_5994030469744577522_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-      {
-    "name": "Prison Boss Prohibition VR",
-    "affiliate_link": "https://www.meta.com/affiliates/6m6ZJhndD",
-    "img_link": "./img/Games/499627221_697042603236084_1369880695833966521_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "Bearly Escape",
-    "affiliate_link": "https://www.meta.com/affiliates/5ineEiitJ",
-    "img_link": "./img/Games/491831382_1412915676518706_1152898940958832296_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
