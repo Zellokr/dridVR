@@ -5,9 +5,9 @@ export const bannerImagesList: DataImage[] = [
     
     
     {
-    image: "img/Banner/RequisitionBanner.jpg",
+    image: "img/Banner/BesigeVR_Banner",
     altText: "Banner de videojuegos",
-    url: "https://www.meta.com/affiliates/FnRc5KEPq",
+    url: "https://www.meta.com/affiliates/6bJsjbsSd",
     contentId: "",
   },
    {
