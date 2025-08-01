@@ -11,7 +11,7 @@ export const featureGames: GameSchema[] = [
     "bhaptics": 0
   },
   {
-    "name": "Besige VR",
+    "name": "Besiege VR",
     "affiliate_link": "https://www.meta.com/affiliates/6bJsjbsSd",
     "img_link": "./img/Games/38974507_956970849616267_7523863736471477206_n.jpg",
     "yt_link": "0",
