@@ -5,7 +5,7 @@ export const bannerImagesList: DataImage[] = [
     
     
     {
-    image: "img/Banner/BesigeVR_Banner",
+    image: "img/Banner/BesigeVR_Banner.webp",
     altText: "Banner de videojuegos",
     url: "https://www.meta.com/affiliates/6bJsjbsSd",
     contentId: "",
