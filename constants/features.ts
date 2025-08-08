@@ -14,7 +14,7 @@ export const featureGames: GameSchema[] = [
     "name": "Besiege VR",
     "affiliate_link": "https://www.meta.com/affiliates/6bJsjbsSd",
     "img_link": "./img/Games/38974507_956970849616267_7523863736471477206_n.jpg",
-    "yt_link": "0",
+    "yt_link": "https://youtu.be/AuxDM5GYr7Q?si=T7ivTRBkbl106yxX",
     "crossbuy": 0,
     "bhaptics": 0
   },
