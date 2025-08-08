@@ -3,7 +3,7 @@ import type { DataImage } from "~/components/Body/Banner/types";
 export const bannerImagesList: DataImage[] = [
 
      {
-    image: "img/Banner/Copy of HiddenMemories_CoverImageWide.png",
+    image: "img/Banner/hiddenmemories.webp",
     altText: "Videojuego de realidad virtual llamado HiddenMemories",
     url: "https://www.meta.com/affiliates/CM5A1Ron9",
   },
