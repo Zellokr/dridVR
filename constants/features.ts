@@ -2,6 +2,15 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+   
+   {
+    "name": "Hidden Memories of The Gardens Between",
+    "affiliate_link": "https://www.meta.com/affiliates/CM5A1Ron9",
+    "img_link": "./img/Games/499304319_1455927875348787_8266021397499062174_n.jpg",
+    "yt_link": "https://youtu.be/7X9kccFCn0M?si=SoWv9r9TthwR5_Wn",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
    {
     "name": "Sky Runner: Drone Hero",
     "affiliate_link": "https://www.meta.com/affiliates/HzCFNVygn",
@@ -30,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "name": "BEATABLE",
     "affiliate_link": "https://www.meta.com/affiliates/Av8GEANXa",
     "img_link": "./img/Games/507818746_2740884629435929_424663165203185797_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
- {
-    "name": "99 DROPS",
-    "affiliate_link": "https://www.meta.com/affiliates/6zrm2FJ4M",
-    "img_link": "./img/Games/499295625_1923943391780416_2836023731105236100_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
