@@ -12,6 +12,14 @@ export const featureGames: GameSchema[] = [
     "bhaptics": 0
   },
    {
+    "name": "I Fetch Rocks",
+    "affiliate_link": "https://www.meta.com/affiliates/LFtXH6JGJ",
+    "img_link": "./img/Games/338982597_1108306750452909_6020856842053091057_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
     "name": "Sky Runner: Drone Hero",
     "affiliate_link": "https://www.meta.com/affiliates/HzCFNVygn",
     "img_link": "./img/Games/499298329_1234369754597914_8679612175364558418_n.jpg",
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "name": "STACKAAR",
     "affiliate_link": "https://www.meta.com/affiliates/Bu6cf9MHa",
     "img_link": "./img/Games/491820648_747863781099090_8231748124262064470_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "BEATABLE",
-    "affiliate_link": "https://www.meta.com/affiliates/Av8GEANXa",
-    "img_link": "./img/Games/507818746_2740884629435929_424663165203185797_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
