@@ -2,7 +2,22 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
-   
+    {
+    "name": "World War Z",
+    "affiliate_link": "https://www.meta.com/affiliates/B1yfXkQF8",
+    "img_link": "./img/Games/473392010_2428237764241646_3393249897285510383_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "Can You Do It - VR Experience",
+    "affiliate_link": "https://www.meta.com/affiliates/9WMKVZwUS",
+    "img_link": "./img/Games/39031462_765929624052423_5560774879576763627_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
    {
     "name": "Hidden Memories of The Gardens Between",
     "affiliate_link": "https://www.meta.com/affiliates/CM5A1Ron9",
@@ -26,22 +41,7 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-  {
-    "name": "Besiege VR",
-    "affiliate_link": "https://www.meta.com/affiliates/6bJsjbsSd",
-    "img_link": "./img/Games/38974507_956970849616267_7523863736471477206_n.jpg",
-    "yt_link": "https://youtu.be/AuxDM5GYr7Q?si=T7ivTRBkbl106yxX",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-  {
-    "name": "STACKAAR",
-    "affiliate_link": "https://www.meta.com/affiliates/Bu6cf9MHa",
-    "img_link": "./img/Games/491820648_747863781099090_8231748124262064470_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+ 
   
 ];
