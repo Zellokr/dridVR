@@ -2,7 +2,7 @@ import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
 {
-    image: "img/Banner/worldwarz.webp",
+    image: "img/Banner/worldwarzvr.webp",
     altText: "Videojuego de realidad virtual llamado World War Z VR",
     url: "https://www.meta.com/affiliates/B1yfXkQF8",
   },
