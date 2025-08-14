@@ -37,7 +37,7 @@ export const featureGames: GameSchema[] = [
    {
     "name": "I Fetch Rocks",
     "affiliate_link": "https://www.meta.com/affiliates/LFtXH6JGJ",
-    "img_link": "./img/Games/338982597_1108306750452909_6020856842053091057_n.jpg",
+    "img_link": "./img/Games/38982597_1108306750452909_6020856842053091057_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
