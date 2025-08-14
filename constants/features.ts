@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
     {
+    "name": "Frost Survival VR",
+    "affiliate_link": "https://www.meta.com/affiliates/6mgUwAkGC",
+    "img_link": "./img/Games/499618000_754894260354367_347896483049409463_n.jpg",
+    "yt_link": "https://youtu.be/suwlcqE0qww?si=WJa_G9hn4Rettpw5",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
     "name": "World War Z",
     "affiliate_link": "https://www.meta.com/affiliates/B1yfXkQF8",
     "img_link": "./img/Games/473392010_2428237764241646_3393249897285510383_n.jpg",
@@ -30,14 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "I Fetch Rocks",
     "affiliate_link": "https://www.meta.com/affiliates/LFtXH6JGJ",
     "img_link": "./img/Games/338982597_1108306750452909_6020856842053091057_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "Sky Runner: Drone Hero",
-    "affiliate_link": "https://www.meta.com/affiliates/HzCFNVygn",
-    "img_link": "./img/Games/499298329_1234369754597914_8679612175364558418_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
