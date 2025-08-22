@@ -481,6 +481,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Beauty Salon Simulator VR",
+    "affiliate_link": "https://www.meta.com/affiliates/F8QugjMy3",
+    "img_link": "./img/Games/473392010_598807943015444_6165353311321110163_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Besiege VR",
     "affiliate_link": "https://www.meta.com/affiliates/6bJsjbsSd",
     "img_link": "./img/Games/38974507_956970849616267_7523863736471477206_n.jpg",
@@ -1776,6 +1784,14 @@
     "yt_link": "https://youtu.be/EQRK33p3K8w?si=K78A5SRKCiGMZ397",
     "crossbuy": 0,
     "bhaptics": 1
+  },
+   {
+    "name": "Grit and Valor - 1949",
+    "affiliate_link": "https://www.meta.com/affiliates/DEfyuTMMX",
+    "img_link": "./img/Games/499304034_1410506846827506_3899759777801896798_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
   },
   {
     "name": "Guardian of Realms",
@@ -3215,7 +3231,7 @@
     "img_link": "./img/Games/491828843_9861276627290671_5120677952933762507_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Racket Club",
