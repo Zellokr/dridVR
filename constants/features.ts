@@ -1,7 +1,22 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
-
+{
+    "name": "Grit and Valor - 1949",
+    "affiliate_link": "https://www.meta.com/affiliates/DEfyuTMMX",
+    "img_link": "./img/Games/499304034_1410506846827506_3899759777801896798_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "Beauty Salon Simulator VR",
+    "affiliate_link": "https://www.meta.com/affiliates/F8QugjMy3",
+    "img_link": "./img/Games/473392010_598807943015444_6165353311321110163_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Frost Survival VR",
     "affiliate_link": "https://www.meta.com/affiliates/6mgUwAkGC",
@@ -22,22 +37,6 @@ export const featureGames: GameSchema[] = [
     "name": "Can You Do It - VR Experience",
     "affiliate_link": "https://www.meta.com/affiliates/9WMKVZwUS",
     "img_link": "./img/Games/39031462_765929624052423_5560774879576763627_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "Hidden Memories of The Gardens Between",
-    "affiliate_link": "https://www.meta.com/affiliates/CM5A1Ron9",
-    "img_link": "./img/Games/499304319_1455927875348787_8266021397499062174_n.jpg",
-    "yt_link": "https://youtu.be/7X9kccFCn0M?si=SoWv9r9TthwR5_Wn",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "I Fetch Rocks",
-    "affiliate_link": "https://www.meta.com/affiliates/LFtXH6JGJ",
-    "img_link": "./img/Games/38982597_1108306750452909_6020856842053091057_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
