@@ -5,7 +5,7 @@ export const featureGames: GameSchema[] = [
     "name": "Grit and Valor - 1949",
     "affiliate_link": "https://www.meta.com/affiliates/DEfyuTMMX",
     "img_link": "./img/Games/499304034_1410506846827506_3899759777801896798_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/bVZ78Z5-d-0?si=31JxcdmhtKRS7N7E",
     "crossbuy": 0,
     "bhaptics": 0
   },
