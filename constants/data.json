@@ -2202,6 +2202,14 @@
     "bhaptics": 0
   },
   {
+    "name": "IRON GUARD: Salvation",
+    "affiliate_link": "https://www.meta.com/affiliates/6ohXJ5nRh",
+    "img_link": "./img/Games/491821849_1537754117189646_7015956685767300346_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Ironlights",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2449350021843569%2F&cjsku=2449350021843569&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/75458092_985641849880806_4150530552390384747_n.jpg",
@@ -2570,12 +2578,20 @@
     "bhaptics": 0
   },
   {
-    "name": "Medieval Dynasty New Settlement",
-    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F5900444653303887%2F&cjsku=5900444653303887&widgetid=67409c6d6e73e5d8cacefdc1",
-    "img_link": "./img/Games/39036619_1106735987772926_5040438482900784230_n.jpg",
-    "yt_link": " https://youtu.be/_XyH9UH5bno?si=AD1_GhBgxiYe03UI",
+    "name": "Metacity Patrol",
+    "affiliate_link": "https://www.meta.com/affiliates/BP6G934iS",
+    "img_link": "./img/Games/499617786_2236900290072001_7393520953640645694_n.jpg",
+    "yt_link": "",
     "crossbuy": 0,
-    "bhaptics": 1
+    "bhaptics": 0
+  },
+  {
+    "name": "Metal: Hellsinger VR",
+    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6490578927725908%2F&cjsku=6490578927725908&widgetid=67409c6d6e73e5d8cacefdc1",
+    "img_link": "./img/Games/38974580_949356530118124_529740280479396207_n.jpg",
+    "yt_link": " https://youtu.be/sWheIvpeaJo?si=wc-4b0BDoGZuTdr2",
+    "crossbuy": 0,
+    "bhaptics": 0
   },
   {
     "name": "Metal: Hellsinger VR",
