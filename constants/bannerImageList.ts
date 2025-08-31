@@ -23,11 +23,5 @@ export const bannerImagesList: DataImage[] = [
     image: "img/Banner/banner_image_2.webp",
     altText: "Banner de accesorios de realidad virtual",
     url: "https://www.meta.com/affiliates/DQCXmgkma",
-  },
-   {
-    image: "img/Banner/BesigeVR_Banner.webp",
-    altText: "Banner de videojuegos",
-    url: "https://www.meta.com/affiliates/6bJsjbsSd",
-    contentId: "",
   }
 ];
