@@ -2,9 +2,9 @@ import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
 {
-    image: "img/Banner/worldwarzvr.webp",
-    altText: "Videojuego de realidad virtual llamado World War Z VR",
-    url: "https://www.meta.com/affiliates/B1yfXkQF8",
+    image: "img/Banner/boxingunderdog.webp",
+    altText: "Videojuego de realidad virtual llamado Boxing Underdog VR",
+    url: "https://www.meta.com/affiliates/Ay8NpV9gK",
   },
    {
     image: "img/Banner/banner_image_1.webp",
@@ -13,9 +13,9 @@ export const bannerImagesList: DataImage[] = [
     contentId: "",
   },
 {
-    image: "img/Banner/hiddenmemories.webp",
-    altText: "Videojuego de realidad virtual llamado HiddenMemories",
-    url: "https://www.meta.com/affiliates/CM5A1Ron9",
+    image: "img/Banner/worldwarzvr.webp",
+    altText: "Videojuego de realidad virtual llamado World War Z VR",
+    url: "https://www.meta.com/affiliates/B1yfXkQF8",
   },
     
  
