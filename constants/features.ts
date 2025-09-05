@@ -1,7 +1,22 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
-
+{
+    "name": "Slap Fighter",
+    "affiliate_link": "https://www.meta.com/affiliates/J1rt4pecN",
+    "img_link": "./img/Games/473393543_1310943550212341_7603591577712594748_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "DrakkenRidge",
+    "affiliate_link": "https://www.meta.com/affiliates/787VMiPiF",
+    "img_link": "./img/Games/499297259_2106964126482010_9186249825901896897_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Metacity Patrol",
     "affiliate_link": "https://www.meta.com/affiliates/BP6G934iS",
@@ -23,22 +38,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/DEfyuTMMX",
     "img_link": "./img/Games/499304034_1410506846827506_3899759777801896798_n.jpg",
     "yt_link": "https://youtu.be/bVZ78Z5-d-0?si=31JxcdmhtKRS7N7E",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Beauty Salon Simulator VR",
-    "affiliate_link": "https://www.meta.com/affiliates/F8QugjMy3",
-    "img_link": "./img/Games/473392010_598807943015444_6165353311321110163_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Frost Survival VR",
-    "affiliate_link": "https://www.meta.com/affiliates/6mgUwAkGC",
-    "img_link": "./img/Games/499618000_754894260354367_347896483049409463_n.jpg",
-    "yt_link": "https://youtu.be/suwlcqE0qww?si=WJa_G9hn4Rettpw5",
     "crossbuy": 0,
     "bhaptics": 0
   }
