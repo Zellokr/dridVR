@@ -1,7 +1,16 @@
 import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
-{
+
+     {
+    "name": "Unloop",
+    "affiliate_link": "https://www.meta.com/affiliates/AhJwaPcq8",
+    "img_link": "./img/Games/499300897_1208389670955554_3564909399670881390_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
     "name": "Slap Fighter",
     "affiliate_link": "https://www.meta.com/affiliates/J1rt4pecN",
     "img_link": "./img/Games/473393543_1310943550212341_7603591577712594748_n.jpg",
@@ -32,15 +41,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-    {
-    "name": "Grit and Valor - 1949",
-    "affiliate_link": "https://www.meta.com/affiliates/DEfyuTMMX",
-    "img_link": "./img/Games/499304034_1410506846827506_3899759777801896798_n.jpg",
-    "yt_link": "https://youtu.be/bVZ78Z5-d-0?si=31JxcdmhtKRS7N7E",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
- 
   
 ];
