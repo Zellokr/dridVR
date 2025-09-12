@@ -14,7 +14,6 @@ export const bannerImagesList: DataImage[] = [
     url: "/games",
     contentId: "",
   },
-{
   {
     image: "img/Banner/boxingunderdog.webp",
     altText: "Videojuego de realidad virtual llamado Boxing Underdog VR",
