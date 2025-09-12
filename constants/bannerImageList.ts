@@ -4,8 +4,8 @@ export const bannerImagesList: DataImage[] = [
 
     {
     image: "img/Banner/ofliesandrainbanner.webp",
-    altText: "Videojuego de realidad virtual llamado World War Z VR",
-    url: "https://www.meta.com/affiliates/B1yfXkQF8",
+    altText: "Videojuego de realidad virtual llamado OF Lies and Rain",
+    url: "https://www.meta.com/affiliates/A2XP55jDS",
   },
    
    {
