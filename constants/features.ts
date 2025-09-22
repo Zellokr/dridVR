@@ -2,6 +2,15 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+     
+     {
+    "name": "Titanic VR",
+    "affiliate_link": "https://www.meta.com/affiliates/YNPPwnmHT",
+    "img_link": "./img/Games/473392025_3996417840637284_7062626265266728581_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
      {
     "name": "Table Troopers",
     "affiliate_link": "https://www.meta.com/affiliates/B9NBusG8V",
@@ -39,14 +48,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/J1rt4pecN",
     "img_link": "./img/Games/473393543_1310943550212341_7603591577712594748_n.jpg",
     "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "DrakkenRidge",
-    "affiliate_link": "https://www.meta.com/affiliates/787VMiPiF",
-    "img_link": "./img/Games/499297259_2106964126482010_9186249825901896897_n.jpg",
-    "yt_link": "https://youtu.be/9m0u4JrDrvU",
     "crossbuy": 0,
     "bhaptics": 0
   }
