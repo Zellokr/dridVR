@@ -2,6 +2,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+    {
+    "name": "Newton's Playground : Physics Sandbox",
+    "affiliate_link": "https://www.meta.com/affiliates/TQB8kuC7G",
+    "img_link": "./img/Games/491827799_1553162825668552_7199299748654636922_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
      {
     "name": "Chrono Hunter",
     "affiliate_link": "https://www.meta.com/affiliates/EtNkoSxCC",
@@ -30,14 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "Pencil - Learn to Draw ",
     "affiliate_link": "https://www.meta.com/affiliates/GEgW6WhNk",
     "img_link": "./img/Games/491820001_1039458434741209_3286019584445384794_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "Successor",
-    "affiliate_link": "https://www.meta.com/affiliates/A5i8Du4MU",
-    "img_link": "./img/Games/491820382_1272984167401454_5799731337705662969_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
