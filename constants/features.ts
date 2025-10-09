@@ -2,7 +2,15 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
-    
+
+     {
+    "name": "MEMOREUM",
+    "affiliate_link": "https://www.meta.com/affiliates/HPvJdnRMK",
+    "img_link": "./img/Games/473393879_660964106460783_1669645472851690461_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Star Wars: Beyond Victory",
     "affiliate_link": "https://www.meta.com/affiliates/7SAA35ta3",
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "name": "Titanic VR",
     "affiliate_link": "https://www.meta.com/affiliates/YNPPwnmHT",
     "img_link": "./img/Games/473392025_3996417840637284_7062626265266728581_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "Table Troopers",
-    "affiliate_link": "https://www.meta.com/affiliates/B9NBusG8V",
-    "img_link": "./img/Games/491823296_4165423037052931_2427186324510205780_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
