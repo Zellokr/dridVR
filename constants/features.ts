@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
 
+      {
+    "name": "Reach",
+    "affiliate_link": "https://www.meta.com/affiliates/BdkWUhqGQ",
+    "img_link": "./img/Games/499312463_712386211172039_4348263024996989382_n.jpg",
+    "yt_link": "https://youtu.be/47ph_cdEzNE?si=sRtuwvPLQhwTPSHy",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
      {
     "name": "MEMOREUM",
     "affiliate_link": "https://www.meta.com/affiliates/HPvJdnRMK",
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "name": "Chrono Hunter",
     "affiliate_link": "https://www.meta.com/affiliates/EtNkoSxCC",
     "img_link": "./img/Games/491821799_690710280657994_2641653685966979585_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  }, 
-     {
-    "name": "Titanic VR",
-    "affiliate_link": "https://www.meta.com/affiliates/YNPPwnmHT",
-    "img_link": "./img/Games/473392025_3996417840637284_7062626265266728581_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
