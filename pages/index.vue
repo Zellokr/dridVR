@@ -204,6 +204,7 @@ const handleCloseModal = () => {
                       size="lg"
                       trailing-icon="i-lucide-arrow-right"
                       class="mt-4"
+                      to="/games"
                     >
                       Ver juegos
                     </UButton>
@@ -245,6 +246,7 @@ const handleCloseModal = () => {
                       size="lg"
                       trailing-icon="i-lucide-arrow-right"
                       class="mt-4"
+                      to="/accessories"
                     >
                       Ver visores
                     </UButton>
@@ -310,6 +312,7 @@ const handleCloseModal = () => {
                       size="lg"
                       trailing-icon="i-lucide-arrow-right"
                       class="mt-4"
+                      to="/accessories"
                     >
                       Ver accesorios
                     </UButton>
