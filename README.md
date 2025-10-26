@@ -25,7 +25,7 @@ Construye la aplicación para producción:
 pnpm build
 ```
 
-Previsualiza la build de producción localmente:
+Previsualiza la build de producción localmente para comprobar:
 
 ```bash
 pnpm preview
