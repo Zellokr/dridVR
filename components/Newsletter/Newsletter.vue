@@ -1,37 +1,26 @@
 <script setup lang="ts">
-import Form from './Form/Form.vue'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+import Form from "./Form/Form.vue";
 
 defineProps<{
-  displayModal: boolean
-}>()
+  displayModal: boolean;
+}>();
 
 const emit = defineEmits<{
-  close: []
-}>()
-
+  close: [];
+}>();
 </script>
 
 <template>
-  <client-only>
-    <Dialog :open="displayModal" @update:open="emit('close')">
-      <DialogContent
-          class="w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl p-6 overflow-y-auto max-h-[90vh]"
-      >
-        <DialogHeader>
-          <DialogTitle>¡Suscríbete a nuestra newsletter!</DialogTitle>
-          <DialogDescription>
-            Mantente actualizado de las últimas novedades sobre VR.
-          </DialogDescription>
-        </DialogHeader>
-        <Form />
-      </DialogContent>
-    </Dialog>
-  </client-only>
+  <UModal :model-value="displayModal" @update:model-value="emit('close')">
+    <UCard>
+      <template #header>
+        <h3 class="text-xl font-semibold">¡Suscríbete a nuestra newsletter!</h3>
+        <p class="text-sm text-muted mt-1">
+          Mantente actualizado de las últimas novedades sobre VR.
+        </p>
+      </template>
+
+      <Form />
+    </UCard>
+  </UModal>
 </template>

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
-import { redirectToContent } from "~/utils/handleContent";
 const { isMobile } = useDevice();
 
 const searchTerm = ref("");
@@ -16,7 +14,10 @@ const emit = defineEmits<{
 }>();
 
 const deactivateFilters = () => {
-  if (isMobile) redirectToContent("allgames");
+  if (isMobile) {
+    const element = document.getElementById("allgames");
+    element?.scrollIntoView({ behavior: "smooth" });
+  }
   hasVideo.value = false;
   hasCrossbuy.value = false;
   hasHaptic.value = false;
@@ -29,127 +30,79 @@ const removeTextWhenClickSwitch = () => {
   if (hasVideo.value || hasCrossbuy.value || hasHaptic.value) {
     searchTerm.value = "";
     emit("update:searchTerm", searchTerm.value);
-    if (isMobile) redirectToContent("allgames");
+    if (isMobile) {
+      const element = document.getElementById("allgames");
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
   }
 };
 
-const computedSearchTerm = computed(() => {
-  return searchTerm.value;
-});
-const computedHasVideo = computed(() => {
-  return hasVideo.value;
-});
-const computedHasCrossbuy = computed(() => {
-  return hasCrossbuy.value;
-});
-const computedHasHaptic = computed(() => {
-  return hasHaptic.value;
+watch(searchTerm, (newValue: string) => {
+  emit("update:searchTerm", newValue);
 });
 
-watch(
-  [
-    computedSearchTerm,
-    computedHasVideo,
-    computedHasCrossbuy,
-    computedHasHaptic,
-  ],
-  ([newSearchTerm, newHasVideo, newHasCrossbuy, newHasHaptic]) => {
-    emit("update:searchTerm", newSearchTerm);
-    emit("update:hasVideo", newHasVideo);
-    emit("update:hasCrossbuy", newHasCrossbuy);
-    emit("update:hasHaptic", newHasHaptic);
-  },
-);
+watch(hasVideo, (newValue: boolean) => {
+  emit("update:hasVideo", newValue);
+  removeTextWhenClickSwitch();
+});
+
+watch(hasCrossbuy, (newValue: boolean) => {
+  emit("update:hasCrossbuy", newValue);
+  removeTextWhenClickSwitch();
+});
+
+watch(hasHaptic, (newValue: boolean) => {
+  emit("update:hasHaptic", newValue);
+  removeTextWhenClickSwitch();
+});
 </script>
 
 <template>
   <div
-    class="bg-gray-800 grid grid-cols-1 md:grid-cols-2 gap-4 p-4 border border-slate-700 fixed bottom-0 left-0 w-full z-20 gap-x-8 md:relative md:mx-0 rounded-t-lg md:rounded-t-none"
+    class="bg-gray-800/95 backdrop-blur-sm grid grid-cols-1 md:grid-cols-2 gap-4 p-4 border border-slate-700 fixed bottom-0 left-0 w-full z-20 gap-x-8 md:relative md:mx-0 rounded-t-lg md:rounded-lg shadow-xl"
   >
-    <div class="flex items-center bg-gray-700 text-white rounded-lg w-full">
-      <MdiIcon
-        icon="mdiMagnify"
-        class="text-white w-5 h-5 ml-3"
-        preserve-aspect-ratio="xMaxYMax slice"
-      />
-      <input
-        v-model="searchTerm"
-        type="text"
-        placeholder="Busca tu juego"
-        @click="deactivateFilters"
-        class="bg-transparent text-white p-2 pl-3 w-full focus:outline-none"
-      />
-    </div>
-    <div
-      class="flex justify-evenly gap-x-8 md:gap-x-0 md:justify-evenly w-full"
-    >
-      <div class="flex flex-col">
-        <label for="filterYoutube" class="text-white flex items-center">
-          <span class="mr-2">Youtube</span>
-          <SvgoYoutubeIcon class="scale-125 text-red-600"></SvgoYoutubeIcon>
-        </label>
-        <div
-          class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
-          :class="hasVideo ? 'bg-blue-500' : 'bg-gray-300'"
-          @click="
-            hasVideo = !hasVideo;
-            removeTextWhenClickSwitch();
-          "
-        >
-          <div
-            class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
-            :class="hasVideo ? 'transform translate-x-6' : ''"
-          ></div>
+    <!-- Search Input -->
+    <UInput
+      v-model="searchTerm"
+      icon="i-lucide-search"
+      placeholder="Busca tu juego..."
+      size="lg"
+      color="primary"
+      @focus="deactivateFilters"
+      :ui="{
+        base: 'bg-gray-700 text-white placeholder-gray-400 border-gray-600',
+        icon: { base: 'text-gray-400' },
+      }"
+    />
+
+    <!-- Filters -->
+    <div class="flex justify-evenly gap-x-4 md:gap-x-6 w-full">
+      <!-- YouTube Filter -->
+      <div class="flex flex-col items-center gap-y-2">
+        <div class="flex items-center gap-x-1.5 text-white text-sm">
+          <span>Youtube</span>
+          <SvgoYoutubeIcon class="w-5 h-5 text-red-600" />
         </div>
+        <USwitch v-model="hasVideo" color="primary" size="md" />
       </div>
-      <div class="flex flex-col">
-        <label for="filterCrossbuy" class="text-white flex items-center">
-          <span class="mr-2">CrossBuy</span>
-          <MdiIcon
-            icon="mdiSync"
-            class="text-white w-4 h-4"
-            preserve-aspect-ratio="xMaxYMax slice"
-          />
-        </label>
-        <div
-          class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
-          :class="hasCrossbuy ? 'bg-blue-500' : 'bg-gray-300'"
-          @click="
-            hasCrossbuy = !hasCrossbuy;
-            removeTextWhenClickSwitch();
-          "
-        >
-          <div
-            class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
-            :class="hasCrossbuy ? 'transform translate-x-6' : ''"
-          ></div>
+
+      <!-- CrossBuy Filter -->
+      <div class="flex flex-col items-center gap-y-2">
+        <div class="flex items-center gap-x-1.5 text-white text-sm">
+          <span>CrossBuy</span>
+          <MdiIcon icon="mdiSync" class="w-4 h-4 text-white" />
         </div>
+        <USwitch v-model="hasCrossbuy" color="primary" size="md" />
       </div>
-      <div class="flex flex-col">
-        <label for="filterVibrate" class="text-white flex items-center">
-          <span class="mr-2">bHaptics</span>
-          <MdiIcon
-            icon="mdiVibrate"
-            class="text-white w-4 h-4"
-            preserve-aspect-ratio="xMaxYMax slice"
-          />
-        </label>
-        <div
-          class="toggle-label w-12 h-6 rounded-full relative cursor-pointer transition-colors"
-          :class="hasHaptic ? 'bg-blue-500' : 'bg-gray-300'"
-          @click="
-            hasHaptic = !hasHaptic;
-            removeTextWhenClickSwitch();
-          "
-        >
-          <div
-            class="dot w-6 h-6 bg-white rounded-full absolute top-0 left-0 transition-transform"
-            :class="hasHaptic ? 'transform translate-x-6' : ''"
-          ></div>
+
+      <!-- bHaptics Filter -->
+      <div class="flex flex-col items-center gap-y-2">
+        <div class="flex items-center gap-x-1.5 text-white text-sm">
+          <span>bHaptics</span>
+          <MdiIcon icon="mdiVibrate" class="w-4 h-4 text-white" />
         </div>
+        <USwitch v-model="hasHaptic" color="primary" size="md" />
       </div>
     </div>
   </div>
 </template>
-
-<style scoped></style>

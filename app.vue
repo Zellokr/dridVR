@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { Toaster } from '@/components/ui/sonner'
-import 'vue-sonner/style.css'
+// Nuxt UI v4 uses UApp component which includes toast system
 </script>
 
 <template>
-  <ClientOnly>
-    <Toaster />
-  </ClientOnly>
-  <NuxtPage />
+  <UApp>
+    <NuxtPage />
+  </UApp>
 </template>

@@ -9,11 +9,10 @@ import Navbar from "~/components/Navbar/Navbar.vue";
       class="flex flex-col justify-center items-center gap-y-6 py-8 md:gap-y-8"
     >
       <NuxtLink to="/">
-        <nuxt-img
+        <img
           src="/img/logo.png"
           alt="Drid logo"
           class="rounded-xl cursor-pointer transition-transform duration-200 hover:scale-105 w-auto h-24"
-          format="webp"
         />
       </NuxtLink>
       <SocialsMedia />

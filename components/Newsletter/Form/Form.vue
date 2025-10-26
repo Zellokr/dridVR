@@ -1,76 +1,79 @@
 <script setup lang="ts">
-import {FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage} from "~/components/ui/form";
-import {Button} from "~/components/ui/button";
-import {Input} from "~/components/ui/input";
+import { z } from "zod";
+import type { FormSubmitEvent } from "#ui/types";
 
-import { toTypedSchema } from '@vee-validate/zod'
-import { useForm } from 'vee-validate'
-import * as z from 'zod'
+const schema = z.object({
+  email: z.string().email("El correo electrónico debe ser válido"),
+});
 
-const formSchema = toTypedSchema(z.object({
-  email: z.string({
-    required_error: 'El correo electrónico es obligatorio',
-  }).email({
-    message: 'El correo electrónico debe ser un correo electrónico válido',
-  }),
-}));
+type Schema = z.output<typeof schema>;
 
-const { isFieldDirty, handleSubmit, meta } = useForm({
-  validationSchema: formSchema,
-})
+const state = reactive({
+  email: "",
+});
 
-const message = ref('')
-const response = ref(null)
+const message = ref("");
+const success = ref<boolean | null>(null);
+const loading = ref(false);
 
-const onSubmit = handleSubmit(async (values) => {
-  const res = await $fetch('/api/contacts', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      email: values.email
-    }),
-  })
-  if (res.success) {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('contactId', res.data.id)
+async function onSubmit(event: FormSubmitEvent<Schema>) {
+  loading.value = true;
+  message.value = "";
+  success.value = null;
+
+  try {
+    const res = await $fetch("/api/contacts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: event.data.email,
+      }),
+    });
+
+    if (res.success) {
+      if (typeof window !== "undefined" && "data" in res && res.data) {
+        localStorage.setItem("contactId", String((res.data as any).id));
+      }
+      success.value = true;
+      message.value = "¡Te has suscrito con éxito!";
+
+      // Limpiar form después de éxito
+      state.email = "";
+    } else {
+      success.value = false;
+      message.value = "El email que has introducido ya está suscrito";
     }
-    response.value = true
-    message.value = "¡Te has suscrito con éxito!"
-  } else {
-    response.value = false
-    message.value = "El email que has introducido ya está suscrito"
-    console.log('No se recibieron datos correctamente')
+  } catch (error) {
+    success.value = false;
+    message.value = "Error al procesar la suscripción. Intenta nuevamente.";
+    console.error("Error en suscripción:", error);
+  } finally {
+    loading.value = false;
   }
-})
-
+}
 </script>
 
 <template>
-  <form class="space-y-3" @submit="onSubmit">
-    <FormField v-slot="{ componentField }" name="email" :validate-on-blur="!isFieldDirty">
-      <FormItem>
-        <FormLabel>Email</FormLabel>
-        <FormControl>
-          <Input type="email" placeholder="Inserta tu email" v-bind="componentField" />
-        </FormControl>
-        <FormDescription />
-        <FormMessage class="text-red-600 text-sm" />
-      </FormItem>
-    </FormField>
-    <p v-if="response !== null"
-       class=" text-black w-full p-2 rounded-lg font-semibold"
-       :class="{
-      'bg-red-300/80': !response,
-      'bg-green-300': response,
-    }">
-      {{message}}
-    </p>
-    <Button type="submit" :disabled="!meta.valid" variant="secondary" class="cursor-pointer">
+  <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
+    <UFormField label="Email" name="email" required>
+      <UInput
+        v-model="state.email"
+        type="email"
+        placeholder="tu@email.com"
+        icon="i-lucide-mail"
+        size="lg"
+      />
+    </UFormField>
+
+    <UAlert
+      v-if="success !== null"
+      :color="success ? 'success' : 'error'"
+      :icon="success ? 'i-lucide-check-circle' : 'i-lucide-alert-circle'"
+      :title="message"
+    />
+
+    <UButton type="submit" color="primary" size="lg" block :loading="loading">
       Suscribirse
-    </Button>
-  </form>
+    </UButton>
+  </UForm>
 </template>
-
-<style scoped>
-
-</style>

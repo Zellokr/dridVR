@@ -66,27 +66,28 @@ useHead({
   ],
 });
 
-const showNewsletter = ref(true)
-const loading = ref(false)
+const showNewsletter = ref(true);
+const loading = ref(false);
 
 onMounted(async () => {
-
-  const userId = localStorage.getItem('contactId');
+  const userId = localStorage.getItem("contactId");
 
   if (userId) {
     showNewsletter.value = false;
-    return
+    return;
   }
 
   try {
-    loading.value = true
-    const res = await $fetch('/api/contacts');
+    loading.value = true;
+    const res = await $fetch("/api/contacts");
 
     if (res.success) {
-      const isUserInList = res.data.contacts.some((user: any) => user.id === userId);
+      const isUserInList = res.data.contacts.some(
+        (user: any) => user.id === userId
+      );
 
       if (!isUserInList) {
-        const lastShown = localStorage.getItem('newsletterLastShown');
+        const lastShown = localStorage.getItem("newsletterLastShown");
         const now = new Date();
         const oneWeek = 7 * 24 * 60 * 60 * 1000;
 
@@ -98,25 +99,23 @@ onMounted(async () => {
           showNewsletter.value = true;
         }
       }
-      loading.value = false
+      loading.value = false;
     }
   } catch (error) {
-    console.error('Error al obtener los contactos:', error);
+    console.error("Error al obtener los contactos:", error);
   }
-
 });
 
 const handleCloseModal = () => {
-  showNewsletter.value = false
-  const now = new Date()
-  localStorage.setItem('newsletterLastShown', now.toISOString())
-}
-
+  showNewsletter.value = false;
+  const now = new Date();
+  localStorage.setItem("newsletterLastShown", now.toISOString());
+};
 </script>
 
 <template>
   <NuxtLayout name="default-layout" v-if="!loading">
-    <div class="pb-14" >
+    <div class="pb-14">
       <div v-if="showNewsletter">
         <Newsletter :display-modal="showNewsletter" @close="handleCloseModal" />
       </div>
@@ -131,7 +130,7 @@ const handleCloseModal = () => {
             <div
               class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14 md:gap-x-8"
             >
-              <nuxt-img
+              <img
                 src="/img/ImagenWebJuegos.webp"
                 alt="Imagen de 3 juegos de realidad virtual, el primero es Batman Arkham Shadow, el segundo es Asgard's Wrath y el tercero es Metro Awakening"
                 class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1 object-cover"
@@ -170,7 +169,7 @@ const handleCloseModal = () => {
                   como se merece.
                 </p>
               </div>
-              <nuxt-img
+              <img
                 src="/img/visoresmetaquestimagen.webp"
                 alt="Imagen de las gafas de realidad virtual Meta Quest 3"
                 class="rounded-xl cursor-pointer order-2"
@@ -183,9 +182,8 @@ const handleCloseModal = () => {
             <div
               class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14"
             >
-              <nuxt-img
+              <img
                 src="/img/Wield.jpg"
-                format="webp"
                 alt="Imagen con accesorios de realidad virtual con el marca de accesorios Kiwi Design"
                 class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
               />
@@ -197,8 +195,8 @@ const handleCloseModal = () => {
                   class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
                 >
                   Con el Onestock de WieldVR apuntar ya no será un problema,
-                  gracias a su adaptable diseño, y fácil aprendizaje,
-                  no perderás ningún segundo intentando encontrar el punto de mira,
+                  gracias a su adaptable diseño, y fácil aprendizaje, no
+                  perderás ningún segundo intentando encontrar el punto de mira,
                   será tan sencillo como apuntar y ¡disparar!
                 </p>
               </div>
@@ -209,5 +207,3 @@ const handleCloseModal = () => {
     </div>
   </NuxtLayout>
 </template>
-
-

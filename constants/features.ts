@@ -5,7 +5,7 @@ export const featureGames: GameSchema[] = [
 {
     "name": "VEX MAGE",
     "affiliate_link": "https://www.meta.com/affiliates/CJwgvEzMY",
-    "img_link": "./img/Games/491822581_1079316964363502_2190154169289756009_n.jpg",
+    "img_link": "/img/Games/491822581_1079316964363502_2190154169289756009_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -13,7 +13,7 @@ export const featureGames: GameSchema[] = [
       {
     "name": "Reach",
     "affiliate_link": "https://www.meta.com/affiliates/BdkWUhqGQ",
-    "img_link": "./img/Games/499312463_712386211172039_4348263024996989382_n.jpg",
+    "img_link": "/img/Games/499312463_712386211172039_4348263024996989382_n.jpg",
     "yt_link": "https://youtu.be/47ph_cdEzNE?si=sRtuwvPLQhwTPSHy",
     "crossbuy": 0,
     "bhaptics": 0
@@ -21,7 +21,7 @@ export const featureGames: GameSchema[] = [
      {
     "name": "MEMOREUM",
     "affiliate_link": "https://www.meta.com/affiliates/HPvJdnRMK",
-    "img_link": "./img/Games/473393879_660964106460783_1669645472851690461_n.jpg",
+    "img_link": "/img/Games/473393879_660964106460783_1669645472851690461_n.jpg",
     "yt_link": "https://youtu.be/T2IG7Zun7kQ?si=uvXgxjXyQG8sBeTS",
     "crossbuy": 0,
     "bhaptics": 0
@@ -29,7 +29,7 @@ export const featureGames: GameSchema[] = [
     {
     "name": "Star Wars: Beyond Victory",
     "affiliate_link": "https://www.meta.com/affiliates/7SAA35ta3",
-    "img_link": "./img/Games/499299745_3074995456008715_5855507417964469643_n.jpg",
+    "img_link": "/img/Games/499299745_3074995456008715_5855507417964469643_n.jpg",
     "yt_link": "https://youtu.be/aPkaCmcJ50E?si=4ImfHAiNiyguIT-Q",
     "crossbuy": 0,
     "bhaptics": 0
@@ -37,10 +37,10 @@ export const featureGames: GameSchema[] = [
     {
     "name": "Newton's Playground : Physics Sandbox",
     "affiliate_link": "https://www.meta.com/affiliates/TQB8kuC7G",
-    "img_link": "./img/Games/491827799_1553162825668552_7199299748654636922_n.jpg",
+    "img_link": "/img/Games/491827799_1553162825668552_7199299748654636922_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   }
-  
+
 ];

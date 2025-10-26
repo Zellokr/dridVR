@@ -18,59 +18,67 @@ type CardProps = {
 
 const props = defineProps<CardProps>();
 
-import { Card, CardContent } from "@/components/ui/card";
+// Compute the image height class properly for Tailwind
+const imageHeightClass = computed(() => {
+  return props.sizeImage ? `h-${props.sizeImage}` : "h-52";
+});
 </script>
 
 <template>
-  <Card>
-    <CardContent
-      :class="
-        cn('bg-gray-800 text-white shadow-lg overflow-hidden relative', props.class)
-      "
+  <UCard
+    :class="cn('bg-gray-800 text-white shadow-lg overflow-hidden', props.class)"
+    :ui="{
+      body: {
+        padding: '',
+      },
+    }"
+  >
+    <a
+      :href="game.affiliate_link"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      class="block"
     >
-      <a
-        :href="game.affiliate_link"
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-      >
+      <div class="relative">
         <img
           :src="game.img_link"
           alt="Game Image"
-          class="w-full object-cover"
-          :class="[sizeImage ? `h-${sizeImage}` : 'h-52']"
-          loading="lazy"
+          :class="cn('w-full object-cover h-52', imageHeightClass)"
         />
-        <a
-          v-if="game.yt_link"
-          :href="game.yt_link"
-          class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
-          @click.stop.prevent="handleContent(game.yt_link)"
-        >
-          <SvgoYoutubeIcon />
-        </a>
-        <div class="p-4 h-20 flex justify-between items-center shadow-md">
-          <span class="text-lg font-semibold text-white truncate">
-            {{ game.name || "Nombre del Juego" }}
-          </span>
+        <ClientOnly>
+          <a
+            v-if="game.yt_link"
+            :href="game.yt_link"
+            class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
+            @click.stop.prevent="handleContent(game.yt_link)"
+          >
+            <SvgoYoutubeIcon />
+          </a>
+        </ClientOnly>
+      </div>
+      <div
+        class="p-4 h-20 flex justify-between items-center shadow-md bg-gray-800"
+      >
+        <span class="text-lg font-semibold text-white truncate">
+          {{ game.name || "Nombre del Juego" }}
+        </span>
+        <ClientOnly>
           <div
-            v-if="game.crossbuy || game.bhaptics"
             class="flex items-center gap-x-2 text-white px-2 py-1 rounded-lg shadow-sm"
           >
             <MdiIcon
               v-if="game.crossbuy"
               icon="mdiSync"
-              preserve-aspect-ratio="xMaxYMax slice"
               class="text-white w-4 h-4"
             />
             <MdiIcon
               v-if="game.bhaptics"
-              preserve-aspect-ratio="xMaxYMax slice"
               icon="mdiVibrate"
               class="text-white w-4 h-4"
             />
           </div>
-        </div>
-      </a>
-    </CardContent>
-  </Card>
+        </ClientOnly>
+      </div>
+    </a>
+  </UCard>
 </template>

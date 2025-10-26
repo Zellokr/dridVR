@@ -11,21 +11,15 @@ export default defineNuxtConfig({
     ],
   },
   modules: [
+    "@nuxt/ui",
+    "@vueuse/nuxt",
     "nuxt-mdi",
     "nuxt-svgo",
-    "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "nuxt-gtag",
-    "@nuxtjs/sitemap",
-    "vue3-carousel-nuxt",
-    "@nuxt/image",
-    'shadcn-nuxt'
+    "@nuxtjs/sitemap"
   ],
-  shadcn: {
-    prefix: '',
-    componentDir: './components/ui'
-  },
   build: {
     analyze: {
       gzipSize: true,
