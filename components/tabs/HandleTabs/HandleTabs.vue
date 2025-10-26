@@ -3,33 +3,58 @@ import type { Tab } from "~/components/tabs/HandleTabs/types";
 
 const { isMobile } = useDevice();
 
-defineProps<{
+const props = defineProps<{
   tabs: Tab[];
   defaultValue: string;
 }>();
+
+const selectedTab = ref(props.defaultValue);
 </script>
 
 <template>
-  <client-only>
-    <UTabs :default-value="defaultValue" :items="tabs" class="w-full">
-      <template #default="{ item }">
-        <div class="inline-flex items-center gap-x-4">
-          <span class="text-sm md:text-lg">{{ item.label }}</span>
-
+  <ClientOnly>
+    <div class="w-full">
+      <!-- Tabs Header -->
+      <div
+        class="flex items-center gap-2 border-b border-gray-700/50 mb-8 overflow-x-auto"
+      >
+        <button
+          v-for="(tab, index) in tabs"
+          :key="index"
+          @click="selectedTab = tab.value"
+          :class="[
+            'relative flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-3 font-semibold text-sm sm:text-base transition-all duration-300 hover:text-white whitespace-nowrap',
+            selectedTab === tab.value ? 'text-white' : 'text-gray-400',
+          ]"
+        >
           <MdiIcon
-            v-if="item.icon && !isMobile"
-            :icon="item.icon"
-            class="text-white w-6 h-6"
-            preserve-aspect-ratio="xMaxYMax slice"
+            v-if="tab.icon && !isMobile"
+            :icon="tab.icon"
+            :class="[
+              'w-5 h-5 transition-colors',
+              selectedTab === tab.value ? 'text-blue-400' : 'text-gray-500',
+            ]"
           />
-        </div>
-      </template>
+          <span>{{ tab.label }}</span>
 
-      <template #item="{ item }">
-        <div class="p-4 shadow-xl">
-          <component :is="item.component!" v-bind="item.props!" />
+          <!-- Active indicator -->
+          <div
+            v-if="selectedTab === tab.value"
+            class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-full"
+          ></div>
+        </button>
+      </div>
+
+      <!-- Tabs Content -->
+      <div class="py-4">
+        <div
+          v-for="(tab, index) in tabs"
+          :key="index"
+          v-show="selectedTab === tab.value"
+        >
+          <component :is="tab.component!" v-bind="tab.props!" />
         </div>
-      </template>
-    </UTabs>
-  </client-only>
+      </div>
+    </div>
+  </ClientOnly>
 </template>

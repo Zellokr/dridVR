@@ -5,13 +5,6 @@ import AccessoryTab from "~/components/tabs/HandleTabs/AccessoryTab/AccessoryTab
 import type { Tab } from "~/components/tabs/HandleTabs/types";
 import { accessories } from "~/constants/accessories";
 
-type AccessoriesProps = {
-  title?: string;
-  subtitle?: string;
-};
-
-defineProps<AccessoriesProps>();
-
 const wieldVrAccessories = computed(() => {
   return accessories.filter((item) => item.brand === "WieldVR");
 });
@@ -37,12 +30,7 @@ const tabs: Tab[] = [
 </script>
 
 <template>
-  <div class="flex justify-start">
-    <TitleContent :title="title!">
-      <template v-if="subtitle" #subtitle>
-        {{ subtitle }}
-      </template>
-    </TitleContent>
+  <div v-if="tabs.length > 0" class="w-full">
+    <HandleTabs :default-value="tabs[0]?.value || 'WieldVR'" :tabs="tabs" />
   </div>
-  <HandleTabs :default-value="tabs[0].value" :tabs="tabs" />
 </template>

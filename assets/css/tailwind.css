@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
+/* Configuración de tema para Tailwind v4 */
 @theme {
-  /* Colores VR personalizados */
+  /* Colores personalizados VR */
   --color-vr-dark: #0a0a0f;
   --color-vr-gray: #1a1a24;
   --color-vr-gray-light: #2a2a3a;
@@ -10,10 +11,12 @@
   --color-vr-purple: #8b5cf6;
   --color-vr-purple-light: #a78bfa;
 
-  /* Scrollbar */
-  --scrollbar-width: 12px;
-  --scrollbar-track: theme('colors.vr-gray');
-  --scrollbar-thumb: theme('colors.vr-gray-light');
+  /* Breakpoints personalizados */
+  --breakpoint-3xl: 1920px;
+
+  /* Espaciado */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
 }
 
 /* ===================================

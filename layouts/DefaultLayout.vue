@@ -1,9 +1,11 @@
 <template>
-  <div class="min-h-dvh w-full bg-gradient-to-r from-gray-900 via-gray-950 to-gray-900 flex flex-col">
+  <div
+    class="min-h-screen w-full bg-gradient-to-r from-gray-900 via-gray-950 to-gray-900"
+  >
     <Header />
-    <div class="flex-grow flex items-center justify-center">
+    <main class="w-full">
       <slot />
-    </div>
+    </main>
   </div>
 </template>
 
@@ -45,5 +47,4 @@
   background: #1e1e1e; /* Color de la esquina del scrollbar */
 }
 </style>
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

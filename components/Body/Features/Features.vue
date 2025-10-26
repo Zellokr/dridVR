@@ -1,26 +1,24 @@
 <script setup lang="ts">
-import Card, { type GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
+import Card from "~/components/CustomCards/MediumCard/Card.vue";
+import type { SchemaGame } from "~/utils/types";
 
 type FeaturesProps = {
-  dataList: GameSchema[];
-  title: string;
-  subtitle: string;
+  dataList: SchemaGame[];
 };
 
 defineProps<FeaturesProps>();
 </script>
 
 <template>
-  <TitleContent :title="title" class="flex flex-col gap-y-2">
-    <template #subtitle>
-      {{ subtitle }}
-    </template>
-  </TitleContent>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-4"
+    class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-5 lg:gap-6"
   >
-    <div v-for="game in dataList" :key="game.name">
-      <Card :game="game" class="bg-gray-700" />
-    </div>
+    <ScrollReveal
+      v-for="(game, index) in dataList"
+      :key="game.name"
+      :delay="index * 50"
+    >
+      <Card :game="game" class="h-full" />
+    </ScrollReveal>
   </div>
 </template>

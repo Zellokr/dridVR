@@ -67,26 +67,24 @@ useHead({
 });
 
 const showNewsletter = ref(true);
-const loading = ref(false);
+const loading = ref(true);
+const contentReady = ref(false);
 
 onMounted(async () => {
   const userId = localStorage.getItem("contactId");
 
   if (userId) {
     showNewsletter.value = false;
-    return;
   }
 
   try {
-    loading.value = true;
     const res = await $fetch("/api/contacts");
 
     if (res.success) {
-      const isUserInList = res.data.contacts.some(
-        (user: any) => user.id === userId
-      );
+      const contacts = (res as any).data?.contacts || [];
+      const isUserInList = contacts.some((user: any) => user.id === userId);
 
-      if (!isUserInList) {
+      if (!isUserInList && !userId) {
         const lastShown = localStorage.getItem("newsletterLastShown");
         const now = new Date();
         const oneWeek = 7 * 24 * 60 * 60 * 1000;
@@ -99,10 +97,15 @@ onMounted(async () => {
           showNewsletter.value = true;
         }
       }
-      loading.value = false;
     }
   } catch (error) {
     console.error("Error al obtener los contactos:", error);
+  } finally {
+    loading.value = false;
+    // Pequeño delay para transición suave
+    setTimeout(() => {
+      contentReady.value = true;
+    }, 100);
   }
 });
 
@@ -114,96 +117,209 @@ const handleCloseModal = () => {
 </script>
 
 <template>
-  <NuxtLayout name="default-layout" v-if="!loading">
-    <div class="pb-14">
-      <div v-if="showNewsletter">
-        <Newsletter :display-modal="showNewsletter" @close="handleCloseModal" />
-      </div>
-      <div
-        class="md:container grid grid-flow-row-dense grid-cols-4 grid-rows-auto gap-y-28 md:gap-y-28 mx-6"
-      >
-        <div class="col-span-12 row-start-1">
-          <Banner :data-images="bannerImagesList" />
+  <NuxtLayout name="default-layout">
+    <ClientOnly>
+      <Newsletter
+        v-if="showNewsletter && !loading"
+        :display-modal="showNewsletter"
+        @close="handleCloseModal"
+      />
+    </ClientOnly>
+
+    <div v-if="loading" class="min-h-screen">
+      <UContainer class="py-8 sm:py-12 lg:py-16">
+        <div class="space-y-16 sm:space-y-20 lg:space-y-24">
+          <USkeleton class="h-48 sm:h-64 lg:h-80 w-full rounded-xl" />
+
+          <div
+            v-for="i in 3"
+            :key="i"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
+          >
+            <USkeleton class="h-64 sm:h-80 w-full rounded-xl" />
+            <div class="space-y-4">
+              <USkeleton class="h-8 sm:h-10 w-3/4" />
+              <USkeleton class="h-4 w-full" />
+              <USkeleton class="h-4 w-5/6" />
+              <USkeleton class="h-4 w-4/6" />
+            </div>
+          </div>
         </div>
-        <ScrollReveal class="col-span-12 row-start-2">
-          <nuxt-link to="/games">
-            <div
-              class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14 md:gap-x-8"
+      </UContainer>
+    </div>
+
+    <div
+      v-else
+      class="min-h-screen transition-opacity duration-500"
+      :class="contentReady ? 'opacity-100' : 'opacity-0'"
+    >
+      <UContainer class="py-8 sm:py-12 lg:py-16">
+        <div class="space-y-16 sm:space-y-20 lg:space-y-24">
+          <section aria-label="Banner principal">
+            <Banner :data-images="bannerImagesList" />
+          </section>
+
+          <ScrollReveal>
+            <UCard
+              as="article"
+              class="overflow-hidden group hover:ring-2 hover:ring-primary/50 transition-all duration-300"
             >
-              <img
-                src="/img/ImagenWebJuegos.webp"
-                alt="Imagen de 3 juegos de realidad virtual, el primero es Batman Arkham Shadow, el segundo es Asgard's Wrath y el tercero es Metro Awakening"
-                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1 object-cover"
-              />
-              <div class="flex flex-col gap-y-4 order-1">
-                <span class="text-white font-bold text-xl md:text-4xl"
-                  >Juega más, paga menos</span
+              <NuxtLink
+                to="/games"
+                class="block"
+                aria-label="Ver catálogo de juegos VR"
+              >
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center p-4 sm:p-6 lg:p-8"
                 >
-                <p
-                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
-                >
-                  Cualquier juego que compres desde aquí tendrá un descuento
-                  automático, gracias a mis enlaces de afiliados de Meta, algo
-                  que te hará pagar menos, de forma legal y me estarás apoyando
-                  a mi, directamente
-                </p>
-              </div>
-            </div>
-          </nuxt-link>
-        </ScrollReveal>
-        <ScrollReveal class="col-span-12 row-start-3">
-          <nuxt-link to="/accessories">
-            <div
-              class="grid grid-cols-1 lg:grid-cols-2 place-items-center content-center gap-y-14"
+                  <div
+                    class="order-2 lg:order-1 relative overflow-hidden rounded-xl"
+                  >
+                    <img
+                      src="/img/ImagenWebJuegos.webp"
+                      alt="Imagen de 3 juegos de realidad virtual: Batman Arkham Shadow, Asgard's Wrath y Metro Awakening"
+                      class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      width="640"
+                      height="480"
+                    />
+                  </div>
+
+                  <div class="order-1 lg:order-2 space-y-4 sm:space-y-6">
+                    <h2
+                      class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight"
+                    >
+                      Juega más, paga menos
+                    </h2>
+                    <p
+                      class="text-base sm:text-lg text-gray-300 leading-relaxed max-w-prose"
+                    >
+                      Cualquier juego que compres desde aquí tendrá un descuento
+                      automático, gracias a mis enlaces de afiliados de Meta,
+                      algo que te hará pagar menos, de forma legal y me estarás
+                      apoyando a mí, directamente.
+                    </p>
+                    <UButton
+                      color="primary"
+                      size="lg"
+                      trailing-icon="i-lucide-arrow-right"
+                      class="mt-4"
+                    >
+                      Ver juegos
+                    </UButton>
+                  </div>
+                </div>
+              </NuxtLink>
+            </UCard>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <UCard
+              as="article"
+              class="overflow-hidden group hover:ring-2 hover:ring-primary/50 transition-all duration-300"
             >
-              <div class="flex flex-col gap-y-4 lg:order-2 xl:order-2">
-                <span class="text-white font-bold text-xl md:text-4xl"
-                  >El mejor visor, con regalo</span
+              <NuxtLink
+                to="/accessories"
+                class="block"
+                aria-label="Ver visores Meta Quest"
+              >
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center p-4 sm:p-6 lg:p-8"
                 >
-                <p
-                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
-                >
-                  Al comprar desde aquí un visor Meta Quest 3, Meta Quest 3S o
-                  Meta Quest Pro, obtendrás 30 euros en tu cartera en la Meta
-                  Store, para que puedas comprar algunos y estrenar tu visor
-                  como se merece.
-                </p>
-              </div>
-              <img
-                src="/img/visoresmetaquestimagen.webp"
-                alt="Imagen de las gafas de realidad virtual Meta Quest 3"
-                class="rounded-xl cursor-pointer order-2"
-              />
-            </div>
-          </nuxt-link>
-        </ScrollReveal>
-        <ScrollReveal class="col-span-12 row-start-4">
-          <nuxt-link to="/accessories">
-            <div
-              class="grid grid-cols-1 lg:grid-cols-2 place-content-between place-items-center gap-y-14"
+                  <div class="order-1 space-y-4 sm:space-y-6">
+                    <h2
+                      class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight"
+                    >
+                      El mejor visor, con regalo
+                    </h2>
+                    <p
+                      class="text-base sm:text-lg text-gray-300 leading-relaxed max-w-prose"
+                    >
+                      Al comprar desde aquí un visor Meta Quest 3, Meta Quest 3S
+                      o Meta Quest Pro, obtendrás 30 euros en tu cartera en la
+                      Meta Store, para que puedas comprar algunos juegos y
+                      estrenar tu visor como se merece.
+                    </p>
+                    <UButton
+                      color="primary"
+                      size="lg"
+                      trailing-icon="i-lucide-arrow-right"
+                      class="mt-4"
+                    >
+                      Ver visores
+                    </UButton>
+                  </div>
+
+                  <div class="order-2 relative overflow-hidden rounded-xl">
+                    <img
+                      src="/img/visoresmetaquestimagen.webp"
+                      alt="Gafas de realidad virtual Meta Quest 3"
+                      class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      width="640"
+                      height="480"
+                    />
+                  </div>
+                </div>
+              </NuxtLink>
+            </UCard>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <UCard
+              as="article"
+              class="overflow-hidden group hover:ring-2 hover:ring-primary/50 transition-all duration-300"
             >
-              <img
-                src="/img/Wield.jpg"
-                alt="Imagen con accesorios de realidad virtual con el marca de accesorios Kiwi Design"
-                class="rounded-xl cursor-pointer order-2 lg:order-1 xl:order-1"
-              />
-              <div class="flex flex-col gap-y-4 order-1">
-                <span class="text-white font-bold text-xl md:text-4xl"
-                  >Apunten, ¡fuego!</span
+              <NuxtLink
+                to="/accessories"
+                class="block"
+                aria-label="Ver accesorios VR"
+              >
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center p-4 sm:p-6 lg:p-8"
                 >
-                <p
-                  class="text-white font-light text-lg w-full lg:max-w-[30rem] break-words"
-                >
-                  Con el Onestock de WieldVR apuntar ya no será un problema,
-                  gracias a su adaptable diseño, y fácil aprendizaje, no
-                  perderás ningún segundo intentando encontrar el punto de mira,
-                  será tan sencillo como apuntar y ¡disparar!
-                </p>
-              </div>
-            </div>
-          </nuxt-link>
-        </ScrollReveal>
-      </div>
+                  <div
+                    class="order-2 lg:order-1 relative overflow-hidden rounded-xl"
+                  >
+                    <img
+                      src="/img/Wield.jpg"
+                      alt="Accesorios de realidad virtual marca Kiwi Design"
+                      class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      width="640"
+                      height="480"
+                    />
+                  </div>
+
+                  <div class="order-1 lg:order-2 space-y-4 sm:space-y-6">
+                    <h2
+                      class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight"
+                    >
+                      Apunten, ¡fuego!
+                    </h2>
+                    <p
+                      class="text-base sm:text-lg text-gray-300 leading-relaxed max-w-prose"
+                    >
+                      Con el Onestock de WieldVR apuntar ya no será un problema,
+                      gracias a su adaptable diseño, y fácil aprendizaje, no
+                      perderás ningún segundo intentando encontrar el punto de
+                      mira, será tan sencillo como apuntar y ¡disparar!
+                    </p>
+                    <UButton
+                      color="primary"
+                      size="lg"
+                      trailing-icon="i-lucide-arrow-right"
+                      class="mt-4"
+                    >
+                      Ver accesorios
+                    </UButton>
+                  </div>
+                </div>
+              </NuxtLink>
+            </UCard>
+          </ScrollReveal>
+        </div>
+      </UContainer>
     </div>
   </NuxtLayout>
 </template>

@@ -2,36 +2,23 @@
 import { handleContent } from "~/utils/handleContent";
 import type { HTMLAttributes } from "vue";
 import { cn } from "@/lib/utils";
-
-export type GameSchema = {
-  name?: string;
-  affiliate_link: string;
-  img_link: string;
-  yt_link?: string;
-  crossbuy?: number;
-  bhaptics?: number;
-};
+import type { SchemaGame } from "~/utils/types";
 
 type CardProps = {
-  game: GameSchema;
+  game: SchemaGame;
 } & { class?: HTMLAttributes["class"]; sizeImage?: string };
 
 const props = defineProps<CardProps>();
-
-// Compute the image height class properly for Tailwind
-const imageHeightClass = computed(() => {
-  return props.sizeImage ? `h-${props.sizeImage}` : "h-52";
-});
 </script>
 
 <template>
-  <UCard
-    :class="cn('bg-gray-800 text-white shadow-lg overflow-hidden', props.class)"
-    :ui="{
-      body: {
-        padding: '',
-      },
-    }"
+  <article
+    :class="
+      cn(
+        'group relative w-full bg-gray-800 rounded-lg sm:rounded-xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-2xl hover:border-gray-600 hover:-translate-y-1 transition-all duration-300',
+        props.class
+      )
+    "
   >
     <a
       :href="game.affiliate_link"
@@ -39,46 +26,63 @@ const imageHeightClass = computed(() => {
       rel="noopener noreferrer nofollow"
       class="block"
     >
-      <div class="relative">
+      <!-- Image Container -->
+      <div class="relative overflow-hidden aspect-[5/5]">
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        ></div>
         <img
           :src="game.img_link"
-          alt="Game Image"
-          :class="cn('w-full object-cover h-52', imageHeightClass)"
+          :alt="game.name || 'Game Image'"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
         />
+
+        <!-- YouTube Badge -->
         <ClientOnly>
-          <a
+          <button
             v-if="game.yt_link"
-            :href="game.yt_link"
-            class="absolute top-2 right-2 bg-red-600 rounded-full p-2 cursor-pointer transform transition-transform duration-300 hover:scale-110"
+            :aria-label="`Ver video de ${game.name}`"
+            class="absolute top-2 right-2 z-20 bg-red-600 hover:bg-red-500 rounded-full p-2 shadow-lg transform transition-all duration-300 hover:scale-110 active:scale-95"
             @click.stop.prevent="handleContent(game.yt_link)"
           >
-            <SvgoYoutubeIcon />
-          </a>
+            <SvgoYoutubeIcon class="w-4 h-4 text-white" />
+          </button>
         </ClientOnly>
-      </div>
-      <div
-        class="p-4 h-20 flex justify-between items-center shadow-md bg-gray-800"
-      >
-        <span class="text-lg font-semibold text-white truncate">
-          {{ game.name || "Nombre del Juego" }}
-        </span>
+
+        <!-- Feature Badges Overlay -->
         <ClientOnly>
           <div
-            class="flex items-center gap-x-2 text-white px-2 py-1 rounded-lg shadow-sm"
+            v-if="game.crossbuy || game.bhaptics"
+            class="absolute bottom-2 left-2 z-20 flex flex-wrap items-center gap-1.5"
           >
-            <MdiIcon
+            <span
               v-if="game.crossbuy"
-              icon="mdiSync"
-              class="text-white w-4 h-4"
-            />
-            <MdiIcon
+              class="flex items-center gap-1 px-2 py-0.5 bg-blue-500/90 backdrop-blur-sm rounded-full text-xs font-medium text-white shadow-lg"
+            >
+              <MdiIcon icon="mdiSync" class="w-3 h-3" />
+              <span class="hidden sm:inline">CrossBuy</span>
+            </span>
+            <span
               v-if="game.bhaptics"
-              icon="mdiVibrate"
-              class="text-white w-4 h-4"
-            />
+              class="flex items-center gap-1 px-2 py-0.5 bg-purple-500/90 backdrop-blur-sm rounded-full text-xs font-medium text-white shadow-lg"
+            >
+              <MdiIcon icon="mdiVibrate" class="w-3 h-3" />
+              <span class="hidden sm:inline">bHaptics</span>
+            </span>
           </div>
         </ClientOnly>
       </div>
+
+      <!-- Content -->
+      <div class="p-2.5 sm:p-3 bg-gray-800">
+        <h3
+          class="text-xs sm:text-sm font-semibold text-white line-clamp-2 group-hover:text-blue-400 transition-colors duration-200 leading-snug"
+          :title="game.name"
+        >
+          {{ game.name || "Nombre del Juego" }}
+        </h3>
+      </div>
     </a>
-  </UCard>
+  </article>
 </template>
