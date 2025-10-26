@@ -2,10 +2,12 @@
   <div
     class="min-h-screen w-full bg-gradient-to-r from-gray-900 via-gray-950 to-gray-900"
   >
-    <Header />
-    <main class="w-full">
-      <slot />
-    </main>
+    <div class="container mx-auto">
+      <Header />
+      <main class="w-full">
+        <slot />
+      </main>
+    </div>
   </div>
 </template>
 
