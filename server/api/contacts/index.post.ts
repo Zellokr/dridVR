@@ -37,8 +37,9 @@ export default defineEventHandler(async (event) => {
 });
 
 const subscribeUserToBrevo = async (email: string) => {
+    const config = useRuntimeConfig();
     const listId = Number(process.env.BREVO_LIST_ID);
-    const apiKey = process.env.BREVO_API_KEY;
+    const apiKey = config.brevoApiKey;
 
     if (!listId || !apiKey) {
         throw new Error('Faltan las variables de entorno BREVO_LIST_ID o BREVO_API_KEY');

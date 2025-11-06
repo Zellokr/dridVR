@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-06-07",
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
+  runtimeConfig: {
+    // Private keys (only available server-side)
+    brevoApiKey: process.env.BREVO_API_KEY,
+  },
   vite: {
     plugins: [
       tailwindcss(),

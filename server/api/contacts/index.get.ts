@@ -1,10 +1,12 @@
 export default defineEventHandler(async (event) => {
+    const config = useRuntimeConfig();
+
     try {
         const response = await $fetch('https://api.brevo.com/v3/contacts', {
             method: 'GET',
             headers: {
                 accept: 'application/json',
-                'api-key': process.env.BREVO_API_KEY || '',
+                'api-key': config.brevoApiKey || '',
             },
         });
 
