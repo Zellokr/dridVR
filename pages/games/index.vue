@@ -79,37 +79,6 @@ useHead({
       </UContainer>
     </section>
 
-    <!-- Halloween Section -->
-    <section class="w-full">
-      <UContainer class="px-4 sm:px-6 lg:px-8">
-        <div class="py-8 sm:py-12 lg:py-16">
-          <!-- Section Header -->
-          <div class="mb-8 sm:mb-10">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-500/10 border border-orange-500/30 rounded-full mb-4"
-            >
-              <UIcon name="i-lucide-ghost" class="w-4 h-4 text-orange-400" />
-              <span class="text-xs font-medium text-orange-300"
-                >Especial Halloween</span
-              >
-            </div>
-            <h2
-              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3"
-            >
-              Juegos de Terror 👻
-            </h2>
-            <p class="text-base sm:text-lg text-gray-400 max-w-2xl">
-              Los juegos más aterradores para vivir Halloween en realidad
-              virtual
-            </p>
-          </div>
-
-          <!-- Halloween Games Grid -->
-          <Features :data-list="halloweenGamesFormatted" />
-        </div>
-      </UContainer>
-    </section>
-
     <!-- Divider -->
     <div
       class="w-full h-px bg-linear-to-r from-transparent via-orange-700 to-transparent my-8"
