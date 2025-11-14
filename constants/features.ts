@@ -27,18 +27,18 @@ export const featureGames: GameSchema[] = [
     "bhaptics": 0
   },
 {
-    "name": "VEX MAGE",
-    "affiliate_link": "https://www.meta.com/affiliates/CJwgvEzMY",
-    "img_link": "/img/Games/491822581_1079316964363502_2190154169289756009_n.jpg",
+    "name": "Syberia",
+    "affiliate_link": "https://www.meta.com/affiliates/4RaKH8RvPR",
+    "img_link": "./img/Games/491820382_1822667978462767_6089766565430026358_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
       {
-    "name": "Reach",
-    "affiliate_link": "https://www.meta.com/affiliates/BdkWUhqGQ",
-    "img_link": "/img/Games/499312463_712386211172039_4348263024996989382_n.jpg",
-    "yt_link": "https://youtu.be/47ph_cdEzNE?si=sRtuwvPLQhwTPSHy",
+    "name": "Hotel Infinito",
+    "affiliate_link": "https://www.meta.com/affiliates/7D9x38Ath",
+    "img_link": "./img/Games/499304938_2027946571357691_7261381856193672262_n.jpg",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   }
