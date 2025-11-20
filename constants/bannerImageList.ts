@@ -10,7 +10,7 @@ export const bannerImagesList: DataImage[] = [
   },
     {
     image: "/img/Banner/DemeoDungeonAndDragonBanner.webp",
-    altText: "Videojuego de realidad virtual llamado Forefront",
+    altText: "Videojuego de realidad virtual llamado Demeo",
     url: "https://www.meta.com/affiliates/BQKF62DeV",
   },
         {
