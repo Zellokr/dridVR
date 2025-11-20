@@ -8,16 +8,17 @@ export const bannerImagesList: DataImage[] = [
     url: "/games",
     contentId: "",
   },
+    {
+    image: "/img/Banner/DemeoDungeonAndDragonBanner.webp",
+    altText: "Videojuego de realidad virtual llamado Forefront",
+    url: "https://www.meta.com/affiliates/BQKF62DeV",
+  },
         {
     image: "/img/Banner/Quest3SBlackFriday.webp",
     altText: "Banner de accesorios de realidad virtual",
     url: "https://www.meta.com/affiliates/AbzRrTmFY",
   },
-      {
-    image: "/img/Banner/ForefrontBanner.webp",
-    altText: "Videojuego de realidad virtual llamado Forefront",
-    url: "https://www.meta.com/affiliates/7RdDupYuv",
-  },
+   
      
      {
     image: "/img/Banner/ReachBanner.webp",
