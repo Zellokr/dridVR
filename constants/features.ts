@@ -2,6 +2,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+     {
+    "name": "Demeo x Dungeons & Dragons: Battlemarked",
+    "affiliate_link": "https://www.meta.com/affiliates/BQKF62DeV",
+    "img_link": "./img/Games/499305027_653730900666136_5648357199524809106_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Glassbreakers",
     "affiliate_link": "https://www.meta.com/affiliates/ADjn1c4dy",
@@ -30,14 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "Syberia",
     "affiliate_link": "https://www.meta.com/affiliates/4RaKH8RvPR",
     "img_link": "./img/Games/491820382_1822667978462767_6089766565430026358_n.jpg",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-      {
-    "name": "Hotel Infinito",
-    "affiliate_link": "https://www.meta.com/affiliates/7D9x38Ath",
-    "img_link": "./img/Games/499304938_2027946571357691_7261381856193672262_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
