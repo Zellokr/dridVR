@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
      {
+    "name": "Thief VR: Legacy of Shadow",
+    "affiliate_link": "https://www.meta.com/affiliates/6VMAU4PRV",
+    "img_link": "./img/Games/499332272_1073948757937270_7808984192494514144_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+     {
     "name": "Deadly Delivery",
     "affiliate_link": "https://www.meta.com/affiliates/Ky2eBYcT9",
     "img_link": "./img/Games/499303788_790652400613514_7573602946737861350_n.jpg",
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/ADjn1c4dy",
     "img_link": "./img/Games/499617729_662176040090161_5560587289857672521_n.jpg",
     "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "TRACKED: Shoot to Survive",
-    "affiliate_link": "https://www.meta.com/affiliates/7mZsXHr8K",
-    "img_link": "./img/Games/491821782_771258645931025_7949299798195120549_n.jpg",
-    "yt_link": "https://youtu.be/U3MoiLJ6E74",
     "crossbuy": 0,
     "bhaptics": 0
   }
