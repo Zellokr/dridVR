@@ -3,7 +3,7 @@ import type { DataImage } from "~/components/Body/Banner/types";
 export const bannerImagesList: DataImage[] = [
 
  {
-    image: "/img/Banner/BlackFridayBanner.webp",
+    image: "/img/Banner/bannernavidad.webp",
     altText: "Banner de videojuegos",
     url: "/games",
     contentId: "",
@@ -15,7 +15,7 @@ export const bannerImagesList: DataImage[] = [
   },
     
         {
-    image: "/img/Banner/Quest3SBlackFriday.webp",
+    image: "/img/Banner/bannernavidadquest3.webp",
     altText: "Banner de accesorios de realidad virtual",
     url: "https://www.meta.com/affiliates/AbzRrTmFY",
   },
