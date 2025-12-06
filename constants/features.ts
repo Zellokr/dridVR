@@ -2,11 +2,11 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
-     {
+   {
     "name": "Thief VR: Legacy of Shadow",
     "affiliate_link": "https://www.meta.com/affiliates/6VMAU4PRV",
     "img_link": "./img/Games/499332272_1073948757937270_7808984192494514144_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/wmBo9dYbQbM?si=y5xuMfhm3AOUxk9N",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -34,10 +34,10 @@ export const featureGames: GameSchema[] = [
     "crossbuy": 0,
     "bhaptics": 0
   },
-    {
-    "name": "Glassbreakers",
-    "affiliate_link": "https://www.meta.com/affiliates/ADjn1c4dy",
-    "img_link": "./img/Games/499617729_662176040090161_5560587289857672521_n.jpg",
+     {
+    "name": "Men in Black: Most Wanted",
+    "affiliate_link": "https://www.meta.com/affiliates/C6zZWEs7m",
+    "img_link": "./img/Games/491823271_4298703640402508_267190464816475861_n.jpg",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
