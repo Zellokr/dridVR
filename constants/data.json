@@ -1065,6 +1065,7 @@
     "crossbuy": 0,
     "bhaptics": 0
   },
+ 
   {
     "name": "Dead Hook",
     "affiliate_link": "https://www.meta.com/affiliates/DGC7a24d8",
@@ -2656,6 +2657,14 @@
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 1
+  },
+  {
+    "name": "Marvel's Deadpool VR",
+    "affiliate_link": "https://www.meta.com/affiliates/4PdCTit3pS",
+    "img_link": "./img/Games/499312357_565944479572802_6463433371077248263_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
   },
   {
     "name": "Marvel's Iron Man VR",
