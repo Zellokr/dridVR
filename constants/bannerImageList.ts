@@ -26,9 +26,9 @@ export const bannerImagesList: DataImage[] = [
   },
      
      {
-    image: "/img/Banner/ReachBanner.webp",
-    altText: "Videojuego de realidad virtual llamado Reach",
-    url: "https://www.meta.com/affiliates/BdkWUhqGQ",
+    image: "/img/Banner/Deadpoolbanner.webp",
+    altText: "Videojuego de realidad virtual llamado Deadpool",
+    url: "https://www.meta.com/affiliates/4PdCTit3pS",
   }
 
 ];
