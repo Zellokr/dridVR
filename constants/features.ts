@@ -14,7 +14,7 @@ export const featureGames: GameSchema[] = [
     "name": "Deadly Delivery",
     "affiliate_link": "https://www.meta.com/affiliates/Ky2eBYcT9",
     "img_link": "./img/Games/499303788_790652400613514_7573602946737861350_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/9A8AmStbVic?si=taN_udp3ngQg4pdW",
     "crossbuy": 0,
     "bhaptics": 0
   },
