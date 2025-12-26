@@ -13,7 +13,7 @@ export const gotyGames: SchemaGame[] = [
     "name": "Marvel's Deadpool VR",
     "affiliate_link": "https://www.meta.com/affiliates/deadpool",
     "img_link": "./img/Games/499312357_565944479572802_6463433371077248263_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/H3ZGfuB4msI?si=-3N8VjALXC8MVJCC",
     "crossbuy": false,
     "bhaptics": false
   },
@@ -45,7 +45,7 @@ export const gotyGames: SchemaGame[] = [
     "name": "Forefront",
     "affiliate_link": "https://www.meta.com/affiliates/forefront",
     "img_link": "./img/Games/473393887_2470831469962675_6195762742504749911_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/dQJIge5ZGMc?si=N9auH41mepVxhXFn",
     "crossbuy": false,
     "bhaptics": false
   },
@@ -61,8 +61,8 @@ export const gotyGames: SchemaGame[] = [
     "name": "Demeo x Dungeons & Dragons Battlemarked",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3634830803298285%2F&cjsku=3634830803298285&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/499305027_653730900666136_5648357199524809106_n.jpg",
-    "yt_link": "",
-    "crossbuy": true,
+    "yt_link": "https://youtu.be/EOL8afY_6hU?si=0TTAROvuYhHBlfiZ",
+    "crossbuy": false,
     "bhaptics": false
   },
   {
@@ -77,7 +77,7 @@ export const gotyGames: SchemaGame[] = [
     "name": "Thief VR - Legacy of Shadow",
     "affiliate_link": "https://www.meta.com/affiliates/thief",
     "img_link": "./img/Games/499332272_1073948757937270_7808984192494514144_n.jpg",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/wmBo9dYbQbM?si=y5xuMfhm3AOUxk9N",
     "crossbuy": false,
     "bhaptics": false
   }
