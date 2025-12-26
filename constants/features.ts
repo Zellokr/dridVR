@@ -29,7 +29,7 @@ export const featureGames: GameSchema[] = [
     {
     "name": "Street Gods",
     "affiliate_link": "https://www.meta.com/affiliates/7TMcwN8xv",
-    "img_link": "./img/Games/491823746_2321496548310639_5332265616824231967_n.jpg",
+    "img_link": "./img/Games/491823746_2321496548310639_5332265616824231967_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
