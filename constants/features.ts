@@ -2,43 +2,43 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
-   {
-    "name": "Dixotomia",
-    "affiliate_link": "https://www.meta.com/affiliates/VEdDybCLp",
-    "img_link": "./img/Games/499324083_693562293477518_7730284112963869333_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Groovy Labs",
-    "affiliate_link": "https://www.meta.com/affiliates/DZwUyiq6F",
-    "img_link": "./img/Games/491821115_1876706436573337_174493975721684781_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "Walk the Plank",
-    "affiliate_link": "https://www.meta.com/affiliates/CzXdpa1dQ",
-    "img_link": "./img/Games/499622214_1912947135965986_1550361271224524682_n.webp",
+  {
+    "name": "Brain Candy",
+    "affiliate_link": "https://www.meta.com/affiliates/7r7KYt4Bo",
+    "img_link": "./img/Games/491822581_831957186212009_1777569849428800758_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
      {
-    "name": "Simulador de Barbería VR",
-    "affiliate_link": "https://www.meta.com/affiliates/6LfTCu5Mk",
-    "img_link": "./img/Games/499618499_1335844441409467_2761049339135197619_n.webp",
+    "name": "Wreckin' Raccoon",
+    "affiliate_link": "https://www.meta.com/affiliates/HxHpVnWCo",
+    "img_link": "./img/Games/491819982_676766955431489_2776435327864327937_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "Mole a Hole",
+    "affiliate_link": "https://www.meta.com/affiliates/83d16oaVb",
+    "img_link": "./img/Games/491820496_642424905591165_5670819287101967033_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
      {
-    "name": "Crossings",
-    "affiliate_link": "https://www.meta.com/affiliates/T8kNmGzGZ",
-    "img_link": "./img/Games/491824741_1680680859322823_8499136835362803385_n.webp",
-    "yt_link": "https://youtu.be/0hFDEEiK9so?si=SIOITiXyz0gfw9wE",
+    "name": "Dread Meridian",
+    "affiliate_link": "https://www.meta.com/affiliates/7sCCGyZ9r",
+    "img_link": "./img/Games/499619697_3249047561933122_1131908243347304463_n.webp",
+    "yt_link": "https://youtu.be/TTwKKnjQ6RU?si=mj8RuMqsiJy7NAKE",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+     {
+    "name": "Golden Gloves",
+    "affiliate_link": "https://www.meta.com/affiliates/DTBJkzVC2",
+    "img_link": "./img/Games/499301473_1678153999984400_2612646409849842494_n.webp",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   }
