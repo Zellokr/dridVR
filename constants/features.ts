@@ -2,6 +2,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+   {
+    "name": "Pirates VR: Jolly Roger",
+    "affiliate_link": "https://www.meta.com/affiliates/8FRDHKALG",
+    "img_link": "./img/Games/491824532_1228058249342128_4720890586012453857_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Brain Candy",
     "affiliate_link": "https://www.meta.com/affiliates/7r7KYt4Bo",
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/7sCCGyZ9r",
     "img_link": "./img/Games/499619697_3249047561933122_1131908243347304463_n.webp",
     "yt_link": "https://youtu.be/TTwKKnjQ6RU?si=mj8RuMqsiJy7NAKE",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "Golden Gloves",
-    "affiliate_link": "https://www.meta.com/affiliates/DTBJkzVC2",
-    "img_link": "./img/Games/499301473_1678153999984400_2612646409849842494_n.webp",
-    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   }
