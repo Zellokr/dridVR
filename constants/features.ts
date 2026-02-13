@@ -3,10 +3,18 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
    {
+    "name": "Orcs Must Die: By The Blade",
+    "affiliate_link": "https://www.meta.com/affiliates/HS79b5ajC",
+    "img_link": "./img/Games/499300678_754502844273856_4626817594378572429_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
     "name": "Pirates VR: Jolly Roger",
     "affiliate_link": "https://www.meta.com/affiliates/8FRDHKALG",
     "img_link": "./img/Games/491824532_1228058249342128_4720890586012453857_n.webp",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/tYdNqQ_zZ_8?si=1tXi9nsK2l1xmjin",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/83d16oaVb",
     "img_link": "./img/Games/491820496_642424905591165_5670819287101967033_n.webp",
     "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "Dread Meridian",
-    "affiliate_link": "https://www.meta.com/affiliates/7sCCGyZ9r",
-    "img_link": "./img/Games/499619697_3249047561933122_1131908243347304463_n.webp",
-    "yt_link": "https://youtu.be/TTwKKnjQ6RU?si=mj8RuMqsiJy7NAKE",
     "crossbuy": 0,
     "bhaptics": 0
   }
