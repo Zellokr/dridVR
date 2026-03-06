@@ -10,34 +10,34 @@ export const featureGames: GameSchema[] = [
     "crossbuy": 0,
     "bhaptics": 0
   },
-   {
-    "name": "Pirates VR: Jolly Roger",
-    "affiliate_link": "https://www.meta.com/affiliates/8FRDHKALG",
-    "img_link": "./img/Games/491824532_1228058249342128_4720890586012453857_n.webp",
-    "yt_link": "https://youtu.be/tYdNqQ_zZ_8?si=1tXi9nsK2l1xmjin",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-  {
-    "name": "Brain Candy",
-    "affiliate_link": "https://www.meta.com/affiliates/7r7KYt4Bo",
-    "img_link": "./img/Games/491822581_831957186212009_1777569849428800758_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
      {
-    "name": "Wreckin' Raccoon",
-    "affiliate_link": "https://www.meta.com/affiliates/HxHpVnWCo",
-    "img_link": "./img/Games/491819982_676766955431489_2776435327864327937_n.webp",
+    "name": "RAGER",
+    "affiliate_link": "https://www.meta.com/affiliates/8KBEiAStU",
+    "img_link": "./img/Games/499307931_1611900226497538_8787896665086869012_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
    {
-    "name": "Mole a Hole",
-    "affiliate_link": "https://www.meta.com/affiliates/83d16oaVb",
-    "img_link": "./img/Games/491820496_642424905591165_5670819287101967033_n.webp",
+    "name": "Le Dino Labo",
+    "affiliate_link": "https://www.meta.com/affiliates/Aj25Jx3fW",
+    "img_link": "./img/Games/491825462_852346813869199_3496863667959873628_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "SkyLeap",
+    "affiliate_link": "https://www.meta.com/affiliates/AsArRwH5Z",
+    "img_link": "./img/Games/491823286_846723161199331_5948877726402820210_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "Fixer Undercover",
+    "affiliate_link": "https://www.meta.com/affiliates/C3XQap6qH",
+    "img_link": "./img/Games/491823271_1217185877146015_8743150462366580871_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
