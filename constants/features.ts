@@ -3,9 +3,9 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
    {
-    "name": "Orcs Must Die: By The Blade",
-    "affiliate_link": "https://www.meta.com/affiliates/HS79b5ajC",
-    "img_link": "./img/Games/499300678_754502844273856_4626817594378572429_n.webp",
+    "name": "Fight Fit VR",
+    "affiliate_link": "https://www.meta.com/affiliates/7i4j8vKrK",
+    "img_link": "./img/Games/39031319_1611631739761307_2491182172697861727_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
