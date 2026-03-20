@@ -3,6 +3,22 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
    {
+    "name": "Cursed Echoes",
+    "affiliate_link": "https://www.meta.com/affiliates/8TdmUjrRs",
+    "img_link": "./img/Games/491819983_1406065877290819_3050450984097403096_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "Unseen Diplomacy 2",
+    "affiliate_link": "https://www.meta.com/affiliates/74vPLtkjD",
+    "img_link": "./img/Games/499296194_1502846007361603_5702462798731013770_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
     "name": "Fight Fit VR",
     "affiliate_link": "https://www.meta.com/affiliates/7i4j8vKrK",
     "img_link": "./img/Games/39031319_1611631739761307_2491182172697861727_n.webp",
@@ -22,22 +38,6 @@ export const featureGames: GameSchema[] = [
     "name": "Le Dino Labo",
     "affiliate_link": "https://www.meta.com/affiliates/Aj25Jx3fW",
     "img_link": "./img/Games/491825462_852346813869199_3496863667959873628_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "SkyLeap",
-    "affiliate_link": "https://www.meta.com/affiliates/AsArRwH5Z",
-    "img_link": "./img/Games/491823286_846723161199331_5948877726402820210_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "Fixer Undercover",
-    "affiliate_link": "https://www.meta.com/affiliates/C3XQap6qH",
-    "img_link": "./img/Games/491823271_1217185877146015_8743150462366580871_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
