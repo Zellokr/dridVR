@@ -43,7 +43,7 @@ export const gotyGames: SchemaGame[] = [
   },
   {
     "name": "Forefront",
-    "affiliate_link": "https://www.meta.com/affiliates/forefront",
+    "affiliate_link": "https://www.meta.com/affiliates/7RdDupYuv",
     "img_link": "./img/Games/473393887_2470831469962675_6195762742504749911_n.jpg",
     "yt_link": "https://youtu.be/dQJIge5ZGMc?si=N9auH41mepVxhXFn",
     "crossbuy": false,
