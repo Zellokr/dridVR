@@ -490,10 +490,18 @@
   },
   {
     "name": "Beat Saber",
-    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2448060205267927%2F&cjsku=2448060205267927&widgetid=67409c6d6e73e5d8cacefdc1",
+    "affiliate_link": "https://www.meta.com/affiliates/58Zvrg6gS",
     "img_link": "./img/Games/39001727_511634121582114_3550352269992881687_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Beat the Beats",
+    "affiliate_link": "https://www.meta.com/affiliates/7UHwub3Lp",
+    "img_link": "./img/Games/38974887_903317764512651_4367060651741261931_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -580,6 +588,14 @@
     "name": "Block Buster",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F4310142359062337%2F&cjsku=4310142359062337&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39031328_1742255849957911_6228336013788781813_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Bloxer",
+    "affiliate_link": "https://www.meta.com/affiliates/Akyc5iBER",
+    "img_link": "./img/Games/491821796_1667881214412796_7265008159670163211_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -3162,6 +3178,14 @@
     "crossbuy": 0,
     "bhaptics": 1
   },
+   {
+    "name": "Oh My Galaxy!",
+    "affiliate_link": "https://www.meta.com/affiliates/Dbesd5AQ5",
+    "img_link": "./img/Games/491819356_854609650930089_7443951044157474720_n.webp",
+    "yt_link": "",
+    "crossbuy": 1,
+    "bhaptics": 0
+  },
   {
     "name": "OhShape",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2522558964527688%2F&cjsku=2522558964527688&widgetid=67409c6d6e73e5d8cacefdc1",
@@ -3418,6 +3442,14 @@
     "crossbuy": 0,
     "bhaptics": 0
   },
+   {
+    "name": "Plasmaborne",
+    "affiliate_link": "https://www.meta.com/affiliates/NQv4FptL9",
+    "img_link": "./img/Games/491823286_1793708494669803_3983515235769519239_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Please, Don't Touch Anything",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2706567592751319%2F&cjsku=2706567592751319&widgetid=67409c6d6e73e5d8cacefdc1",
@@ -3515,6 +3547,14 @@
     "bhaptics": 1
   },
   {
+    "name": "Protect My Cow",
+    "affiliate_link": "https://www.meta.com/affiliates/4ajmNm88ha",
+    "img_link": "./img/Games/499300661_1507511347383795_6963641726878657436_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "PSYCHIC SHOOTER",
     "affiliate_link": "https://www.meta.com/affiliates/Aoi2yE3JH",
     "img_link": "./img/Games/38984475_912388017467735_469760913959337696_n.jpg",
@@ -3576,6 +3616,14 @@
     "img_link": "./img/Games/75230043_7351064638304621_6038870961007097936_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Racket Pinball",
+    "affiliate_link": "https://www.meta.com/affiliates/8TXALubf9",
+    "img_link": "./img/Games/491824328_1336956178467458_2886774562409944223_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -3948,6 +3996,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Skytail",
+    "affiliate_link": "https://www.meta.com/affiliates/DiQekTydb",
+    "img_link": "./img/Games/491820855_927470380179139_3129617467835630105_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Sky Climb",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6439300372853604%2F&cjsku=6439300372853604&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38982675_352158204024935_3073724690091900618_n.jpg",
@@ -4079,6 +4135,14 @@
     "name": "Space Channel 5 VR Kinda Funky News Flash!",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2249318828413747%2F&cjsku=2249318828413747&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/75195902_1773389786148946_1968245505793879886_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Space Control",
+    "affiliate_link": "https://www.meta.com/affiliates/c65Dok56F",
+    "img_link": "./img/Games/491823271_2056223741894499_5836907611081234286_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -4217,6 +4281,14 @@
     "img_link": "./img/Games/38974647_1397226020455782_3692523486204395520_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Star Trek: Infection",
+    "affiliate_link": "https://www.meta.com/affiliates/BGHs7pzep",
+    "img_link": "./img/Games/491828899_24698915326393822_4129578363663631155_n.webp",
+    "yt_link": "https://youtu.be/YGhbtI3oaqY?si=ccNTewgcrDw5-rH4",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -4500,6 +4572,14 @@
     "bhaptics": 0
   },
   {
+    "name": "TaVRn's Takedown - Naheulbeuk",
+    "affiliate_link": "https://www.meta.com/affiliates/8KsAtqXK5",
+    "img_link": "./img/Games/491823270_1417701236740474_8916931527861982871_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Tetris® Effect: Connected",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3386618894743567%2F&cjsku=3386618894743567&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38974759_225564913220328_4127793048424046271_n.jpg",
@@ -4521,6 +4601,14 @@
     "img_link": "./img/Games/75282159_1049088472399647_8368377074281083370_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+   {
+    "name": "The Boys",
+    "affiliate_link": "https://www.meta.com/affiliates/Hyx6QCeSn",
+    "img_link": "./img/Games/491822723_4256648827994955_2985533148640339611_n.webp",
+    "yt_link": "https://youtu.be/nR2x2LTrArg?si=wIPLb0PnKJEJ-AWW",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
