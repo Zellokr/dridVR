@@ -9,9 +9,9 @@ export const bannerImagesList: DataImage[] = [
     contentId: "",
   },
   {
-    image: "/img/Banner/ThiefBanner.webp",
-    altText: "Videojuego de realidad virtual llamado Star Wars Beyond Victory",
-    url: "https://www.meta.com/affiliates/6VMAU4PRV",
+    image: "/img/Banner/WRATHBanner.webp",
+    altText: "Videojuego de realidad virtual llamado WRATH",
+    url: "https://www.meta.com/affiliates/8DmRM2WLP",
   },
     
         {
