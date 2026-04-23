@@ -118,41 +118,6 @@ useHead({
 
     <!-- Divider -->
     <div
-      class="w-full h-px bg-linear-to-r from-transparent via-amber-500 to-transparent"
-    ></div>
-
-    <!-- GOTY Section - Mejores Juegos del Año -->
-    <section class="w-full">
-      <UContainer class="px-4 sm:px-6 lg:px-8">
-        <div class="py-8 sm:py-12 lg:py-16">
-          <!-- Section Header -->
-          <div class="mb-8 sm:mb-10">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-full mb-4"
-            >
-              <UIcon name="i-lucide-trophy" class="w-4 h-4 text-amber-400" />
-              <span class="text-xs font-medium text-amber-300"
-                >Los mejores juegos del año</span
-              >
-            </div>
-            <h2
-              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3"
-            >
-              Mejores Juegos del Año
-            </h2>
-            <p class="text-base sm:text-lg text-gray-400 max-w-2xl">
-              Los títulos más destacados y premiados de realidad virtual
-            </p>
-          </div>
-
-          <!-- GOTY Games Grid -->
-          <Features :data-list="gotyGames" />
-        </div>
-      </UContainer>
-    </section>
-
-    <!-- Divider -->
-    <div
       class="w-full h-px bg-linear-to-r from-transparent via-gray-700 to-transparent my-8"
     ></div>
 
