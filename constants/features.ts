@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
     {
+    "name": "The Amusement",
+    "affiliate_link": "https://www.meta.com/affiliates/P6C3GMwVh",
+    "img_link": "./img/Games/491819239_2095336347706119_7381433065338082967_n.webp",
+    "yt_link": "https://youtu.be/IjJ2X-TXUKo?si=wg4O7nXWv7aYseRy",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
     "name": "WRATH: Aeon of Ruin VR - Brutal Edition",
     "affiliate_link": "https://www.meta.com/affiliates/8DmRM2WLP",
     "img_link": "./img/Games/499620669_1803967224266511_3383253472074138301_n.webp",
@@ -33,14 +41,5 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/YGhbtI3oaqY?si=ccNTewgcrDw5-rH4",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-   {
-    "name": "Beat the Beats",
-    "affiliate_link": "https://www.meta.com/affiliates/7UHwub3Lp",
-    "img_link": "./img/Games/38974887_903317764512651_4367060651741261931_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
-
 ];
