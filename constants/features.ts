@@ -2,45 +2,44 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+    {
+    "name": "The Amusement",
+    "affiliate_link": "https://www.meta.com/affiliates/P6C3GMwVh",
+    "img_link": "./img/Games/491819239_2095336347706119_7381433065338082967_n.webp",
+    "yt_link": "https://youtu.be/IjJ2X-TXUKo?si=wg4O7nXWv7aYseRy",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
+    "name": "WRATH: Aeon of Ruin VR - Brutal Edition",
+    "affiliate_link": "https://www.meta.com/affiliates/8DmRM2WLP",
+    "img_link": "./img/Games/499620669_1803967224266511_3383253472074138301_n.webp",
+    "yt_link": "https://youtu.be/huj0OJhlD-E?si=3nOTuYo5HHyuZ9Oe",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
    {
-    "name": "Walk the Plank",
-    "affiliate_link": "https://www.meta.com/affiliates/CzXdpa1dQ",
-    "img_link": "./img/Games/499622214_1912947135965986_1550361271224524682_n.webp",
+    "name": "Flag Games",
+    "affiliate_link": "https://www.meta.com/affiliates/DoBCMkXXQ",
+    "img_link": "./img/Games/499312376_699971669839664_4087023905876285759_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
-     {
-    "name": "Simulador de Barbería VR",
-    "affiliate_link": "https://www.meta.com/affiliates/6LfTCu5Mk",
-    "img_link": "./img/Games/499618499_1335844441409467_2761049339135197619_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-     {
-    "name": "Crossings",
-    "affiliate_link": "https://www.meta.com/affiliates/T8kNmGzGZ",
-    "img_link": "./img/Games/491824741_1680680859322823_8499136835362803385_n.webp",
-    "yt_link": "https://youtu.be/0hFDEEiK9so?si=SIOITiXyz0gfw9wE",
+   {
+    "name": "The Boys",
+    "affiliate_link": "https://www.meta.com/affiliates/Hyx6QCeSn",
+    "img_link": "./img/Games/491822723_4256648827994955_2985533148640339611_n.webp",
+    "yt_link": "https://youtu.be/nR2x2LTrArg?si=wIPLb0PnKJEJ-AWW",
     "crossbuy": 0,
     "bhaptics": 0
   },
     {
-    "name": "Street Gods",
-    "affiliate_link": "https://www.meta.com/affiliates/7TMcwN8xv",
-    "img_link": "./img/Games/491823746_2321496548310639_5332265616824231967_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "True Surf",
-    "affiliate_link": "https://www.meta.com/affiliates/DWfXnYMhT",
-    "img_link": "./img/Games/499618277_653478137457821_5458112418876366809_n.webp",
-    "yt_link": "",
+    "name": "Star Trek: Infection",
+    "affiliate_link": "https://www.meta.com/affiliates/BGHs7pzep",
+    "img_link": "./img/Games/491828899_24698915326393822_4129578363663631155_n.webp",
+    "yt_link": "https://youtu.be/YGhbtI3oaqY?si=ccNTewgcrDw5-rH4",
     "crossbuy": 0,
     "bhaptics": 0
   }
-
 ];

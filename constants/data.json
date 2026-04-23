@@ -490,10 +490,18 @@
   },
   {
     "name": "Beat Saber",
-    "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2448060205267927%2F&cjsku=2448060205267927&widgetid=67409c6d6e73e5d8cacefdc1",
+    "affiliate_link": "https://www.meta.com/affiliates/58Zvrg6gS",
     "img_link": "./img/Games/39001727_511634121582114_3550352269992881687_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Beat the Beats",
+    "affiliate_link": "https://www.meta.com/affiliates/7UHwub3Lp",
+    "img_link": "./img/Games/38974887_903317764512651_4367060651741261931_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -585,6 +593,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Bloxer",
+    "affiliate_link": "https://www.meta.com/affiliates/Akyc5iBER",
+    "img_link": "./img/Games/491821796_1667881214412796_7265008159670163211_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Blueplanet VR Explore v2",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3422717251188752%2F&cjsku=3422717251188752&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39031567_3768081253459286_986765857251168808_n.jpg",
@@ -645,6 +661,14 @@
     "affiliate_link": "https://www.meta.com/affiliates/Ay8NpV9gK",
     "img_link": "./img/Games/38984452_1961817484261581_3509939785629441957_n.jpg",
     "yt_link": "https://youtu.be/GqFSVYQMiw0?si=99ZsNRZ-vuQwZ745",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Brain Candy",
+    "affiliate_link": "https://www.meta.com/affiliates/7r7KYt4Bo",
+    "img_link": "./img/Games/491822581_831957186212009_1777569849428800758_n.webp",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -772,6 +796,14 @@
     "name": "Carve Snowboarding",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3317083428365473%2F&cjsku=3317083428365473&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38974584_240563734833616_7000656079056654508_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "Catana: Red Flowers",
+    "affiliate_link": "https://www.meta.com/affiliates/8AW3Xbuso",
+    "img_link": "./img/Games/491830589_1031557268694858_6748475057472620343_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -1041,6 +1073,14 @@
     "crossbuy": 0,
     "bhaptics": 0
   },
+   {
+    "name": "Cursed Echoes",
+    "affiliate_link": "https://www.meta.com/affiliates/8TdmUjrRs",
+    "img_link": "./img/Games/491819983_1406065877290819_3050450984097403096_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Cybrix",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F4625005897550253%2F&cjsku=4625005897550253&widgetid=67409c6d6e73e5d8cacefdc1",
@@ -1227,6 +1267,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Dixotomia",
+    "affiliate_link": "https://www.meta.com/affiliates/VEdDybCLp",
+    "img_link": "./img/Games/499324083_693562293477518_7730284112963869333_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "djay",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F5577676049000759%2F&cjsku=5577676049000759&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39001725_1223739648896526_1901391091835848107_n.jpg",
@@ -1296,6 +1344,14 @@
     "img_link": "./img/Games/38974712_343544689601753_1620906754701262848_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Dread Meridian",
+    "affiliate_link": "https://www.meta.com/affiliates/7sCCGyZ9r",
+    "img_link": "./img/Games/499619697_3249047561933122_1131908243347304463_n.webp",
+    "yt_link": "https://youtu.be/TTwKKnjQ6RU?si=mj8RuMqsiJy7NAKE",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -1475,6 +1531,14 @@
     "bhaptics": 1
   },
   {
+    "name": "Everdream Valley VR",
+    "affiliate_link": "https://www.meta.com/affiliates/Dp3BUf1ha",
+    "img_link": "./img/Games/499618293_1568131004543464_6415490694390209922_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "EVERSLAUGHT Invasion",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F5219488324783789%2F&cjsku=5219488324783789&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39031353_403249615479863_668117140173112227_n.jpg",
@@ -1519,6 +1583,14 @@
     "affiliate_link": "https://www.tkqlhce.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6951948781556245%2F&cjsku=6951948781556245",
     "img_link": "./img/Games/39035391_475553498837357_5557784264540528780_n.jpg",
     "yt_link": "https://youtu.be/XRAFS3p6lK4",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Fight Fit VR",
+    "affiliate_link": "https://www.meta.com/affiliates/7i4j8vKrK",
+    "img_link": "./img/Games/39031319_1611631739761307_2491182172697861727_n.webp",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -1574,6 +1646,22 @@
     "name": "Five Nights at Freddy's: Help Wanted 2",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F7156077941079207%2F&cjsku=7156077941079207&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38974518_1096042711555576_7926015440465486546_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Fixer Undercover",
+    "affiliate_link": "https://www.meta.com/affiliates/C3XQap6qH",
+    "img_link": "./img/Games/491823271_1217185877146015_8743150462366580871_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Flag Games",
+    "affiliate_link": "https://www.meta.com/affiliates/DoBCMkXXQ",
+    "img_link": "./img/Games/499312376_699971669839664_4087023905876285759_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -1810,6 +1898,14 @@
     "crossbuy": 0,
     "bhaptics": 0
   },
+   {
+    "name": "Golden Gloves",
+    "affiliate_link": "https://www.meta.com/affiliates/DTBJkzVC2",
+    "img_link": "./img/Games/499301473_1678153999984400_2612646409849842494_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Golf 5",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F4113720305326115%2F&cjsku=4113720305326115&widgetid=67409c6d6e73e5d8cacefdc1",
@@ -1895,6 +1991,14 @@
     "affiliate_link": "https://www.meta.com/affiliates/DEfyuTMMX",
     "img_link": "./img/Games/499304034_1410506846827506_3899759777801896798_n.jpg",
     "yt_link": "https://youtu.be/bVZ78Z5-d-0?si=31JxcdmhtKRS7N7E",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Groovy Labs",
+    "affiliate_link": "https://www.meta.com/affiliates/DZwUyiq6F",
+    "img_link": "./img/Games/491821115_1876706436573337_174493975721684781_n.webp",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -2515,6 +2619,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Le Dino Labo",
+    "affiliate_link": "https://www.meta.com/affiliates/Aj25Jx3fW",
+    "img_link": "./img/Games/491825462_852346813869199_3496863667959873628_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "LEGO® Bricktales",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F6521909757843713%2F&cjsku=6521909757843713&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38982602_3775638696056002_4721758878248087333_n.jpg",
@@ -2827,6 +2939,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Mole a Hole",
+    "affiliate_link": "https://www.meta.com/affiliates/83d16oaVb",
+    "img_link": "./img/Games/491820496_642424905591165_5670819287101967033_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Mondly: Practice Languages in VR",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F4214902388537196%2F&cjsku=4214902388537196&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/75429297_268930424654799_4855733878068893019_n.jpg",
@@ -3064,6 +3184,14 @@
     "img_link": "./img/Games/473393575_973835214128727_5629459935029185258_n.jpg",
     "yt_link": "https://youtu.be/qRGr4A1t8NI",
     "crossbuy": 0,
+    "bhaptics": 1
+  },
+   {
+    "name": "Oh My Galaxy!",
+    "affiliate_link": "https://www.meta.com/affiliates/Dbesd5AQ5",
+    "img_link": "./img/Games/491819356_854609650930089_7443951044157474720_n.webp",
+    "yt_link": "",
+    "crossbuy": 1,
     "bhaptics": 0
   },
   {
@@ -3094,6 +3222,14 @@
     "name": "OrbusVR: Reborn",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2352932654734987%2F&cjsku=2352932654734987&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39031355_382766640555107_6500147339000338725_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Orcs Must Die: By The Blade",
+    "affiliate_link": "https://www.meta.com/affiliates/HS79b5ajC",
+    "img_link": "./img/Games/499300678_754502844273856_4626817594378572429_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -3275,6 +3411,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Pirates VR: Jolly Roger",
+    "affiliate_link": "https://www.meta.com/affiliates/8FRDHKALG",
+    "img_link": "./img/Games/491824532_1228058249342128_4720890586012453857_n.webp",
+    "yt_link": "https://youtu.be/tYdNqQ_zZ_8?si=1tXi9nsK2l1xmjin",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Pistol Whip",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2104963472963790%2F&cjsku=2104963472963790&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/75617314_871769875069011_2145642987831107179_n.jpg",
@@ -3302,6 +3446,14 @@
     "name": "Pixel Ripped 1995",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3628344387191267%2F&cjsku=3628344387191267&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38982598_576398908288717_4348766745237724972_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "Plasmaborne",
+    "affiliate_link": "https://www.meta.com/affiliates/NQv4FptL9",
+    "img_link": "./img/Games/491823286_1793708494669803_3983515235769519239_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -3403,6 +3555,14 @@
     "bhaptics": 1
   },
   {
+    "name": "Protect My Cow",
+    "affiliate_link": "https://www.meta.com/affiliates/4ajmNm88ha",
+    "img_link": "./img/Games/499300661_1507511347383795_6963641726878657436_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "PSYCHIC SHOOTER",
     "affiliate_link": "https://www.meta.com/affiliates/Aoi2yE3JH",
     "img_link": "./img/Games/38984475_912388017467735_469760913959337696_n.jpg",
@@ -3467,9 +3627,25 @@
     "bhaptics": 0
   },
   {
+    "name": "Racket Pinball",
+    "affiliate_link": "https://www.meta.com/affiliates/8TXALubf9",
+    "img_link": "./img/Games/491824328_1336956178467458_2886774562409944223_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Radial-G: Proteus",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2736496286381191%2F&cjsku=2736496286381191&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39036690_6789090344452512_1657285438609409668_n.jpg",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "RAGER",
+    "affiliate_link": "https://www.meta.com/affiliates/8KBEiAStU",
+    "img_link": "./img/Games/499307931_1611900226497538_8787896665086869012_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -3676,6 +3852,14 @@
     "bhaptics": 1
   },
   {
+    "name": "Salmon Man",
+    "affiliate_link": "https://www.meta.com/affiliates/7j3Ea7UDL",
+    "img_link": "./img/Games/491823286_1489277475669490_7824343433971628009_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Samba de Amigo: Virtual Party",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F5736173679792982%2F&cjsku=5736173679792982&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38974650_1557944958366887_5784537405251594653_n.jpg",
@@ -3807,6 +3991,22 @@
     "name": "Simulador de Barbería VR",
     "affiliate_link": "https://www.meta.com/affiliates/6LfTCu5Mk",
     "img_link": "./img/Games/499618499_1335844441409467_2761049339135197619_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "SkyLeap",
+    "affiliate_link": "https://www.meta.com/affiliates/AsArRwH5Z",
+    "img_link": "./img/Games/491823286_846723161199331_5948877726402820210_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
+    "name": "Skytail",
+    "affiliate_link": "https://www.meta.com/affiliates/DiQekTydb",
+    "img_link": "./img/Games/491820855_927470380179139_3129617467835630105_n.webp",
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
@@ -3948,6 +4148,14 @@
     "bhaptics": 0
   },
   {
+    "name": "Space Control",
+    "affiliate_link": "https://www.meta.com/affiliates/c65Dok56F",
+    "img_link": "./img/Games/491823271_2056223741894499_5836907611081234286_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Space Pirate Trainer DX",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F1663790613725314%2F&cjsku=1663790613725314&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38982531_222946386464996_7775552983734212505_n.jpg",
@@ -4081,6 +4289,14 @@
     "img_link": "./img/Games/38974647_1397226020455782_3692523486204395520_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Star Trek: Infection",
+    "affiliate_link": "https://www.meta.com/affiliates/BGHs7pzep",
+    "img_link": "./img/Games/491828899_24698915326393822_4129578363663631155_n.webp",
+    "yt_link": "https://youtu.be/YGhbtI3oaqY?si=ccNTewgcrDw5-rH4",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -4364,6 +4580,14 @@
     "bhaptics": 0
   },
   {
+    "name": "TaVRn's Takedown - Naheulbeuk",
+    "affiliate_link": "https://www.meta.com/affiliates/8KsAtqXK5",
+    "img_link": "./img/Games/491823270_1417701236740474_8916931527861982871_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+  {
     "name": "Tetris® Effect: Connected",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F3386618894743567%2F&cjsku=3386618894743567&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/38974759_225564913220328_4127793048424046271_n.jpg",
@@ -4385,6 +4609,22 @@
     "img_link": "./img/Games/75282159_1049088472399647_8368377074281083370_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "The Amusement",
+    "affiliate_link": "https://www.meta.com/affiliates/P6C3GMwVh",
+    "img_link": "./img/Games/491819239_2095336347706119_7381433065338082967_n.webp",
+    "yt_link": "https://youtu.be/IjJ2X-TXUKo?si=wg4O7nXWv7aYseRy",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+   {
+    "name": "The Boys",
+    "affiliate_link": "https://www.meta.com/affiliates/Hyx6QCeSn",
+    "img_link": "./img/Games/491822723_4256648827994955_2985533148640339611_n.webp",
+    "yt_link": "https://youtu.be/nR2x2LTrArg?si=wIPLb0PnKJEJ-AWW",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -4609,7 +4849,7 @@
     "img_link": "./img/Games/499332272_1073948757937270_7808984192494514144_n.jpg",
     "yt_link": "https://youtu.be/wmBo9dYbQbM?si=y5xuMfhm3AOUxk9N",
     "crossbuy": 0,
-    "bhaptics": 0
+    "bhaptics": 1
   },
   {
     "name": "Thumper",
@@ -4873,6 +5113,14 @@
     "img_link": "./img/Games/38974472_1333712330707050_1390601997871041792_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Unseen Diplomacy 2",
+    "affiliate_link": "https://www.meta.com/affiliates/74vPLtkjD",
+    "img_link": "./img/Games/499296194_1502846007361603_5702462798731013770_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
@@ -5235,12 +5483,28 @@
     "crossbuy": 0,
     "bhaptics": 0
   },
+   {
+    "name": "WRATH: Aeon of Ruin VR - Brutal Edition",
+    "affiliate_link": "https://www.meta.com/affiliates/8DmRM2WLP",
+    "img_link": "./img/Games/499620669_1803967224266511_3383253472074138301_n.webp",
+    "yt_link": "https://youtu.be/huj0OJhlD-E?si=3nOTuYo5HHyuZ9Oe",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
   {
     "name": "Wraith: The Oblivion - Afterlife",
     "affiliate_link": "https://www.ftjcfx.com/click-101284762-15639798?url=https%3A%2F%2Fwww.meta.com%2Fexperiences%2F2562090053828017%2F&cjsku=2562090053828017&widgetid=67409c6d6e73e5d8cacefdc1",
     "img_link": "./img/Games/39001667_470512550899871_4606584255550721107_n.jpg",
     "yt_link": "",
     "crossbuy": 1,
+    "bhaptics": 0
+  },
+  {
+    "name": "Wreckin' Raccoon",
+    "affiliate_link": "https://www.meta.com/affiliates/HxHpVnWCo",
+    "img_link": "./img/Games/491819982_676766955431489_2776435327864327937_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
     "bhaptics": 0
   },
   {
