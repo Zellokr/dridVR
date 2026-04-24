@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
     {
+    "name": "Little Nightmares VR: Altered Echoes",
+    "affiliate_link": "https://www.meta.com/affiliates/CEEyqa2Sy",
+    "img_link": "./img/Games/491828050_25698447106435214_4197305191158005059_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+    {
     "name": "The Amusement",
     "affiliate_link": "https://www.meta.com/affiliates/P6C3GMwVh",
     "img_link": "./img/Games/491819239_2095336347706119_7381433065338082967_n.webp",
@@ -31,14 +39,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/Hyx6QCeSn",
     "img_link": "./img/Games/491822723_4256648827994955_2985533148640339611_n.webp",
     "yt_link": "https://youtu.be/nR2x2LTrArg?si=wIPLb0PnKJEJ-AWW",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "Star Trek: Infection",
-    "affiliate_link": "https://www.meta.com/affiliates/BGHs7pzep",
-    "img_link": "./img/Games/491828899_24698915326393822_4129578363663631155_n.webp",
-    "yt_link": "https://youtu.be/YGhbtI3oaqY?si=ccNTewgcrDw5-rH4",
     "crossbuy": 0,
     "bhaptics": 0
   }
