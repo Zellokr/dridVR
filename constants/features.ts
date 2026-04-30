@@ -2,11 +2,27 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+     {
+    "name": "Teenage Mutant Ninja Turtles Empire City",
+    "affiliate_link": "https://www.meta.com/affiliates/J2sjJUEU9",
+    "img_link": "./img/Games/491820141_3007694096287200_6241673081806224560_n.webp",
+    "yt_link": "https://youtu.be/VDGB6CJpn-I?si=I_A4o4RNGMp6Ty2J",
+    "crossbuy": 0,
+    "bhaptics": 0
+  }
+       {
+    "name": "Beyond Sandbox",
+    "affiliate_link": "https://www.meta.com/affiliates/HsPTbPAjq",
+    "img_link": "./img/Games/499618284_1265078785750616_5601289579839418166_n.webp",
+    "yt_link": "https://youtu.be/Fdj1Hneqjdg?si=N9ZCyDysJTKlrXkZ",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
     {
     "name": "Little Nightmares VR: Altered Echoes",
     "affiliate_link": "https://www.meta.com/affiliates/CEEyqa2Sy",
     "img_link": "./img/Games/491828050_25698447106435214_4197305191158005059_n.webp",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/-QMCaI2mxYM?si=ar_BR5fybrHxsBF_",
     "crossbuy": 0,
     "bhaptics": 0
   },
@@ -25,21 +41,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/huj0OJhlD-E?si=3nOTuYo5HHyuZ9Oe",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-   {
-    "name": "Flag Games",
-    "affiliate_link": "https://www.meta.com/affiliates/DoBCMkXXQ",
-    "img_link": "./img/Games/499312376_699971669839664_4087023905876285759_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-   {
-    "name": "The Boys",
-    "affiliate_link": "https://www.meta.com/affiliates/Hyx6QCeSn",
-    "img_link": "./img/Games/491822723_4256648827994955_2985533148640339611_n.webp",
-    "yt_link": "https://youtu.be/nR2x2LTrArg?si=wIPLb0PnKJEJ-AWW",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
+   
 ];
