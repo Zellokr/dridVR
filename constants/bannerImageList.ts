@@ -2,6 +2,11 @@ import type { DataImage } from "~/components/Body/Banner/types";
 
 export const bannerImagesList: DataImage[] = [
  {
+    image: "/img/Banner/tortugasninjas_banner.webp",
+    altText: "Videojuego de realidad virtual llamado Teenage Mutant Ninja Turtles Empire City",
+    url: "https://www.meta.com/affiliates/J2sjJUEU9",
+  },
+ {
     image: "/img/Banner/LittleNightmares_banner.webp",
     altText: "Videojuego de realidad virtual llamado LittleNightmares",
     url: "https://www.meta.com/affiliates/CEEyqa2Sy",
@@ -24,9 +29,5 @@ export const bannerImagesList: DataImage[] = [
     altText: "Banner de accesorios de realidad virtual",
     url: "https://www.meta.com/affiliates/AbzRrTmFY",
   },
-     {
-    image: "/img/Banner/forefront_banner.webp",
-    altText: "Videojuego de realidad virtual llamado Forefront",
-    url: "https://www.meta.com/affiliates/7RdDupYuv",
-  }
+     
 ];
