@@ -9,7 +9,7 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/VDGB6CJpn-I?si=I_A4o4RNGMp6Ty2J",
     "crossbuy": 0,
     "bhaptics": 0
-  }
+  },
       {
     "name": "One More Delve",
     "affiliate_link": "https://www.meta.com/affiliates/4ZU5kRFGbS",
