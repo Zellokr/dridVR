@@ -10,6 +10,14 @@ export const featureGames: GameSchema[] = [
     "crossbuy": 0,
     "bhaptics": 0
   }
+      {
+    "name": "One More Delve",
+    "affiliate_link": "https://www.meta.com/affiliates/4ZU5kRFGbS",
+    "img_link": "./img/Games/491829980_2120721965021016_2801020263418036182_n.webp",
+    "yt_link": "https://youtu.be/ayZBEAUsNVo",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
        {
     "name": "Beyond Sandbox",
     "affiliate_link": "https://www.meta.com/affiliates/HsPTbPAjq",
@@ -33,14 +41,7 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/IjJ2X-TXUKo?si=wg4O7nXWv7aYseRy",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-    {
-    "name": "WRATH: Aeon of Ruin VR - Brutal Edition",
-    "affiliate_link": "https://www.meta.com/affiliates/8DmRM2WLP",
-    "img_link": "./img/Games/499620669_1803967224266511_3383253472074138301_n.webp",
-    "yt_link": "https://youtu.be/huj0OJhlD-E?si=3nOTuYo5HHyuZ9Oe",
-    "crossbuy": 0,
-    "bhaptics": 0
-  }
+           
+}
    
 ];
