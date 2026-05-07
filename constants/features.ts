@@ -3,6 +3,14 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 export const featureGames: GameSchema[] = [
 
      {
+    "name": "Evil Inside VR",
+    "affiliate_link": "https://www.meta.com/affiliates/4bxt4yfrdi",
+    "img_link": "./img/Games/499303746_1395052968900213_2557845914393711386_n.webp",
+    "yt_link": "https://youtu.be/VkJ5ZIz-ZNc?si=Ov--xprZ3zYJ8hoP",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+     {
     "name": "Teenage Mutant Ninja Turtles Empire City",
     "affiliate_link": "https://www.meta.com/affiliates/J2sjJUEU9",
     "img_link": "./img/Games/491820141_3007694096287200_6241673081806224560_n.webp",
@@ -15,14 +23,6 @@ export const featureGames: GameSchema[] = [
     "affiliate_link": "https://www.meta.com/affiliates/4ZU5kRFGbS",
     "img_link": "./img/Games/491829980_2120721965021016_2801020263418036182_n.webp",
     "yt_link": "https://youtu.be/ayZBEAUsNVo",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-       {
-    "name": "Beyond Sandbox",
-    "affiliate_link": "https://www.meta.com/affiliates/HsPTbPAjq",
-    "img_link": "./img/Games/499618284_1265078785750616_5601289579839418166_n.webp",
-    "yt_link": "https://youtu.be/Fdj1Hneqjdg?si=N9ZCyDysJTKlrXkZ",
     "crossbuy": 0,
     "bhaptics": 0
   },
