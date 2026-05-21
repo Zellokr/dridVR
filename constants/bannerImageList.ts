@@ -18,9 +18,9 @@ export const bannerImagesList: DataImage[] = [
     contentId: "",
   },
    {
-    image: "/img/Banner/LittleNightmares_banner.webp",
-    altText: "Videojuego de realidad virtual llamado LittleNightmares",
-    url: "https://www.meta.com/affiliates/CEEyqa2Sy",
+    image: "/img/Banner/spymaster_banner.webp",
+    altText: "Videojuego de realidad virtual llamado Spymaster",
+    url: "https://www.meta.com/affiliates/Cknm3EzXD",
   },
  {
     image: "/img/Banner/banner_image_2.webp",
