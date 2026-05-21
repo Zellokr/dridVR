@@ -18,11 +18,11 @@ export const featureGames: GameSchema[] = [
     "crossbuy": 0,
     "bhaptics": 0
   },
-      {
-    "name": "One More Delve",
-    "affiliate_link": "https://www.meta.com/affiliates/4ZU5kRFGbS",
-    "img_link": "./img/Games/491829980_2120721965021016_2801020263418036182_n.webp",
-    "yt_link": "https://youtu.be/ayZBEAUsNVo",
+    {
+    "name": "Spymaster",
+    "affiliate_link": "https://www.meta.com/affiliates/Cknm3EzXD",
+    "img_link": "./img/Games/491823341_937103132073728_7336675141747262623_n.webp",
+    "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
   },
