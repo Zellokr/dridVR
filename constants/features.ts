@@ -22,7 +22,7 @@ export const featureGames: GameSchema[] = [
     "name": "Spymaster",
     "affiliate_link": "https://www.meta.com/affiliates/Cknm3EzXD",
     "img_link": "./img/Games/491823341_937103132073728_7336675141747262623_n.webp",
-    "yt_link": "",
+    "yt_link": "https://youtu.be/j3Do5qC2sXY",
     "crossbuy": 0,
     "bhaptics": 0
   },
