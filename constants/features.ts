@@ -2,6 +2,22 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+    {
+    "name": "Compass",
+    "affiliate_link": "https://www.meta.com/affiliates/Dcog9RGup",
+    "img_link": "./img/Games/499300661_853052124524832_8811125998914025448_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
+     {
+    "name": "Virtual Hunter",
+    "affiliate_link": "https://www.meta.com/affiliates/CsQ6RpYqY",
+    "img_link": "./img/Games/491819356_1291497902486724_1697658662175617703_n.webp",
+    "yt_link": "",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
      {
     "name": "Evil Inside VR",
     "affiliate_link": "https://www.meta.com/affiliates/4bxt4yfrdi",
@@ -25,23 +41,6 @@ export const featureGames: GameSchema[] = [
     "yt_link": "https://youtu.be/j3Do5qC2sXY",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-    {
-    "name": "Little Nightmares VR: Altered Echoes",
-    "affiliate_link": "https://www.meta.com/affiliates/CEEyqa2Sy",
-    "img_link": "./img/Games/491828050_25698447106435214_4197305191158005059_n.webp",
-    "yt_link": "https://youtu.be/-QMCaI2mxYM?si=ar_BR5fybrHxsBF_",
-    "crossbuy": 0,
-    "bhaptics": 0
-  },
-    {
-    "name": "The Amusement",
-    "affiliate_link": "https://www.meta.com/affiliates/P6C3GMwVh",
-    "img_link": "./img/Games/491819239_2095336347706119_7381433065338082967_n.webp",
-    "yt_link": "https://youtu.be/IjJ2X-TXUKo?si=wg4O7nXWv7aYseRy",
-    "crossbuy": 0,
-    "bhaptics": 0
-           
-}
+  }
    
 ];
