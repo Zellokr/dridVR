@@ -7,9 +7,9 @@ export const bannerImagesList: DataImage[] = [
     url: "https://www.meta.com/affiliates/4bxt4yfrdi",
   },
  {
-    image: "/img/Banner/tortugasninjas_banner.webp",
-    altText: "Videojuego de realidad virtual llamado Teenage Mutant Ninja Turtles Empire City",
-    url: "https://www.meta.com/affiliates/J2sjJUEU9",
+    image: "/img/Banner/quantumvoid_banner.webp",
+    altText: "Videojuego de realidad virtual llamado Quantum Void",
+    url: "https://www.meta.com/affiliates/9HVeYLPmR",
   },
  {
     image: "/img/Banner/banner_image_1.webp",
@@ -18,9 +18,9 @@ export const bannerImagesList: DataImage[] = [
     contentId: "",
   },
    {
-    image: "/img/Banner/spymaster_banner.webp",
-    altText: "Videojuego de realidad virtual llamado Spymaster",
-    url: "https://www.meta.com/affiliates/Cknm3EzXD",
+    image: "/img/Banner/roboquest_banner.webp",
+    altText: "Videojuego de realidad virtual llamado Roboquest VR",
+    url: "https://www.meta.com/affiliates/9LhvLsaVy",
   },
  {
     image: "/img/Banner/banner_image_2.webp",
