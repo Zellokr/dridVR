@@ -2,6 +2,15 @@ import type { GameSchema } from "~/components/CustomCards/MediumCard/Card.vue";
 
 export const featureGames: GameSchema[] = [
 
+     
+       {
+    "name": "The Lightkeepers",
+    "affiliate_link": "https://metacreator.pxf.io/PzdMxq",
+    "img_link": "./img/Games/491831964_1577549357430109_631464406236633518_n.webp",
+    "yt_link": "https://youtu.be/qMZ1K0wEUI0?si=HsVeQ_l-WPRClaVB",
+    "crossbuy": 0,
+    "bhaptics": 0
+  },
       {
     "name": "Quantum Void",
     "affiliate_link": "https://metacreator.pxf.io/PzdxKj",
@@ -33,14 +42,5 @@ export const featureGames: GameSchema[] = [
     "yt_link": "",
     "crossbuy": 0,
     "bhaptics": 0
-  },
-     {
-    "name": "Virtual Hunter",
-    "affiliate_link": "https://metacreator.pxf.io/jR6bD5",
-    "img_link": "./img/Games/491819356_1291497902486724_1697658662175617703_n.webp",
-    "yt_link": "",
-    "crossbuy": 0,
-    "bhaptics": 0
   }
-   
 ];
