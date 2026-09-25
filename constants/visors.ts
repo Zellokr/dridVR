@@ -6,13 +6,18 @@ type Visors = {
 export const visors: Visors[] = [
   {
     name: "Meta Quest 3",
-    affiliate_link: "https://www.meta.com/affiliates/DQCXmgkma",
+    affiliate_link: "https://metacreator.pxf.io/L0d6yM",
     img_link:
       "https://lookaside.fbsbx.com/elementpath/media/?media_id=157327897433582&version=1730492448&transcode_extension=webp",
   },
   {
-    name: "Meta Quest 3S",
-    affiliate_link: "https://www.meta.com/affiliates/AbzRrTmFY",
+    name: "Meta Quest 3S (128 Gb)",
+    affiliate_link: "https://metacreator.pxf.io/qW6MLY",
+    img_link: "https://static.xx.fbcdn.net/rsrc.php/v1/yV/r/DIQNob5e8y6.jpg",
+  },
+  {
+    name: "Meta Quest 3S (256 Gb)",
+    affiliate_link: "https://metacreator.pxf.io/qW6MLY",
     img_link: "https://static.xx.fbcdn.net/rsrc.php/v1/yV/r/DIQNob5e8y6.jpg",
   },
   {
