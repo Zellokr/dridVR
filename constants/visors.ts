@@ -13,12 +13,12 @@ export const visors: Visors[] = [
   {
     name: "Meta Quest 3S (128 Gb)",
     affiliate_link: "https://metacreator.pxf.io/qW6MLY",
-    img_link: "https://static.xx.fbcdn.net/rsrc.php/v1/yV/r/DIQNob5e8y6.jpg",
+    img_link: "/img/visors/9896-meta-quest-3s-gafas-de-realidad-virtual-128gb-771ba608-f5a3-4619-98c7-a0a36e1661c4.webp",
   },
   {
     name: "Meta Quest 3S (256 Gb)",
     affiliate_link: "https://metacreator.pxf.io/qW6MLY",
-    img_link: "https://static.xx.fbcdn.net/rsrc.php/v1/yV/r/DIQNob5e8y6.jpg",
+    img_link: "/img/visors/9896-meta-quest-3s-gafas-de-realidad-virtual-128gb-771ba608-f5a3-4619-98c7-a0a36e1661c4.web",
   },
   {
     name: "Ray-Ban Meta Wayfarer",
